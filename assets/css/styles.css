@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../../fonts/Roboto-Regular.ttf") format('truetype');;
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../../fonts/Roboto-Light.ttf") format('truetype');;
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../../fonts/Roboto-Medium.ttf") format('truetype');;
+}
+
+@font-face {
+    font-family: "TitilliumWeb Bold";
+	src: url("../../fonts/TitilliumWeb-Bold.ttf") format('truetype');;
+}
+
+@font-face {
+    font-family: "TitilliumWeb Light";
+	src: url("../../fonts/TitilliumWeb-Light.ttf") format('truetype');;
+}
+
+@font-face {
+    font-family: "TitilliumWeb ExtraLight";
+	src: url("../../fonts/TitilliumWeb-ExtraLight.ttf") format('truetype');;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #0dacfe;
+}
+
+#socials {
+	position: fixed;
+	top: 50%;
+	margin-top: -120px;
+	z-index: 2;
+}
+
+#socials > a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#socials > a:hover {
+	background-position: 0 -60px;
+}
+
+#socials #facebook {
+	background-image: url('../img/facebook.png');
+}
+
+#socials #twitter {
+	background-image: url('../img/twitter.png');
+}
+
+#socials #linkedin {
+	background-image: url('../img/linkedin.png');
+}
+
+#socials #gplus {
+	background-image: url('../img/gplus.png');
+}
+
+.header {
+	overflow: hidden;
+	height: 202px;
+}
+
+.header .icon {
+	width: 82px;
+	height: 82px;
+	margin: 40px auto 10px auto;
+	background-repeat: no-repeat;
+}
+
+.header .caption {
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	font: normal 40px "TitilliumWeb Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.triangle {
+	margin: 0 auto;
+	width: 20px;
+	height: 17px;
+	background-repeat: no-repeat;
+	margin-bottom: -17px;
+	position: relative;
+	z-index: 2;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header {
+	overflow: hidden;
+	height: 703px;
+	background: #040203 url('../img/header.jpg') no-repeat center;
+}
+	
+#header #header-content {
+	margin-top: 45px;
+}
+
+#header #header-content #menu {
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	float: right;
+}
+
+#header #header-content #menu > li {
+	display: inline;
+	margin-left: 20px;
+}
+
+#header #header-content #menu > li > a {
+	font: normal 16px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #ffffff;
+}
+
+#header #header-content #menu > li > a:hover {
+	text-decoration: underline;
+	color: #0dacfe;
+}
+
+#header #header-content #menu > li.active > a {
+	color: #0dacfe;
+}
+
+#header #header-content #event-title,
+#header #header-content #date-place,
+#header #header-content #slogan {
+	width: 692px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#header #header-content #event-title {
+	margin-top: 70px;
+	font: normal 75px "TitilliumWeb Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #ffffff;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #828297;
+}
+
+#header #header-content #date-place {
+	padding: 10px 0;
+	border-bottom: solid 1px #828297;
+}
+
+#header #header-content #date-place #date,
+#header #header-content #date-place #place {
+	display: inline;
+	color: #ffffff;
+	font: normal 35px "TitilliumWeb Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#header #header-content #date-place #date {
+	padding-left: 40px;
+	background: url('../img/calendar.png') left center no-repeat;
+}
+
+#header #header-content #date-place #place {
+	margin-left: 35px;
+	padding-left: 30px;
+	background: url('../img/marker.png') left center no-repeat;
+}
+
+#header #header-content #slogan {
+	color: #ffffff;
+	font: normal 30px "TitilliumWeb ExtraLight", "lucida grande", tahoma, verdana, arial, sans-serif;
+	padding: 25px 0;
+}
+
+#header #header-content #register-button {
+	display: none;
+	margin: 10px auto 0 auto;
+	width: 247px;
+	height: 60px;
+	background: url('../img/register-button-bg.png') no-repeat;
+	text-align: center;
+	color: #ffffff;
+	font: normal 30px "TitilliumWeb Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+	line-height: 55px;
+	cursor: pointer;
+}
+
+#header #call-for-papers {
+	width: 300px;
+	height: 50px;
+	margin: 55px auto 0 auto;
+}
+
+#header #call-for-papers #label {
+	background-color: #ffffff;
+	display: inline;
+	padding: 8px 25px;
+	font: normal 20px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#header #call-for-papers #button {
+	background-color: #0dacfe;
+	color: #ffffff;
+	display: inline-block;
+	padding: 8px 25px;
+	font: normal 20px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#venue {
+	background-color: #0dacfe;
+}
+
+#venue .icon {
+	background-image: url('../img/venue-icon.png');
+}
+
+.lightblue-triangle {
+	background-image: url('../img/lightblue-triangle.png');
+}
+
+#map {
+	overflow: hidden;
+	color: #384d66;
+	text-align: center;
+	height: 700px;
+}
+
+#map #map-container {
+	width: 100%;
+	height: 700px;
+	position: absoloute;
+	z-index: 0;
+}
+
+#map #map-description {
+	position: relative;
+	width:714px;
+	height: 161px;
+	margin: -240px auto 0 auto;
+	z-index: 1;
+	background: url('../img/map-description.png') no-repeat;
+	padding: 20px;
+}
+
+#map #map-description #title {
+	font: normal 20px "Roboto Medium", "lucida grande", tahoma, verdana, arial, sans-serif;
+	margin: 10px 0;
+}
+
+#map #map-description #description {
+	font: normal 14px "Roboto Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+/* Decorations */
+
+.triangle-before {
+	position: absolute;
+	height: 27px;
+	width: 100%;
+	background: url('../img/triangle-before.png') no-repeat;
+	z-index: 1;
+}
+
+.triangle-after {
+	height: 34px;
+	background-color: #e7e7e7;
+	background-image: url('../img/triangle-after.png');
+	background-repeat: no-repeat;
+}
