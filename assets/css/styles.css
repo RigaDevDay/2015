@@ -234,19 +234,19 @@ a {
 }
 
 #countdown-panel .label#days {
-	margin-left: 60px;
+	margin-left: 30px;
 }
 
 #countdown-panel .label#hours {
-	margin-left: 215px;
+	margin-left: 160px;
 }
 
 #countdown-panel .label#minutes {
-	margin-left: 345px;
+	margin-left: 290px;
 }
 
 #countdown-panel .label#seconds {
-	margin-left: 480px;
+	margin-left: 430px;
 }
 
 #about .caption {
