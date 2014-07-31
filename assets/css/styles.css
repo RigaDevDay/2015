@@ -388,6 +388,20 @@ a {
 
 #footer #share > li {
 	display: inline-block;
+	vertical-align: top;
+}
+
+#footer #share > li.twitter {
+}
+
+#footer #share > li.facebook {
+	margin-right: 15px;
+}
+
+#footer #share > li.gplus {
+}
+
+#footer #share > li.in {
 }
 
 #footer #footer-logo {
