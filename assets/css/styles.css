@@ -29,6 +29,8 @@
 }
 
 html, body {
+	width: 100%;
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 }
@@ -39,10 +41,10 @@ a {
 }
 
 #socials {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	margin-top: -120px;
-	z-index: 2;
+	z-index: 3;
 }
 
 #socials > a {
@@ -75,21 +77,22 @@ a {
 
 .header {
 	overflow: hidden;
-	height: 202px;
-}
-
-.header .icon {
-	width: 82px;
-	height: 82px;
-	margin: 40px auto 10px auto;
-	background-repeat: no-repeat;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	padding: 25px 0;
 }
 
 .header .caption {
+	display: inline-block;
 	text-transform: uppercase;
-	text-align: center;
 	color: #ffffff;
 	font: normal 40px "TitilliumWeb Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	line-height: 70px;
+	height: 70px;
+	padding-left: 90px;
+	background-repeat: no-repeat;
 }
 
 .triangle {
@@ -202,22 +205,9 @@ a {
 }
 
 #header #call-for-papers {
-	width: 300px;
+	width: 190px;
 	height: 50px;
 	margin: 55px auto 0 auto;
-}
-
-#header #call-for-papers #label {
-	background-color: #ffffff;
-	display: inline;
-	padding: 8px 25px;
-	font: normal 20px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
-	-webkit-border-top-left-radius: 15px;
-	-webkit-border-bottom-left-radius: 15px;
-	-moz-border-radius-topleft: 15px;
-	-moz-border-radius-bottomleft: 15px;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
 }
 
 #header #call-for-papers #button {
@@ -226,19 +216,76 @@ a {
 	display: inline-block;
 	padding: 8px 25px;
 	font: normal 20px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
-	-webkit-border-top-right-radius: 15px;
-	-webkit-border-bottom-right-radius: 15px;
-	-moz-border-radius-topright: 15px;
-	-moz-border-radius-bottomright: 15px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
-#venue {
+#countdown-panel {
+	width: 800px;
+	height: 200px;
+	margin: -70px auto 0 auto;
+}
+
+#countdown-panel .label {
+	position: absolute;
+	font: normal 20px "TitilliumWeb Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #f05940;
+}
+
+#countdown-panel .label#days {
+	margin-left: 130px;
+}
+
+#countdown-panel .label#hours {
+	margin-left: 330px;
+}
+
+#countdown-panel .label#minutes {
+	margin-left: 485px;
+}
+
+#countdown-panel .label#seconds {
+	margin-left: 655px;
+}
+
+#about .caption {
+	background-image: url('../img/about-icon.png');
+}
+
+#about-content {
+	padding: 50px 0;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#about-content .description {
+	vertical-align: top;
+	width: 470px;
+	font: normal 16px "Roboto Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	text-align: justify;
+	color: #686b70;
+}
+
+#about-content .twitter-timeline {
+	vertical-align: top;
+	padding-left: 30px;
+	width: 500px;
+	height: 700px;
+}
+
+#about-content .description #photogallery {
+	margin-top: 70px;
+	width: 595px;
+	height: 173px;
+	background: url('../img/photogallery.png') no-repeat;
+}
+
+#about, #venue {
 	background-color: #0dacfe;
 }
 
-#venue .icon {
+#venue .caption {
 	background-image: url('../img/venue-icon.png');
 }
 
@@ -256,7 +303,7 @@ a {
 #map #map-container {
 	width: 100%;
 	height: 700px;
-	position: absoloute;
+	position: absolute;
 	z-index: 0;
 }
 
@@ -279,6 +326,99 @@ a {
 	font: normal 14px "Roboto Light", "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
+#organisers {
+	background-color: #2c3e50;
+}
+
+#organisers .caption {
+	background-image: url('../img/organisers-icon.png');
+}
+
+#organisers-content {
+	height: 250px;
+}
+
+#organisers-content .title {
+	width: 1171px;
+	margin: 60px auto 35px auto;
+	border-bottom: solid 1px #dedede;
+	padding-bottom: 30px;
+	text-align: center;
+	color: #2c3e50;
+	font: normal 24px "TitilliumWeb-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#organisers-content #organisers-list {
+	list-style-type: none;
+	text-align: center;
+}
+
+#organisers-content #organisers-list > li {
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 25px;
+}
+
+#organisers-content #organisers-list > #gdg-riga {
+	background-image: url('../img/gdg-riga.png');
+}
+
+#organisers-content #organisers-list > #jug {
+	background-image: url('../img/jug.png');
+}
+
+#organisers-content #organisers-list > #lvoug {
+	background-image: url('../img/lvoug.png');
+}
+
+#footer {
+	overflow: hidden;
+	background-color: #2b3032;
+}
+
+#footer #share {
+	margin-left: -40px;
+	position: absolite;
+	text-align: center;
+	list-style-type: none;
+}
+
+#footer #share > li {
+	display: inline-block;
+}
+
+#footer #footer-logo {
+	background: url('../img/footer-logo-bg.png') repeat-x;
+	height: 145px;
+}
+
+#footer #footer-logo #logo {
+	height: 204px;
+	width: 250px;
+	margin: 0 auto;
+	background: #2b3032 url('../img/logo.png') no-repeat center;
+}
+
+#footer #footer-description {
+	font: normal 15px "Roboto-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	text-align: center;
+	color: #ffffff;
+}
+
+#footer #footer-description > a {
+	color: #0dacfe;
+}
+
+#footer #copyright {
+	margin: 20px 0 10px 0;
+	font: normal 15px "Roboto-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #4a4d4e;
+	text-align: center;
+}
+
 /* Decorations */
 
 .triangle-before {
@@ -294,4 +434,18 @@ a {
 	background-color: #e7e7e7;
 	background-image: url('../img/triangle-after.png');
 	background-repeat: no-repeat;
+}
+
+#fb_login_button { 
+    width: 80px; 
+}
+#fb_login_button span, 
+#fb_login_button iframe {
+    width: 80px !important;
+    height: 25px !important;
+}
+
+.flip-clock-divider {
+	width: 30px !important;
+	visibility: hidden;
 }

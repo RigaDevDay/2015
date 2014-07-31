@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flipclock.css">
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 	<script src="assets/js/google-maps.js"></script>
+	<script src="assets/js/positionSticky.js"></script>
+	<script src="assets/js/flipclock.min.js"></script>
+	<script src="assets/js/custom.js"></script>
 	<title>Riga Dev Day</title>
 </head>
 <body>
 
 	<div id="socials">
 		<a href="#" id="facebook"></a>
-		<a href="https://twitter.com/RigaDevDay" id="twitter"></a>
-		<a href="https://www.linkedin.com/groups/Riga-Dev-Day-2015-6734834/about" id="linkedin"></a>
+		<a href="#" id="twitter"></a>
+		<a href="#" id="linkedin"></a>
 		<a href="#" id="gplus"></a>
 	</div>
 	
@@ -60,28 +65,116 @@
 				</div>
 				
 				<div id="call-for-papers">
-					<div id="label">Call for papers</div>
-					<a href="https://docs.google.com/forms/d/1j8f-Zf1o9Jfo2zMH2B8dh4aIO5gSUc1FAQs0leE8tmA/viewform"><div id="button">Submit</div></a>
+					<a href="https://docs.google.com/forms/d/1j8f-Zf1o9Jfo2zMH2B8dh4aIO5gSUc1FAQs0leE8tmA/viewform">
+					<div id="button">Call for Papers</div></a>
 				</div>
 				
 			</div>
 		</div>
 	</div>
-	<div class="triangle-after"></div>
 	
-	<div class="header" id="venue">
-		<div class="icon"></div>
-		<div class="caption">venue</div>
+	<div id="countdown-panel">
+		<div id="countdown"></div>
+		<div class="label" id="days">Days</div>
+		<div class="label" id="hours">Hours</div>
+		<div class="label" id="minutes">Minutes</div>
+		<div class="label" id="seconds">Seconds</div>
 	</div>
-	<div class="triangle lightblue-triangle"></div>
-	<div class="triangle-before"></div>
 	
-	<div id="map">
-		<div id="map-container"></div>
-		<div id="map-description">
-			<div id="title">Multikino</div>
-			<div id="description">Riga, Mukusalas iela 71</br><a href="http://www.multikino.lv/">www.multikino.lv</a></div>
+	<div>
+		<div class="header" id="about">
+			<div class="caption">about riga dev day</div>
+		</div>
+		<div id="about-content">
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="description">
+						<p>
+							The conference was organised by Latvian Java User Group and Oracle at November 28th in Riga, Latvia. This was a major Baltics IT event welcoming more than 280 Java programmers from the region.
+						</p>
+						<p>
+							15 talks was presented by 15 speakers from Russia, Latvia, England, France, Greece, Czech Republic, Germany, Switzerland, Finland and Italy.
+						</p>
+						<p>
+							Photos and presentations from Java Day Riga 2013 are available now.
+						</p>
+						<p>
+							For any questions please contact Latvian JUG.
+						</p>
+						<div id="photogallery"></div>
+					</td>
+					<td class="twitter-timeline">
+						<a class="twitter-timeline" href="https://twitter.com/hashtag/rigadevday2014" data-widget-id="494202577274163200">#rigadevday2014 Tweets</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</td>
+				</tr>
+			</table>
+
 		</div>
 	</div>
+	
+	<div>
+		<div class="header" id="venue">
+			<div class="caption">venue</div>
+		</div>
+		<div id="map">
+			<div id="map-container"></div>
+			<div id="map-description">
+				<div id="title">Multikino</div>
+				<div id="description">Riga, Mukusalas iela 71</br><a href="http://www.multikino.lv/">www.multikino.lv</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<div class="header" id="organisers">
+			<div class="caption">organisers</div>
+		</div>
+		<div id="organisers-content">
+			<div class="title">Organisers of the Event</div>
+			<ul id="organisers-list">
+				<li id="gdg-riga"></li>
+				<li id="jug"></li>
+				<li id="lvoug"></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div id="footer-logo">
+			<div id="logo"></div>
+		</div>
+		<ul id="share">
+			<li>
+				<a href="https://twitter.com/share" data-url="http://javaday.lv/" class="twitter-share-button" data-hashtags="jdayriga">Tweet</a>
+			</li>
+			<li>
+				<div class="social facebook"> 
+					<div class="fb-like" data-href="http://javaday.lv/" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+				</div>
+			</li>
+			<li>
+				<div class="g-plusone" data-size="medium" data-href="http://javaday.lv/"></div>
+			</li>
+			<li>
+				<script type="IN/Share" data-url="http://javaday.lv/" data-counter="right"></script>
+			</li>
+		</ul>
+		<div id="footer-description">
+			Riga Dev Day -  Kino Citadele, Riga, Latvia - <a href="mailto:office@rigadevday.lv">office@rigadevday.lv</a>
+		</div>
+		<div id="copyright">Riga Dev Day © 2015 All rights reserved</div>
+	</div>
+	
+	<script src="http://platform.twitter.com/widgets.js"></script>
+	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+	<script type="text/javascript">
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	  </script>
+	  <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
 </body>
 </html>
