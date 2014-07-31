@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#countdown').flipcountdown({
 			size:'lg',
-			beforeDateTime:'15/07/2014 00:00:01',
+			beforeDateTime:'15/09/2014 00:00:01',
 			speedFlip:60
 			/*tick:function(){
 				var nol = function(h){
