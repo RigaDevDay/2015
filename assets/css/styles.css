@@ -222,9 +222,9 @@ a {
 }
 
 #countdown-panel {
-	width: 800px;
+	width: 570px;
 	height: 200px;
-	margin: -70px auto 0 auto;
+	margin: -55px auto 0 auto;
 }
 
 #countdown-panel .label {
@@ -234,19 +234,19 @@ a {
 }
 
 #countdown-panel .label#days {
-	margin-left: 130px;
+	margin-left: 60px;
 }
 
 #countdown-panel .label#hours {
-	margin-left: 330px;
+	margin-left: 215px;
 }
 
 #countdown-panel .label#minutes {
-	margin-left: 485px;
+	margin-left: 345px;
 }
 
 #countdown-panel .label#seconds {
-	margin-left: 655px;
+	margin-left: 480px;
 }
 
 #about .caption {
@@ -445,7 +445,6 @@ a {
     height: 25px !important;
 }
 
-.flip-clock-divider {
+.xdsoft_space {
 	width: 30px !important;
-	visibility: hidden;
 }
