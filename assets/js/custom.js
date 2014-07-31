@@ -18,4 +18,16 @@ $(document).ready(function() {
 		});
 	$(".header").positionSticky();
 	$(".header").css("width", "100%");
+	
+	$("#gdg-riga").click(function() {
+		window.location.href = "http://gdgriga.lv";
+	});
+	
+	$("#jug").click(function() {
+		window.location.href = "http://jug.lv";
+	});
+	
+	$("#lvoug").click(function() {
+		window.location.href = "http://lvoug.lv";
+	});
 });
