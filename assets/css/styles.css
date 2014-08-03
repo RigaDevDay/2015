@@ -121,7 +121,7 @@ a {
 }
 
 #header #header-content #menu {
-	display: none;
+	/* display: none; */
 	list-style-type: none;
 	margin: 0;
 	float: right;
@@ -330,19 +330,19 @@ a {
 	font: normal 14px "Roboto Light", "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
-#organisers {
+#organizers {
 	background-color: #2c3e50;
 }
 
-#organisers .caption {
-	background-image: url('../img/organisers-icon.png');
+#organizers .caption {
+	background-image: url('../img/organizers-icon.png');
 }
 
-#organisers-content {
+#organizers-content {
 	height: 250px;
 }
 
-#organisers-content .title {
+#organizers-content .title {
 	width: 1171px;
 	margin: 60px auto 35px auto;
 	border-bottom: solid 1px #dedede;
@@ -352,12 +352,12 @@ a {
 	font: normal 24px "TitilliumWeb-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
-#organisers-content #organisers-list {
+#organizers-content #organizers-list {
 	list-style-type: none;
 	text-align: center;
 }
 
-#organisers-content #organisers-list > li {
+#organizers-content #organizers-list > li {
 	display: inline-block;
 	width: 200px;
 	height: 100px;
@@ -367,15 +367,15 @@ a {
 	cursor: pointer;
 }
 
-#organisers-content #organisers-list > #gdg-riga {
+#organizers-content #organizers-list > #gdg-riga {
 	background-image: url('../img/gdg-riga.png');
 }
 
-#organisers-content #organisers-list > #jug {
+#organizers-content #organizers-list > #jug {
 	background-image: url('../img/jug.png');
 }
 
-#organisers-content #organisers-list > #lvoug {
+#organizers-content #organizers-list > #lvoug {
 	background-image: url('../img/lvoug.png');
 }
 
