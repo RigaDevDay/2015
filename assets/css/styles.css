@@ -281,8 +281,12 @@ a {
 	background: url('../img/photogallery.png') no-repeat;
 }
 
-#about, #venue {
+#about {
 	background-color: #0dacfe;
+}
+
+#venue {
+	background-color: #f87177;
 }
 
 #venue .caption {
