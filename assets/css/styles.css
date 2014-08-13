@@ -1,33 +1,3 @@
-@font-face {
-    font-family: "Roboto Regular";
-    src: url("../../fonts/Roboto-Regular.ttf") format('truetype');;
-}
-
-@font-face {
-    font-family: "Roboto Light";
-    src: url("../../fonts/Roboto-Light.ttf") format('truetype');;
-}
-
-@font-face {
-    font-family: "Roboto Medium";
-    src: url("../../fonts/Roboto-Medium.ttf") format('truetype');;
-}
-
-@font-face {
-    font-family: "TitilliumWeb Bold";
-	src: url("../../fonts/TitilliumWeb-Bold.ttf") format('truetype');;
-}
-
-@font-face {
-    font-family: "TitilliumWeb Light";
-	src: url("../../fonts/TitilliumWeb-Light.ttf") format('truetype');;
-}
-
-@font-face {
-    font-family: "TitilliumWeb ExtraLight";
-	src: url("../../fonts/TitilliumWeb-ExtraLight.ttf") format('truetype');;
-}
-
 html, body {
 	width: 100%;
 	min-width: 1200px;
@@ -88,7 +58,7 @@ a {
 	display: inline-block;
 	text-transform: uppercase;
 	color: #ffffff;
-	font: normal 40px "TitilliumWeb Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: 200 40px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	line-height: 70px;
 	height: 70px;
 	padding-left: 90px;
@@ -133,7 +103,7 @@ a {
 }
 
 #header #header-content #menu > li > a {
-	font: normal 16px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: normal 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #ffffff;
 }
 
@@ -156,7 +126,7 @@ a {
 
 #header #header-content #event-title {
 	margin-top: 70px;
-	font: normal 75px "TitilliumWeb Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: bold 75px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #ffffff;
 	padding-bottom: 20px;
 	border-bottom: solid 1px #828297;
@@ -171,7 +141,7 @@ a {
 #header #header-content #date-place #place {
 	display: inline;
 	color: #ffffff;
-	font: normal 35px "TitilliumWeb Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: 200 35px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 #header #header-content #date-place #date {
@@ -187,7 +157,7 @@ a {
 
 #header #header-content #slogan {
 	color: #ffffff;
-	font: normal 30px "TitilliumWeb ExtraLight", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: 200 30px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	padding: 25px 0;
 }
 
@@ -199,7 +169,7 @@ a {
 	background: url('../img/register-button-bg.png') no-repeat;
 	text-align: center;
 	color: #ffffff;
-	font: normal 30px "TitilliumWeb Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: bold 30px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	line-height: 55px;
 	cursor: pointer;
 }
@@ -215,7 +185,7 @@ a {
 	color: #ffffff;
 	display: inline-block;
 	padding: 8px 25px;
-	font: normal 20px "Roboto Regular", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: normal 20px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -229,7 +199,7 @@ a {
 
 #countdown-panel .label {
 	position: absolute;
-	font: normal 20px "TitilliumWeb Bold", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: bold 20px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #f05940;
 }
 
@@ -262,7 +232,7 @@ a {
 #about-content .description {
 	vertical-align: top;
 	width: 470px;
-	font: normal 16px "Roboto Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: lighter 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	text-align: justify;
 	color: #686b70;
 }
@@ -322,12 +292,12 @@ a {
 }
 
 #map #map-description #title {
-	font: normal 20px "Roboto Medium", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: medium 20px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	margin: 10px 0;
 }
 
 #map #map-description #description {
-	font: normal 14px "Roboto Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: lighter 14px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 #organizers {
@@ -349,7 +319,7 @@ a {
 	padding-bottom: 30px;
 	text-align: center;
 	color: #2c3e50;
-	font: normal 24px "TitilliumWeb-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: 200 24px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 #organizers-content #organizers-list {
@@ -386,7 +356,6 @@ a {
 
 #footer #share {
 	margin-left: -40px;
-	position: absolite;
 	text-align: center;
 	list-style-type: none;
 }
@@ -422,7 +391,7 @@ a {
 }
 
 #footer #footer-description {
-	font: normal 15px "Roboto-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: lighter 15px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	text-align: center;
 	color: #ffffff;
 }
@@ -433,7 +402,7 @@ a {
 
 #footer #copyright {
 	margin: 20px 0 10px 0;
-	font: normal 15px "Roboto-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: lighter 15px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #4a4d4e;
 	text-align: center;
 }
