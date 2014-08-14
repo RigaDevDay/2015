@@ -85,7 +85,7 @@ a {
 	height: 703px;
 	background: #040203 url('../img/header.jpg') no-repeat center;
 }
-	
+
 #header #header-content {
 	margin-top: 45px;
 }
@@ -424,10 +424,10 @@ a {
 	background-repeat: no-repeat;
 }
 
-#fb_login_button { 
-    width: 80px; 
+#fb_login_button {
+    width: 80px;
 }
-#fb_login_button span, 
+#fb_login_button span,
 #fb_login_button iframe {
     width: 80px !important;
     height: 25px !important;
@@ -435,4 +435,37 @@ a {
 
 .xdsoft_space {
 	width: 30px !important;
+}
+
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  white-space: nowrap;
+  /* top left corner */
+  position: absolute;
+  width: 800px;
+  right: -100px;
+  bottom: 110px;
+  /* 45 deg ccw rotation */
+  -webkit-transform: rotate(-35deg);
+     -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+       -o-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  /* shadow */
+  -webkit-box-shadow: 0 0 10px #888;
+     -moz-box-shadow: 0 0 10px #888;
+          box-shadow: 0 0 10px #888;
+}
+.ribbon p {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: normal 30px "Roboto-Light", "lucida grande", tahoma, verdana, arial, sans-serif;
+  margin: 1px 0;
+  padding: 20px 150px 20px 0;
+  text-align: right;
+  text-decoration: none;
+  /* shadow */
+  text-shadow: 0 0 5px #444;
 }
