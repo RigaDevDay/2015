@@ -23,6 +23,10 @@ $(document).ready(function() {
         window.location.href='https://docs.google.com/forms/d/1j8f-Zf1o9Jfo2zMH2B8dh4aIO5gSUc1FAQs0leE8tmA/viewform';
     });
 
+    $('#sponsors').click(function() {
+        window.location.href='http://rigadevday.lv';
+    });
+
 	$('#gdg-riga').click(function() {
 		window.location.href = 'http://gdgriga.lv';
 	});
