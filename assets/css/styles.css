@@ -10,7 +10,7 @@ a {text-decoration: none; color: #0dacfe;}
 .left, .right {display: inline-block; vertical-align: top;}
 .left {margin-right: -4px;}
 
-article .title {
+article > .title {
     width: 1171px;
     margin: 60px auto 35px auto;
     padding-bottom: 30px;
