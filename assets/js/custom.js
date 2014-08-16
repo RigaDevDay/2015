@@ -1,33 +1,29 @@
 $(document).ready(function() {
+
 	$('#countdown').flipcountdown({
-			size:'lg',
-			beforeDateTime:'09/15/2014 00:00:00',
-			speedFlip:60
-			/*tick:function(){
-				var nol = function(h){
-					return h>9?h:'0'+h;
-				}
-				var	range  	= NY-Math.round((new Date()).getTime()/1000),
-					secday = 86400, sechour = 3600,
-					days 	= parseInt(range/secday),
-					hours	= parseInt((range%secday)/sechour),
-					min		= parseInt(((range%secday)%sechour)/60),
-					sec		= ((range%secday)%sechour)%60;
-				return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
-			}*/
-		});
-	$(".header").positionSticky();
-	$(".header").css("width", "100%");
-	
-	$("#gdg-riga").click(function() {
-		window.location.href = "http://gdgriga.lv";
+        size:'lg',
+        beforeDateTime:'09/15/2014 00:00:00',
+        speedFlip:60
+    });
+
+	$('section header')
+        .positionSticky()
+        .css('width', '100%');
+
+
+    $('#call-for-papers').click(function() {
+        window.location.href='https://docs.google.com/forms/d/1j8f-Zf1o9Jfo2zMH2B8dh4aIO5gSUc1FAQs0leE8tmA/viewform';
+    });
+
+	$('#gdg-riga').click(function() {
+		window.location.href = 'http://gdgriga.lv';
 	});
 	
-	$("#jug").click(function() {
-		window.location.href = "http://jug.lv";
+	$('#jug').click(function() {
+		window.location.href = 'http://jug.lv';
 	});
 	
-	$("#lvoug").click(function() {
-		window.location.href = "http://lvoug.lv";
+	$('#lvoug').click(function() {
+		window.location.href = 'http://lvoug.lv';
 	});
 });
