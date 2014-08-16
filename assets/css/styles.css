@@ -5,10 +5,10 @@ html, body {
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
-	color: #0dacfe;
-}
+a {text-decoration: none; color: #0dacfe;}
+
+.left, .right {display: inline-block; vertical-align: top;}
+.left {margin-right: -4px;}
 
 #socials {
 	position: absolute;
@@ -17,114 +17,68 @@ a {
 	z-index: 3;
 }
 
-#socials > a {
+#socials a {
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
+    background: no-repeat 0 0;
 }
 
-#socials > a:hover {
-	background-position: 0 -60px;
-}
+#socials a:hover {background-position: 0 -60px;}
+#socials a:nth-child(1) {background-image: url('../img/facebook.png');}
+#socials a:nth-child(2) {background-image: url('../img/twitter.png');}
+#socials a:nth-child(3) {background-image: url('../img/linkedin.png');}
+#socials a:nth-child(4) {background-image: url('../img/gplus.png');}
 
-#socials #facebook {
-	background-image: url('../img/facebook.png');
-}
-
-#socials #twitter {
-	background-image: url('../img/twitter.png');
-}
-
-#socials #linkedin {
-	background-image: url('../img/linkedin.png');
-}
-
-#socials #gplus {
-	background-image: url('../img/gplus.png');
-}
-
-.header {
-	overflow: hidden;
+section header {
+    width: 100%;
+    padding: 25px 0;
 	z-index: 2;
-	width: 100%;
 	text-align: center;
-	vertical-align: top;
-	padding: 25px 0;
 }
 
-.header .caption {
+header.dark-blue {background-color: #2c3e50;}
+header.red {background-color: #f87177;}
+header.blue {background-color: #0dacfe;}
+
+section header h1 {
 	display: inline-block;
+    height: 70px;
+    margin: 0;
+    padding-left: 90px;
 	text-transform: uppercase;
 	color: #ffffff;
-	font: 200 40px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: 300 40px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	line-height: 70px;
-	height: 70px;
-	padding-left: 90px;
 	background-repeat: no-repeat;
 }
 
-.triangle {
-	margin: 0 auto;
-	width: 20px;
-	height: 17px;
-	background-repeat: no-repeat;
-	margin-bottom: -17px;
-	position: relative;
-	z-index: 2;
+header > .wrapper {width: 1000px; margin: 0 auto;}
+
+body > header {
+	height: 658px;
+    padding-top: 45px;
+	background: #040203 url('../img/header.jpg') no-repeat top center;
 }
 
-.container {
-	width: 1000px;
-	margin: 0 auto;
+body > header .detail {
+    width: 692px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#header {
-	overflow: hidden;
-	height: 703px;
-	background: #040203 url('../img/header.jpg') no-repeat center;
-}
-	
-#header #header-content {
-	margin-top: 45px;
-}
+nav {float: right;}
 
-#header #header-content #menu {
-	/* display: none; */
-	list-style-type: none;
-	margin: 0;
-	float: right;
-}
-
-#header #header-content #menu > li {
+nav a {
 	display: inline;
 	margin-left: 20px;
+    font: normal 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
+    color: #ffffff;
 }
+nav a:hover {text-decoration: underline; color: #0dacfe;}
+nav a.active {color: #0dacfe;}
 
-#header #header-content #menu > li > a {
-	font: normal 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
-	color: #ffffff;
-}
-
-#header #header-content #menu > li > a:hover {
-	text-decoration: underline;
-	color: #0dacfe;
-}
-
-#header #header-content #menu > li.active > a {
-	color: #0dacfe;
-}
-
-#header #header-content #event-title,
-#header #header-content #date-place,
-#header #header-content #slogan {
-	width: 692px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-#header #header-content #event-title {
+#event-title {
 	margin-top: 70px;
 	font: bold 75px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #ffffff;
@@ -132,55 +86,33 @@ a {
 	border-bottom: solid 1px #828297;
 }
 
-#header #header-content #date-place {
-	padding: 10px 0;
-	border-bottom: solid 1px #828297;
-}
-
-#header #header-content #date-place #date,
-#header #header-content #date-place #place {
+#date-place {padding: 10px 0; border-bottom: solid 1px #828297;}
+#date-place > div {
 	display: inline;
 	color: #ffffff;
-	font: 200 35px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+	font: 300 35px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
-#header #header-content #date-place #date {
+#date {
 	padding-left: 40px;
-	background: url('../img/calendar.png') left center no-repeat;
+	background-image: url('../img/calendar.png');
 }
 
-#header #header-content #date-place #place {
+#place {
 	margin-left: 35px;
 	padding-left: 30px;
-	background: url('../img/marker.png') left center no-repeat;
+	background-image: url('../img/marker.png');
 }
 
-#header #header-content #slogan {
+#slogan {
 	color: #ffffff;
 	font: 200 30px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	padding: 25px 0;
 }
 
-#header #header-content #register-button {
-	display: none;
-	margin: 10px auto 0 auto;
-	width: 247px;
-	height: 60px;
-	background: url('../img/register-button-bg.png') no-repeat;
-	text-align: center;
-	color: #ffffff;
-	font: bold 30px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
-	line-height: 55px;
-	cursor: pointer;
-}
-
-#header #call-for-papers {
-	width: 190px;
-	height: 50px;
-	margin: 55px auto 0 auto;
-}
-
-#header #call-for-papers #button {
+button {
 	background-color: #0dacfe;
 	color: #ffffff;
 	display: inline-block;
@@ -189,90 +121,55 @@ a {
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+    border: none;
+    cursor: pointer;
 }
 
-#countdown-panel {
+#call-for-papers {display: block; margin: 55px auto 0;}
+
+#counter {
 	width: 570px;
 	height: 200px;
 	margin: -55px auto 0 auto;
 }
 
-#countdown-panel .label {
+#counter .label {
 	position: absolute;
 	font: bold 20px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #f05940;
 }
 
-#countdown-panel .label#days {
-	margin-left: 30px;
-}
+#counter .label#days {margin-left: 30px;}
+#counter .label#hours {margin-left: 160px;}
+#counter .label#minutes {margin-left: 290px;}
+#counter .label#seconds {margin-left: 430px;}
 
-#countdown-panel .label#hours {
-	margin-left: 160px;
-}
-
-#countdown-panel .label#minutes {
-	margin-left: 290px;
-}
-
-#countdown-panel .label#seconds {
-	margin-left: 430px;
-}
-
-#about .caption {
-	background-image: url('../img/about-icon.png');
-}
+#about header h1 {background-image: url('../img/about-icon.png');}
 
 #about-content {
+    width: 1000px;
+    height: 680px;
+    margin: 0 auto;
 	padding: 50px 0;
-	width: 1000px;
-	margin: 0 auto;
 }
 
-#about-content .description {
-	vertical-align: top;
-	width: 470px;
-	font: lighter 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
-	text-align: justify;
-	color: #686b70;
+#about .left {
+    width: 600px;
+    font: lighter 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
+    text-align: justify;
+    color: #686b70;
+}
+#about .right {width: 370px; padding-left: 30px;}
+
+#about #gallery {
+    height:173px;
+    margin-top: 70px;
+    background: url('../img/photogallery.png') no-repeat;
 }
 
-#about-content .twitter-timeline {
-	vertical-align: top;
-	padding-left: 30px;
-	width: 500px;
-	height: 700px;
-}
+#venue header h1 {background-image: url('../img/venue-icon.png');}
 
-#about-content .description #photogallery {
-	margin-top: 70px;
-	width: 595px;
-	height: 173px;
-	background: url('../img/photogallery.png') no-repeat;
-}
-
-#about {
-	background-color: #0dacfe;
-}
-
-#venue {
-	background-color: #f87177;
-}
-
-#venue .caption {
-	background-image: url('../img/venue-icon.png');
-}
-
-.lightblue-triangle {
-	background-image: url('../img/lightblue-triangle.png');
-}
-
-#map {
-	overflow: hidden;
-	color: #384d66;
-	text-align: center;
-	height: 700px;
-}
+#map {height: 700px;}
 
 #map #map-container {
 	width: 100%;
@@ -282,52 +179,43 @@ a {
 }
 
 #map #map-description {
-	position: relative;
+	position: absolute;
 	width:714px;
 	height: 161px;
-	margin: -240px auto 0 auto;
+    left: 50%;
+    margin: 430px 0 0 -357px;
+    color: #384d66;
+    text-align: center;
 	z-index: 1;
 	background: url('../img/map-description.png') no-repeat;
 	padding: 20px;
 }
 
-#map #map-description #title {
-	font: medium 20px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
+#map .title {
+	font: 500 20px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	margin: 10px 0;
 }
 
-#map #map-description #description {
+#map .description {
 	font: lighter 14px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
-#organizers {
-	background-color: #2c3e50;
-}
+#organizers header h1 {background-image: url('../img/organizers-icon.png');}
+#organizers-content {height: 250px;}
 
-#organizers .caption {
-	background-image: url('../img/organizers-icon.png');
-}
-
-#organizers-content {
-	height: 250px;
-}
-
-#organizers-content .title {
+#organizers .title {
 	width: 1171px;
 	margin: 60px auto 35px auto;
+    padding-bottom: 30px;
 	border-bottom: solid 1px #dedede;
-	padding-bottom: 30px;
 	text-align: center;
 	color: #2c3e50;
 	font: 200 24px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
-#organizers-content #organizers-list {
-	list-style-type: none;
-	text-align: center;
-}
+#organizers ul {list-style-type: none; text-align: center;}
 
-#organizers-content #organizers-list > li {
+#organizers li {
 	display: inline-block;
 	width: 200px;
 	height: 100px;
@@ -337,102 +225,56 @@ a {
 	cursor: pointer;
 }
 
-#organizers-content #organizers-list > #gdg-riga {
-	background-image: url('../img/gdg-riga.png');
-}
+#organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
+#organizers #jug {background-image: url('../img/jug.png');}
+#organizers #lvoug {background-image: url('../img/lvoug.png');}
 
-#organizers-content #organizers-list > #jug {
-	background-image: url('../img/jug.png');
-}
+#footer {overflow: hidden; background-color: #2b3032;}
 
-#organizers-content #organizers-list > #lvoug {
-	background-image: url('../img/lvoug.png');
-}
-
-#footer {
-	overflow: hidden;
-	background-color: #2b3032;
-}
-
-#footer #share {
+#footer ul {
 	margin-left: -40px;
 	text-align: center;
 	list-style-type: none;
 }
 
-#footer #share > li {
+#footer li {
 	display: inline-block;
 	vertical-align: top;
 }
+#footer .facebook {margin-right: 20px;}
 
-#footer #share > li.twitter {
-}
-
-#footer #share > li.facebook {
-	margin-right: 20px;
-}
-
-#footer #share > li.gplus {
-}
-
-#footer #share > li.in {
-}
-
-#footer #footer-logo {
+#footer .wrapper {
 	background: url('../img/footer-logo-bg.png') repeat-x;
 	height: 145px;
 }
 
-#footer #footer-logo #logo {
+#footer .logo {
+    width: 250px;
 	height: 204px;
-	width: 250px;
 	margin: 0 auto;
 	background: #2b3032 url('../img/logo.png') no-repeat center;
 }
 
-#footer #footer-description {
+#footer .description {
 	font: lighter 15px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	text-align: center;
 	color: #ffffff;
 }
 
-#footer #footer-description > a {
-	color: #0dacfe;
-}
+#footer > a {color: #0dacfe;}
 
-#footer #copyright {
+#footer .copyright {
 	margin: 20px 0 10px 0;
 	font: lighter 15px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 	color: #4a4d4e;
 	text-align: center;
 }
 
-/* Decorations */
-
-.triangle-before {
-	position: absolute;
-	height: 27px;
-	width: 100%;
-	background: url('../img/triangle-before.png') no-repeat;
-	z-index: 1;
-}
-
-.triangle-after {
-	height: 34px;
-	background-color: #e7e7e7;
-	background-image: url('../img/triangle-after.png');
-	background-repeat: no-repeat;
-}
-
-#fb_login_button { 
-    width: 80px; 
-}
-#fb_login_button span, 
+#fb_login_button {width: 80px;}
+#fb_login_button span,
 #fb_login_button iframe {
     width: 80px !important;
     height: 25px !important;
 }
 
-.xdsoft_space {
-	width: 30px !important;
-}
+.xdsoft_space {width: 30px !important;}

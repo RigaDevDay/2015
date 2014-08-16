@@ -17,137 +17,109 @@
 <body>
 
 	<div id="socials">
-		<a href="https://www.facebook.com/rigadevday" id="facebook"></a>
-		<a href="https://twitter.com/RigaDevDay" id="twitter"></a>
-		<a href="https://www.linkedin.com/groups/Riga-Dev-Day-2015-6734834/about" id="linkedin"></a>
-		<a href="https://plus.google.com/104346723645688269517/posts" id="gplus"></a>
+		<a href="https://www.facebook.com/rigadevday"></a>
+		<a href="https://twitter.com/RigaDevDay"></a>
+		<a href="https://www.linkedin.com/groups/Riga-Dev-Day-2015-6734834/about"></a>
+		<a href="https://plus.google.com/104346723645688269517/posts"></a>
 	</div>
-	
-	<div id="header">
-		<div class="container">
-			<div id="header-content">
-			
-				<img src="assets/img/logo.png">
-				
-				<ul id="menu">
-					<li class="active">
-						<a href="#header">Home</a>
-					</li>
-					<li>
-						<a href="#about">About RDD</a>
-					</li>
-					<li>
-						<a href="#venue">Venue</a>
-					</li>
-					<li>
-						<a href="#organizers">Organizers</a>
-					</li>
-				</ul>
-				
-				<div id="event-title">
-					Riga Dev Day
-				</div>
-				
-				<div id="date-place">
-					<div id="date">22 January 2015</div>
-					<div id="place">Multikino</div>
-				</div>
-				
-				<div id="slogan">
-					Come. See. Develop.
-				</div>
-				
-				<div id="register-button">
-					Register
-				</div>
-				
-				<div id="call-for-papers">
-					<a href="https://docs.google.com/forms/d/1j8f-Zf1o9Jfo2zMH2B8dh4aIO5gSUc1FAQs0leE8tmA/viewform">
-					<div id="button">Call for Papers</div></a>
-				</div>
-				
-			</div>
+
+	<header>
+		<div class="wrapper">
+            <img src="assets/img/logo.png">
+
+            <nav>
+                <a href="#header" class="active">Home</a>
+                <a href="#about">About RDD</a>
+                <a href="#venue">Venue</a>
+                <a href="#organizers">Organizers</a>
+            </nav>
+
+            <div id="event-title" class="detail">Riga Dev Day</div>
+
+            <div id="date-place" class="detail">
+                <div id="date">22 January 2015</div>
+                <div id="place">Multikino</div>
+            </div>
+
+            <div id="slogan" class="detail">Come. See. Develop.</div>
+
+            <button id="call-for-papers">Call for Papers</button>
 		</div>
-	</div>
+	</header>
 	
-	<div id="countdown-panel">
+	<section id="counter">
 		<div id="countdown"></div>
 		<div class="label" id="days">Days</div>
 		<div class="label" id="hours">Hours</div>
 		<div class="label" id="minutes">Minutes</div>
 		<div class="label" id="seconds">Seconds</div>
-	</div>
-	
-	<div>
-		<div class="header" id="about">
-			<div class="caption">about riga dev day</div>
-		</div>
-		<div id="about-content">
-			<table cellspacing="0" cellpadding="0">
-				<tr>
-					<td class="description">
-						<p>Riga Dev Day is a software development conference organised by local Java User Group, Oracle User Group and Google Development Group. This social event is produced by software developers for software developers. All topics will be hands-on and beneficial for your daily job. And we have zero tolerance for sales pitches. Conference takes place in Multikino cinema on 22nd of January, 2015.</p>
+	</section>
 
-						<p>It is the first time this conference brand takes place in Riga, Latvia, accumulating three years of previous experience organizing similar events. This is going to be one of the largest IT events in Baltic States welcoming 400+ participants and 25+ internationally acclaimed speakers.</p>
+	<section id="about">
+		<header class="blue">
+			<h1>About Riga Dev Day</h1>
+		</header>
+		<article id="about-content">
+            <div class="left">
+                <p>Riga Dev Day is a software development conference organised by local Java User Group, Oracle User Group and Google Development Group. This social event is produced by software developers for software developers. All topics will be hands-on and beneficial for your daily job. And we have zero tolerance for sales pitches. Conference takes place in Multikino cinema on 22nd of January, 2015.</p>
 
-						<p>Talks will be around the following topics: </p>
+                <p>It is the first time this conference brand takes place in Riga, Latvia, accumulating three years of previous experience organizing similar events. This is going to be one of the largest IT events in Baltic States welcoming 400+ participants and 25+ internationally acclaimed speakers.</p>
 
-						<ul>
-							<li>Software development on Java Virtual Machine</li>
-							<li>Oracle technologies (Oracle, MySQL, BI, etc.)</li>
-							<li>Web and Mobile development</li>
-							<li>DevOps and Continuous Delivery</li>
-							<li>Wearable technologies and embedded programming</li>
-						</ul>
-						<div id="photogallery"></div>
-					</td>
-					<td class="twitter-timeline">
-						<a class="twitter-timeline" href="https://twitter.com/hashtag/rigadevday" data-widget-id="494202577274163200">#rigadevday Tweets</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					</td>
-				</tr>
-			</table>
+                <p>Talks will be around the following topics: </p>
 
-		</div>
-	</div>
-	
-	<div>
-		<div class="header" id="venue">
-			<div class="caption">venue</div>
-		</div>
-		<div id="map">
+                <ul>
+                    <li>Software development on Java Virtual Machine</li>
+                    <li>Oracle technologies (Oracle, MySQL, BI, etc.)</li>
+                    <li>Web and Mobile development</li>
+                    <li>DevOps and Continuous Delivery</li>
+                    <li>Wearable technologies and embedded programming</li>
+                </ul>
+                <div id="gallery"></div>
+            </div>
+            <div class="right">
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/rigadevday" data-widget-id="494202577274163200">#rigadevday Tweets</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+		</article>
+	</section>
+
+	<section id="venue">
+		<header class="red">
+			<h1>Venue</h1>
+		</header>
+		<article id="map">
 			<div id="map-container"></div>
 			<div id="map-description">
-				<div id="title">Multikino</div>
-				<div id="description">Riga, Mukusalas iela 71</br><a href="http://www.multikino.lv/">www.multikino.lv</a></div>
+				<div class="title">Multikino</div>
+				<div class="description">Riga, Mukusalas iela 71</br><a href="http://www.multikino.lv/">www.multikino.lv</a></div>
 			</div>
-		</div>
-	</div>
-	
-	<div>
-		<div class="header" id="organizers">
-			<div class="caption">organizers</div>
-		</div>
-		<div id="organizers-content">
+		</article>
+	</section>
+
+	<section id="organizers">
+		<header class="dark-blue">
+			<h1>Organizers</h1>
+		</header>
+		<article id="organizers-content">
 			<div class="title">Organizers of the Event</div>
-			<ul id="organizers-list">
+			<ul>
 				<li id="gdg-riga"></li>
 				<li id="jug"></li>
 				<li id="lvoug"></li>
 			</ul>
-		</div>
-	</div>
-	
+		</article>
+	</section>
+
 	<div id="footer">
-		<div id="footer-logo">
-			<div id="logo"></div>
+		<div class="wrapper">
+			<div class="logo"></div>
 		</div>
-		<ul id="share">
+		<ul>
 			<li class="twitter">
 				<a href="https://twitter.com/share" data-url="http://rigadevday.lv/" class="twitter-share-button" data-hashtags="rigadevday">Tweet</a>
 			</li>
 			<li class="facebook">
-				<div class="social facebook"> 
+				<div class="social facebook">
 					<div class="fb-like" data-href="http://rigadevday.lv/" data-send="false" data-layout="button_count" data-show-faces="false"></div>
 				</div>
 			</li>
@@ -158,12 +130,13 @@
 				<script type="IN/Share" data-url="http://rigadevday.lv/" data-counter="right"></script>
 			</li>
 		</ul>
-		<div id="footer-description">
+		<div class="description">
 			Riga Dev Day -  Multikino, Riga, Latvia - <a href="mailto:info@rigadevday.lv">info@rigadevday.lv</a>
 		</div>
-		<div id="copyright">Riga Dev Day © 2015 All rights reserved</div>
+		<div class="copyright">Riga Dev Day © 2015 All rights reserved</div>
 	</div>
-	
+
+    <!-- Social share Scripts -->
 	<script src="http://platform.twitter.com/widgets.js"></script>
 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 	<script type="text/javascript">
