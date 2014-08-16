@@ -124,6 +124,7 @@ button {
     border: none;
     cursor: pointer;
 }
+button:hover {background-color: #0193e0;}
 
 #call-for-papers {display: block; margin: 55px auto 0;}
 
