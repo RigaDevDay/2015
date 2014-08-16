@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    $("nav a").click(function(e) {
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').animate({
+            'scrollTop': $(anchor).offset().top
+        }, 1000);
+    });
+
 	$('#countdown').flipcountdown({
         size:'lg',
         beforeDateTime:'09/15/2014 00:00:00',
