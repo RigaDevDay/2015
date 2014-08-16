@@ -10,6 +10,16 @@ a {text-decoration: none; color: #0dacfe;}
 .left, .right {display: inline-block; vertical-align: top;}
 .left {margin-right: -4px;}
 
+article .title {
+    width: 1171px;
+    margin: 60px auto 35px auto;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #dedede;
+    text-align: center;
+    color: #2c3e50;
+    font: 200 24px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
 #socials {
 	position: fixed;
 	top: 51%;
@@ -202,18 +212,6 @@ button:hover {background-color: #0193e0;}
 }
 
 #organizers header h1 {background-image: url('../img/organizers-icon.png');}
-#organizers-content {height: 250px;}
-
-#organizers .title {
-	width: 1171px;
-	margin: 60px auto 35px auto;
-    padding-bottom: 30px;
-	border-bottom: solid 1px #dedede;
-	text-align: center;
-	color: #2c3e50;
-	font: 200 24px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
-}
-
 #organizers ul {list-style-type: none; text-align: center;}
 
 #organizers li {
@@ -229,6 +227,9 @@ button:hover {background-color: #0193e0;}
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
 #organizers #jug {background-image: url('../img/jug.png');}
 #organizers #lvoug {background-image: url('../img/lvoug.png');}
+
+.centered {text-align: center;}
+#sponsors {margin-bottom: 40px;}
 
 #footer {overflow: hidden; background-color: #2b3032;}
 
