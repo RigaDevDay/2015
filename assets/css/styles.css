@@ -230,6 +230,8 @@ button:hover {background-color: #0193e0;}
 #organizers #jug {background-image: url('../img/jug.png');}
 #organizers #lvoug {background-image: url('../img/lvoug.png');}
 
+#organizers article:nth-child(4) {display:none;}
+
 .centered {text-align: center;}
 #sponsors {margin-bottom: 40px;}
 
