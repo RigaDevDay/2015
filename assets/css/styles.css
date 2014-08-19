@@ -108,6 +108,7 @@ nav a.active {color: #0dacfe;}
 #date {
 	padding-left: 40px;
 	background-image: url('../img/calendar.png');
+	cursor: pointer;
 }
 
 #place {
