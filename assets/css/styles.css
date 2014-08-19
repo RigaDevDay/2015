@@ -114,6 +114,7 @@ nav a.active {color: #0dacfe;}
 	margin-left: 35px;
 	padding-left: 30px;
 	background-image: url('../img/marker.png');
+	cursor: pointer;
 }
 
 #slogan {
