@@ -1,20 +1,23 @@
 $(document).ready(function() {
 
-  $("nav a").click(function(e) {
-      e.preventDefault();
-      var anchor = $(this).attr('href');
-      $('html, body').animate({
-          'scrollTop': $(anchor).offset().top
-      }, 1000);
-  });
+	$("nav a").click(function(e) {
+		e.preventDefault();
+		var anchor = $(this).attr('href');
+		$('html, body').animate({
+			'scrollTop': $(anchor).offset().top
+		}, 1000);
+	});
 
-
-  $("#place").click(function(e) {
-      var anchor = '#venue';
-      $('html, body').animate({
-          'scrollTop': $(anchor).offset().top
-      }, 1000);
-  });
+	$("#place").click(function(e) {
+		var anchor = '#venue';
+		$('html, body').animate({
+			'scrollTop': $(anchor).offset().top
+		}, 1000);
+	});
+	
+	$("#date").click(function(e) {
+		 window.location.href='http://lanyrd.com/2015/rigadevday/save-to-calendar/';
+	});
 
 	$('#countdown').flipcountdown({
         size:'lg',
