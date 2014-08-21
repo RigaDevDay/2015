@@ -2,15 +2,17 @@
 <html>
 <head>
 	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="assets/flipcountdown/jquery.flipcountdown.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:700,300,200" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="assets/flipcountdown/jquery.flipcountdown.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,300,500"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Titillium+Web:700,300,200"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/als.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 	<script src="assets/js/google-maps.js"></script>
 	<script src="assets/js/positionSticky.js"></script>
 	<script src="assets/flipcountdown/jquery.flipcountdown.js"></script>
+    <script src="assets/js/jquery.als-1.6.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<title>Riga Dev Day</title>
 </head>
@@ -23,12 +25,19 @@
 		<a href="https://plus.google.com/104346723645688269517/posts"></a>
 	</div>
 
-	<header>
+    <nav id="right-menu">
+        <a id="top-link" href="#top"></a>
+        <a id="about-link" href="#about"></a>
+        <a id="venue-link" href="#venue"></a>
+        <a id="organizers-link" href="#organizers"></a>
+    </nav>
+
+	<header id="top">
 		<div class="wrapper">
             <img src="assets/img/logo.png">
 
             <nav>
-                <a href="#header" class="active">Home</a>
+                <a href="#" class="active">Home</a>
                 <a href="#about">About RDD</a>
                 <a href="#venue">Venue</a>
                 <a href="#organizers">Organizers</a>
@@ -82,6 +91,38 @@
             </div>
 		</article>
 	</section>
+
+    <!--<section id="speakers">
+        <header class="dark-blue">
+            <h1>Keynote Speakers</h1>
+        </header>
+        <article>
+            <div class="als-container" id="speakers-list">
+                <span class="als-prev">
+                    <img src="images/prev.png" alt="prev" title="previous"/>
+                </span>
+
+                <div class="als-viewport">
+                    <ul class="als-wrapper">
+                        <li class="als-item">
+                            orange
+                        </li>
+                        <li class="als-item">
+                            <img src="images/fruits/apple.png" alt="apple" title="apple"/>
+                        </li>
+                        <li class="als-item">
+                            <img src="images/fruits/banana.png" alt="banana" title="banana"/>
+                            banana
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="als-next">
+                    <img src="images/next.png" alt="next" title="next"/>
+                </span>
+            </div>
+        </article>
+    </section>-->
 
 	<section id="venue">
 		<header class="red">

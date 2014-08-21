@@ -1,5 +1,37 @@
 $(document).ready(function() {
 
+    var rightSidePanel = {
+        element: $('#right-menu'),
+        visible: true,
+
+        changeVisibility: function() {
+            if (this.visible) {
+                this.element.stop(true).fadeOut(500);
+            } else {
+                this.element.stop(true).fadeIn(500);
+            }
+            this.visible = !this.visible;
+        },
+
+        listen: function(identifier) {
+            var self = this;
+            $(window).scroll(function() {
+                var currentPos = $(window).scrollTop();
+                var identBot = $(identifier).position().top + $(identifier).outerHeight(true);
+                // Need to show
+                if (currentPos > identBot && !self.visible) {
+                    self.changeVisibility();
+                }
+                // Need to hide
+                if (currentPos < identBot && self.visible) {
+                    self.changeVisibility();
+                }
+            });
+        }
+    };
+
+    rightSidePanel.listen('header nav');
+
     $("nav a").click(function(e) {
         e.preventDefault();
         var anchor = $(this).attr('href');
@@ -38,4 +70,6 @@ $(document).ready(function() {
 	$('#lvoug').click(function() {
 		window.location.href = 'http://lvoug.lv';
 	});
+
+    //$("#speakers-list").als();
 });
