@@ -40,6 +40,49 @@ article > .title {
 #socials a:nth-child(3) {background-image: url('../img/linkedin.png');}
 #socials a:nth-child(4) {background-image: url('../img/gplus.png');}
 
+/*
+#right-menu, #socials {
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity .75s ease-in-out;
+    -moz-transition: opacity .75s ease-in-out;
+    -ms-transition: opacity .75s ease-in-out;
+    -o-transition: opacity .75s ease-in-out;
+    transition: opacity .75s ease-in-out;
+}
+
+#right-menu:hover, #socials:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+*/
+
+#right-menu {
+    position: fixed;
+    right: 0;
+    top: 51%;
+    margin-top: -120px;
+    z-index: 3;
+    background-color: #ffffff;
+}
+
+#right-menu a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #2c3e50;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1px;
+}
+
+#right-menu a:last-child {margin-bottom: 0;}
+#right-menu a:hover {background-color: #e74c3c;}
+#top-link {background-image: url('../img/right-side-menu/top.png');}
+#about-link {background-image: url('../img/right-side-menu/about.png');}
+#venue-link {background-image: url('../img/right-side-menu/venue.png');}
+#organizers-link {background-image: url('../img/right-side-menu/sponsors.png');}
+
 section header {
     width: 100%;
     padding: 25px 0;
@@ -77,16 +120,16 @@ body > header .detail {
     text-align: center;
 }
 
-nav {float: right;}
+header nav {float: right;}
 
-nav a {
+header nav a {
 	display: inline;
 	margin-left: 20px;
     font: normal 16px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
     color: #ffffff;
 }
-nav a:hover {text-decoration: underline; color: #0dacfe;}
-nav a.active {color: #0dacfe;}
+header nav a:hover {text-decoration: underline; color: #0dacfe;}
+header nav a.active {color: #0dacfe;}
 
 #event-title {
 	margin-top: 70px;
@@ -177,6 +220,8 @@ button:hover {background-color: #0193e0;}
     margin-top: 70px;
     background: url('../img/photogallery.png') no-repeat;
 }
+
+#speakers header h1 {background-image: url('../img/speakers-icon.png');}
 
 #venue header h1 {background-image: url('../img/venue-icon.png');}
 
