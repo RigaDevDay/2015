@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     var rightSidePanel = {
         element: $('#right-menu'),
         visible: true,
@@ -39,6 +38,10 @@ $(document).ready(function() {
             'scrollTop': $(anchor).offset().top
         }, 1000);
     });
+	
+	$("#date").click(function(e) {
+		 window.location.href='http://lanyrd.com/2015/rigadevday/save-to-calendar/';
+	});
 
 	$('#countdown').flipcountdown({
         size:'lg',
@@ -62,11 +65,11 @@ $(document).ready(function() {
 	$('#gdg-riga').click(function() {
 		window.location.href = 'http://gdgriga.lv';
 	});
-	
+
 	$('#jug').click(function() {
 		window.location.href = 'http://jug.lv';
 	});
-	
+
 	$('#lvoug').click(function() {
 		window.location.href = 'http://lvoug.lv';
 	});
