@@ -39,7 +39,7 @@ $(document).ready(function() {
         }, 1000);
     });
 	
-	$("#date").click(function(e) {
+	$("#date").click(function() {
 		 window.location.href='http://lanyrd.com/2015/rigadevday/save-to-calendar/';
 	});
 
