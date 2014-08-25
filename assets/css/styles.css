@@ -21,7 +21,7 @@ article > .title {
 }
 
 #socials {
-	position: fixed;
+	position: absolute;
 	top: 51%;
 	margin-top: -120px;
 	z-index: 3;
