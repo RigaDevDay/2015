@@ -64,6 +64,7 @@ article > .title {
     margin-top: -120px;
     z-index: 3;
     background-color: #ffffff;
+    display: none;
 }
 
 #right-menu a {

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var rightSidePanel = {
         element: $('#right-menu'),
-        visible: true,
+        visible: false,
 
         changeVisibility: function() {
             if (this.visible) {
