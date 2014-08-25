@@ -59,7 +59,7 @@ $(document).ready(function() {
     });
 
     $('#sponsors').click(function() {
-        window.location.href='http://rigadevday.lv';
+        window.location.href='mailto:info@rigadevday.lv';
     });
 
 	$('#gdg-riga').click(function() {
