@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    
+    $("#map-description .photos a").fancybox({
+        closeBtn: false,
+        nextEffect: 'elastic',
+        prevEffect: 'elastic'
+    });
+    
     var rightSidePanel = {
         element: $('#right-menu'),
         visible: false,
