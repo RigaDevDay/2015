@@ -152,10 +152,10 @@ button:hover {background-color: #0193e0;}
 	color: #f05940;
 }
 
-#counter .label#days {margin-left: 30px;}
-#counter .label#hours {margin-left: 160px;}
-#counter .label#minutes {margin-left: 290px;}
-#counter .label#seconds {margin-left: 430px;}
+#counter .label#days {margin-left: 60px;}
+#counter .label#hours {margin-left: 215px;}
+#counter .label#minutes {margin-left: 345px;}
+#counter .label#seconds {margin-left: 480px;}
 
 #about header h1 {background-image: url('../img/about-icon.png');}
 

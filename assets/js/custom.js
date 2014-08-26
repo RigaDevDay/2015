@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	$('#countdown').flipcountdown({
         size:'lg',
-        beforeDateTime:'09/15/2014 00:00:00',
+        beforeDateTime:'01/22/2015 00:00:00',
         speedFlip:60
     });
 
