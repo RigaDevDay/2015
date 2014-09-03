@@ -12,7 +12,7 @@ var speakerManager = {
     },
     
     getSpeakers: function(callback) {
-        $.get('data/speakers.json', function(speakers) {
+        $.getJSON('data/speakers.json', function(speakers) {
             for (var i=0; i<speakers.length; i++) {
                 if (speakers[i].hidden) {
                     speakers.splice(i, 1);
