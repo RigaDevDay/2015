@@ -80,6 +80,10 @@ $(document).ready(function() {
 	$('#lvoug').click(function() {
 		window.location.href = 'http://lvoug.lv';
 	});
-
-    //$("#speakers-list").als();
+	
+	$("#speaker-popup .close").click(function() {
+	   $.modal.close(); 
+	});
+    
+    speakerManager.loadSection();
 });

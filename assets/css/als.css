@@ -14,13 +14,13 @@
 .als-wrapper {
     position: relative;
     list-style: none;
+    padding: 0;
 }
 
 .als-item {
     position: relative;
     display: block;
     text-align: center;
-    cursor: pointer;
     float: left;
 }
 
@@ -28,4 +28,39 @@
     position: absolute;
     cursor: pointer;
     clear: both;
+}
+
+#speakers-list {
+    display: none;
+	margin: 40px auto;
+}
+
+#speakers-list .als-item {
+	margin: 0px 5px;
+	padding: 4px 0px;
+	text-align: center;
+}
+
+#speakers-list .als-item img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#speakers-list .als-prev, #speakers-list .als-next {
+    width: 80px;
+    height: 280px;
+	top: 40px;
+}
+
+#speakers-list .als-prev {
+    background: url('../img/arrow-prev.png') no-repeat;
+    background-position: 0 -280px;
+    cursor: default;
+	left: -30px;
+}
+
+#speakers-list .als-next {
+    background: url('../img/arrow-next.png') no-repeat;
+	right: -30px;
 }

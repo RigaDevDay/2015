@@ -7,6 +7,12 @@ html, body {
 
 a {text-decoration: none; color: #0dacfe;}
 
+.loader {
+	width: 100%;
+	height: 100%;
+	background: url('../img/loader.gif') center no-repeat;
+}
+
 .left, .right {display: inline-block; vertical-align: top;}
 .left {margin-right: -4px;}
 
@@ -71,7 +77,7 @@ article > .title {
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #2c3e50;
+    background-color: #56718C;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 1px;
@@ -81,6 +87,7 @@ article > .title {
 #right-menu a:hover {background-color: #e74c3c;}
 #top-link {background-image: url('../img/right-side-menu/top.png');}
 #about-link {background-image: url('../img/right-side-menu/about.png');}
+#speakers-link {background-image: url('../img/right-side-menu/speakers.png');}
 #venue-link {background-image: url('../img/right-side-menu/venue.png');}
 #organizers-link {background-image: url('../img/right-side-menu/sponsors.png');}
 
@@ -228,7 +235,96 @@ button:hover {background-color: #0193e0;}
 }
 
 #speakers header h1 {background-image: url('../img/speakers-icon.png');}
+#speakers-content {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+	padding: 20px 0 80px 0;
+}
 
+#speakers .speaker {width: 280px; height: 360px;}
+#speakers .country {margin-top: 12px;}
+#speakers .name {
+	font: bold 20px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #e74c3c;
+}
+#speakers .company {
+	margin-top: -3px;
+	font: normal 16px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #161616;
+}
+#speakers .description {
+	height: 74px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 8px;
+	font: normal 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #161616;
+}
+
+#speakers .read-more {
+	color: #e74c3c;
+	font: normal 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+	cursor: pointer;
+}
+#speakers .read-more:hover {color: #6f241c;}
+#speakers .follow {margin-top: 10px;}
+
+#speaker-popup {
+	display: none;
+	width: 1000px;
+	height: 475px;
+	background-color: #ffffff;
+}
+
+#speaker-popup header {
+	background-color: #0dacfe;
+}
+
+#speaker-popup header img {
+	margin: 15px 0 10px 35px;
+}
+
+#speaker-popup .content {
+	padding: 40px;
+	text-align: center;
+}
+
+#speaker-popup .name {
+	margin-top: 10px;
+	font: normal 16px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#speaker-popup .description {
+	margin-top: 15px;
+	font: normal 16px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #5e6e7e;
+}
+
+#speaker-popup .contacts {
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+#speaker-popup .close {
+	width: 37px;
+	height: 37px;
+	margin: 15px 15px 0 0;
+	background: url('../img/modal-close.png') no-repeat;
+	float: right;
+	cursor: pointer;
+}
+
+#speaker-popup .contacts a.blog {
+	margin-left: 20px;
+	color: #e74c3c;
+	font: normal 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+	cursor: pointer;
+	vertical-align: top;
+}
+#speaker-popup .contacts a.blog:hover {color: #6f241c;}
+
+#venue {height: 800px;}
 #venue header h1 {background-image: url('../img/venue-icon.png');}
 
 #map {height: 700px;}

@@ -9,5 +9,38 @@
       "twitter": "_tamanm",
       "blog": "http://about.me/mohamedtaman"
     }
+  },
+  { 
+    "id": "2",
+    "name": "Nick Zeeb",
+    "bio": "Nick Zeeb is a senior Java developer at LMAX Exchange.  As a computer science and finance enthusiast he is super excited by the merger of the two in the form of cryptocurrency. He's worked as a developer at a hedge fund, investment bank and currently at a financial exchange.",
+    "country": "UK",
+    "company": "LMAX Exchange",
+    "contacts": {
+      "twitter": "@NickZeeb",
+      "blog": "http://nickzeeb.wordpress.com/"
+    }
+  },
+  { 
+    "id": "3",
+    "name": "Gleb Smirnov",
+    "bio": "Dealing with stability-critical high-performance applications, including, but not limited to financial systems, for a number of years. A fierce practitioner of TDD. Actively promoting Mutation Analysis and raising Parallel Programming knowledger level in russian-speaking JUGs, mainly via articles and talks. Currently employed at Deutsche Bank.",
+    "country": "Russia",
+    "company": "Deutsche Bank",
+    "contacts": {
+      "twitter": "@gvsmirnov",
+      "blog": "http://lanyrd.com/profile/gvsmirnov/"
+    }
+  },
+  { 
+    "id": "4",
+    "name": "Michał Tajchert",
+    "bio": "In short words: mobile dev. with big interests in wearables devices - done programming for platforms such: Google Glass, Sony SW2, Oakley Airwave, Android Wear.",
+    "country": "Poland",
+    "company": "Polidea",
+    "contacts": {
+      "twitter": "tajchert",
+      "blog": "http://tajchert.pl/"
+    }
   }
 ]
