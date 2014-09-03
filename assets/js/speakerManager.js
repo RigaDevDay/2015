@@ -18,6 +18,15 @@ var speakerManager = {
                     speakers.splice(i, 1);
                 }
             }
+            
+            function compare(speaker1, speaker2) {
+                if (speaker1.order < speaker2.order) {
+                    return -1;
+                }
+                return 1;
+            }
+            speakers.sort(compare);
+            
             if (callback) {
                callback(speakers);
             }

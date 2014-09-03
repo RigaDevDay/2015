@@ -1,6 +1,7 @@
 [
   { 
     "id": "1",
+    "order": "1",
     "name": "Mohamed Taman",
     "bio": "Systems Architect & design supervisor, Adopts, JCP, JCP Executive Committee member, JSR 358, 354, 364, & 363 EG, MoroccoJUG member, EGJUG leader, Oracle Egypt Architects Club board member, speaks java, love mobile, international speaker. Won Duke’s choice 2014 awards, and JCP adopt 2013 awards.",
     "country": "Egypt",
@@ -12,6 +13,7 @@
   },
   { 
     "id": "2",
+    "order": "2",
     "name": "Nick Zeeb",
     "bio": "Nick Zeeb is a senior Java developer at LMAX Exchange.  As a computer science and finance enthusiast he is super excited by the merger of the two in the form of cryptocurrency. He's worked as a developer at a hedge fund, investment bank and currently at a financial exchange.",
     "country": "UK",
@@ -23,6 +25,7 @@
   },
   { 
     "id": "3",
+    "order": "3",
     "name": "Gleb Smirnov",
     "bio": "Dealing with stability-critical high-performance applications, including, but not limited to financial systems, for a number of years. A fierce practitioner of TDD. Actively promoting Mutation Analysis and raising Parallel Programming knowledger level in russian-speaking JUGs, mainly via articles and talks. Currently employed at Deutsche Bank.",
     "country": "Russia",
@@ -34,6 +37,7 @@
   },
   { 
     "id": "4",
+    "order": "4",
     "name": "Michał Tajchert",
     "bio": "In short words: mobile dev. with big interests in wearables devices - done programming for platforms such: Google Glass, Sony SW2, Oakley Airwave, Android Wear.",
     "country": "Poland",
