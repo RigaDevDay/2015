@@ -1,7 +1,7 @@
 [
-  { 
+  {
     "id": "1",
-    "order": "1",
+    "order": "3",
     "name": "Mohamed Taman",
     "bio": "Systems Architect & design supervisor, Adopts, JCP, JCP Executive Committee member, JSR 358, 354, 364, & 363 EG, MoroccoJUG member, EGJUG leader, Oracle Egypt Architects Club board member, speaks java, love mobile, international speaker. Won Duke’s choice 2014 awards, and JCP adopt 2013 awards.",
     "country": "Egypt",
@@ -11,9 +11,9 @@
       "blog": "http://about.me/mohamedtaman"
     }
   },
-  { 
+  {
     "id": "2",
-    "order": "2",
+    "order": "5",
     "name": "Nick Zeeb",
     "bio": "Nick Zeeb is a senior Java developer at LMAX Exchange.  As a computer science and finance enthusiast he is super excited by the merger of the two in the form of cryptocurrency. He's worked as a developer at a hedge fund, investment bank and currently at a financial exchange.",
     "country": "UK",
@@ -23,9 +23,9 @@
       "blog": "http://nickzeeb.wordpress.com/"
     }
   },
-  { 
+  {
     "id": "3",
-    "order": "3",
+    "order": "2",
     "name": "Gleb Smirnov",
     "bio": "Dealing with stability-critical high-performance applications, including, but not limited to financial systems, for a number of years. A fierce practitioner of TDD. Actively promoting Mutation Analysis and raising Parallel Programming knowledger level in russian-speaking JUGs, mainly via articles and talks. Currently employed at Deutsche Bank.",
     "country": "Russia",
@@ -35,7 +35,7 @@
       "blog": "http://lanyrd.com/profile/gvsmirnov/"
     }
   },
-  { 
+  {
     "id": "4",
     "order": "4",
     "name": "Michał Tajchert",
@@ -45,6 +45,18 @@
     "contacts": {
       "twitter": "tajchert",
       "blog": "http://tajchert.pl/"
+    }
+  },
+  {
+    "id": "5",
+    "order": "1",
+    "name": "Mark Rittman",
+    "bio": "Mark Rittman is an expert Oracle Business Intelligence consultant, trainer and developer, and has worked for over ten years with tools such as Oracle Warehouse Builder, Oracle Discoverer, Oracle Database, Oracle BI Suite Enterprise Edition / Siebel Analytics, Oracle Application Server and Oracle OLAP. Mark is an Oracle ACE, an Oracle Fusion Middleware Regional Director, is regularly published on Oracle Technology Network an in Oracle Magazine, chairs user groups in the UK and USA, and consults for organizations around the world on design, best practices and implementation of Oracle’s BI & data warehousing tools.",
+    "country": "UK",
+    "company": "Rittman Mead",
+    "contacts": {
+      "twitter": "markrittman",
+      "blog": "http://rittmanmead.com/"
     }
   }
 ]
