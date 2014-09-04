@@ -60,11 +60,11 @@ var speakerManager = {
     addSpeaker: function(speaker, callback) {
         var flag = this.getImageByCountry(speaker.country);
         var img = new Image();
-        img.src = 'assets/img/speaker-photos/' + speaker.id + '.jpg';
+        img.src = 'assets/img/speaker-photos/' + speaker.id + '.png';
         img.onload = function() {
             var loadingContent = '';
             loadingContent += '<li class="als-item speaker">';
-            loadingContent += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.id + '.jpg"></div>';
+            loadingContent += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.id + '.png"></div>';
             loadingContent += '<div class="country"><img src="assets/img/countries/' + flag + '"></div>';
             loadingContent += '<div class="name">' + speaker.name + '</div>';
             loadingContent += '<div class="company">' + speaker.company + '</div>';
@@ -106,6 +106,10 @@ var speakerManager = {
                 return 'eg.png';
             case 'Poland':
                 return 'pl.png';
+	    case 'Finland':
+		return 'fi.png';
+	    case 'France':
+		return 'fr.png';
         }
     },
     
@@ -116,7 +120,7 @@ var speakerManager = {
                 for (var i=0; i<list.length; i++) {
                     var speaker = list[i];
                     if (speaker.id == speakerId) {
-                        $("#speaker-popup .photo").html('<img src="assets/img/speaker-photos/' + speaker.id + '.jpg"></div>');
+                        $("#speaker-popup .photo").html('<img src="assets/img/speaker-photos/' + speaker.id + '.png"></div>');
                         $("#speaker-popup .name").html(speaker.name);
                         $("#speaker-popup .description").html(speaker.bio);
                         $("#speaker-popup .contacts").html('<a href="https://twitter.com/' + speaker.contacts.twitter + '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>');

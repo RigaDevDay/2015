@@ -58,5 +58,28 @@
       "twitter": "markrittman",
       "blog": "http://rittmanmead.com/"
     }
+  },
+  {
+    "id": "6",
+    "order": "6",
+    "name": "Heli Helskyaho",
+    "bio": "CEO, Miracle Finland Oy. Oracle ACE Director. Ambassador/Spokesperson, EMEA Oracle User groups Community (EOUC). President, Oracle User Group Finland (OUGF).",
+    "country": "Finland",
+    "company": "Miracle",
+    "contacts": {
+      "twitter": "HeliFromFinland",
+      "blog": "http://helifromfinland.wordpress.com/"
+    }
+  },
+  {
+    "id": "7",
+    "order": "7",
+    "name": "Samuel Rats",
+    "bio": "Software engineer working on Genymotion. Android & System dev. GDG Leon organizer.",
+    "country": "France",
+    "company": "Genymobile",
+    "contacts": {
+      "twitter": "rsamsam"
+    }
   }
 ]
