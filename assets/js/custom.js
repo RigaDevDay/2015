@@ -69,21 +69,25 @@ $(document).ready(function() {
         window.location.href='https://docs.google.com/file/d/0BxMQv-svniw_dnNWTV8tQXMyVmM/edit?pli=1';
     });
 
-	$('#gdg-riga').click(function() {
-		window.location.href = 'http://gdgriga.lv';
-	});
+    $('#gdg-riga').click(function() {
+        window.location.href = 'http://gdgriga.lv';
+    });
 
-	$('#jug').click(function() {
-		window.location.href = 'http://jug.lv';
-	});
+    $('#jug').click(function() {
+       window.location.href = 'http://jug.lv';
+    });
 
-	$('#lvoug').click(function() {
-		window.location.href = 'http://lvoug.lv';
-	});
+    $('#lvoug').click(function() {
+       window.location.href = 'http://lvoug.lv';
+    });
 	
-	$("#speaker-popup .close").click(function() {
-	   $.modal.close(); 
-	});
+    $('#oreilly').click(function() {
+        window.location.href = 'http://www.oreilly.com/';
+    });
+
+    $("#speaker-popup .close").click(function() {
+	$.modal.close(); 
+    });
     
     speakerManager.loadSection();
 });

@@ -5,6 +5,12 @@ html, body {
 	padding: 0;
 }
 
+ul {
+    margin:0;
+    padding:0;
+    -webkit-padding-start: 0;
+}
+
 a {text-decoration: none; color: #0dacfe;}
 
 .loader {
@@ -217,7 +223,11 @@ button:hover {background-color: #0193e0;}
     width: 1000px;
     height: 680px;
     margin: 0 auto;
-	padding: 50px 0;
+    padding: 50px 0;
+}
+
+#about-content ul {
+    padding-left: 30px;
 }
 
 #about .left {
@@ -391,6 +401,8 @@ button:hover {background-color: #0193e0;}
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
 #organizers #jug {background-image: url('../img/jug.png');}
 #organizers #lvoug {background-image: url('../img/lvoug.png');}
+
+#organizers #oreilly {background-image: url('../img/partners/oreilly.jpg');}
 
 .centered {text-align: center;}
 #sponsors {margin-bottom: 40px;}
