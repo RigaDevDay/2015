@@ -81,5 +81,17 @@
     "contacts": {
       "twitter": "rsamsam"
     }
+  },
+  {
+    "id": "8",
+    "order": "0",
+    "name": "Tim Hall",
+    "bio": "Tim Hall is an Oracle DBA/Developer and well known Oracle blogger at Oracle-Base. If that isn't enough, he's written two books and over 500 articles, is an Oracle ACE Director, OakTable member and has presented at numerous user groups and conferences worldwide, as well as a series of 2-day presentations as part of the 'Oracle University Celebrity Series'",
+    "country": "UK",
+    "company": "Oracle-Base",
+    "contacts": {
+      "twitter": "oraclebase",
+      "blog": "http://www.oracle-base.com/"
+    }
   }
 ]
