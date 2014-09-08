@@ -84,6 +84,10 @@ $(document).ready(function() {
     $('#oreilly').click(function() {
         window.location.href = 'http://www.oreilly.com/';
     });
+	
+    $('#ok').click(function() {
+        window.location.href = 'http://ok.ru/';
+    });
 
     $("#speaker-popup .close").click(function() {
 	$.modal.close(); 
