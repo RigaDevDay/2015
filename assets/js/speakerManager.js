@@ -92,10 +92,10 @@ var speakerManager = {
             visible_items: visible,
             scrolling_items: visible,
             orientation: "horizontal",
-            circular: "no",
+            circular: "yes",
             autoscroll: "yes",
-            interval: 4000,
-            speed: 1000,
+            interval: 1400 * visible,
+            speed: 250 * visible,
             easing: "linear",
         });
         if (callback) {
