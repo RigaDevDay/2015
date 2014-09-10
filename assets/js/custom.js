@@ -49,6 +49,12 @@ $(document).ready(function() {
 	$("#date").click(function() {
 		 window.location.href='http://lanyrd.com/2015/rigadevday/save-to-calendar/';
 	});
+	
+	$("#place").click(function() {
+	    $('html, body').animate({
+            'scrollTop': $('#venue').offset().top
+        }, 1000);
+	});
 
 	$('#countdown').flipcountdown({
         size:'lg',
