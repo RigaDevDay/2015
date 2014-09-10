@@ -470,3 +470,11 @@ button:hover {background-color: #0193e0;}
 }
 
 .xdsoft_space {width: 30px !important;}
+
+.unselectable {
+   -moz-user-select     : none;
+   -khtml-user-select   : none;
+   -webkit-user-select  : none;
+   -o-user-select       : none;
+   user-select          : none;
+}
