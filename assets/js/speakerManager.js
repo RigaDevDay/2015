@@ -1,5 +1,5 @@
 var speakerManager = {
-    
+
     loadSection: function() {
         speakerManager.getSpeakers(function(list) {
             speakerManager.addSpeakers(list, function() {
@@ -17,7 +17,7 @@ var speakerManager = {
             });
         });
     },
-    
+
     getSpeakers: function(callback) {
         $.getJSON('data/speakers.json', function(speakers) {
             for (var i=0; i<speakers.length; i++) {
@@ -25,7 +25,7 @@ var speakerManager = {
                     speakers.splice(i, 1);
                 }
             }
-            
+
             function compare(speaker1, speaker2) {
                 if (speaker1.order < speaker2.order) {
                     return -1;
@@ -33,22 +33,22 @@ var speakerManager = {
                 return 1;
             }
             speakers.sort(compare);
-            
+
             if (callback) {
                callback(speakers);
             }
         });
     },
-    
+
     addSpeakers: function(speakers, callback) {
         var count = speakers.length;
         var i = 0;
-        
+
         var loadNext = function() {
             if (i < count - 1) {
                 speakerManager.addSpeaker(speakers[i], loadNext);
             }
-            
+
             if (i == count - 1) {
                 if (callback) {
                     speakerManager.addSpeaker(speakers[i], callback);
@@ -58,10 +58,10 @@ var speakerManager = {
             }
             i++;
         }
-        
+
         loadNext();
     },
-    
+
     addSpeaker: function(speaker, callback) {
         var flag = this.getImageByCountry(speaker.country);
         var img = new Image();
@@ -85,7 +85,7 @@ var speakerManager = {
             }
         }
     },
-    
+
     alsSpeakers: function(callback) {
         var visible = 3;
         $("#speakers-list").als({
@@ -102,7 +102,7 @@ var speakerManager = {
             callback();
         }
     },
-    
+
     getImageByCountry: function(countryName) {
         switch (countryName) {
             case 'UK':
@@ -113,13 +113,15 @@ var speakerManager = {
                 return 'eg.png';
             case 'Poland':
                 return 'pl.png';
-	    case 'Finland':
-		return 'fi.png';
-	    case 'France':
-		return 'fr.png';
+	          case 'Finland':
+		            return 'fi.png';
+	          case 'France':
+		            return 'fr.png';
+            case 'Belgium':
+                return 'be.png';
         }
     },
-    
+
     initEventHandlers: function() {
         $('.als-item.speaker .read-more').click(function() {
             var speakerId = $(this).data('id');

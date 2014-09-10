@@ -25,7 +25,7 @@
   },
   {
     "id": "3",
-    "order": "2",
+    "order": 2,
     "name": "Gleb Smirnov",
     "bio": "Dealing with stability-critical high-performance applications, including, but not limited to financial systems, for a number of years. A fierce practitioner of TDD. Actively promoting Mutation Analysis and raising Parallel Programming knowledger level in russian-speaking JUGs, mainly via articles and talks. Currently employed at Deutsche Bank.",
     "country": "Russia",
@@ -37,7 +37,7 @@
   },
   {
     "id": "4",
-    "order": "4",
+    "order": 4,
     "name": "Michał Tajchert",
     "bio": "In short words: mobile dev. with big interests in wearables devices - done programming for platforms such: Google Glass, Sony SW2, Oakley Airwave, Android Wear.",
     "country": "Poland",
@@ -49,7 +49,7 @@
   },
   {
     "id": "5",
-    "order": "1",
+    "order": 1,
     "name": "Mark Rittman",
     "bio": "Mark Rittman is an expert Oracle Business Intelligence consultant, trainer and developer, and has worked for over ten years with tools such as Oracle Warehouse Builder, Oracle Discoverer, Oracle Database, Oracle BI Suite Enterprise Edition / Siebel Analytics, Oracle Application Server and Oracle OLAP. Mark is an Oracle ACE, an Oracle Fusion Middleware Regional Director, is regularly published on Oracle Technology Network an in Oracle Magazine, chairs user groups in the UK and USA, and consults for organizations around the world on design, best practices and implementation of Oracle’s BI & data warehousing tools.",
     "country": "UK",
@@ -61,7 +61,7 @@
   },
   {
     "id": "6",
-    "order": "6",
+    "order": 6,
     "name": "Heli Helskyaho",
     "bio": "CEO, Miracle Finland Oy. Oracle ACE Director. Ambassador/Spokesperson, EMEA Oracle User groups Community (EOUC). President, Oracle User Group Finland (OUGF).",
     "country": "Finland",
@@ -73,7 +73,7 @@
   },
   {
     "id": "7",
-    "order": "7",
+    "order": 7,
     "name": "Samuel Rats",
     "bio": "Software engineer working on Genymotion. Android & System dev. GDG Lyon organizer.",
     "country": "France",
@@ -84,7 +84,7 @@
   },
   {
     "id": "8",
-    "order": "0",
+    "order": 0,
     "name": "Tim Hall",
     "bio": "Tim Hall is an Oracle DBA/Developer and well known Oracle blogger at Oracle-Base. If that isn't enough, he's written two books and over 500 articles, is an Oracle ACE Director, OakTable member and has presented at numerous user groups and conferences worldwide, as well as a series of 2-day presentations as part of the 'Oracle University Celebrity Series'",
     "country": "UK",
@@ -92,6 +92,18 @@
     "contacts": {
       "twitter": "oraclebase",
       "blog": "http://www.oracle-base.com/"
+    }
+  },
+  {
+    "id": "9",
+    "order": -1,
+    "name": "David Delabassee",
+    "bio": "David is a Java EE Evangelist working for Oracle. Prior to Oracle, David spent a decade at Sun Microsystems focusing on Java end-to-end (from the smart card to the high end server), related technologies and the developer tools. In his various roles, David has been involved in numerous Java projects since the early days of this technology. David lives in Belgium and in his spare time, he enjoys tinkering and playing with technologies such as Java, Arduino, Linux, Home Automation, etc.",
+    "country": "Belgium",
+    "company": "Oracle",
+    "contacts": {
+      "twitter": "delabassee",
+      "blog": "http://delabassee.com/"
     }
   }
 ]
