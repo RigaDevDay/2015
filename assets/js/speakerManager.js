@@ -8,6 +8,12 @@ var speakerManager = {
                 speakerManager.alsSpeakers();
                 speakerManager.displayWidget();
                 $('#speakers .description').dotdotdot();
+                
+                $("#left-arrow, #right-arrow").hover(function() {
+                    $.fn.als('stop', 'als-wrapper_0');
+                }, function() {
+                	$.fn.als('start', 'als-wrapper_0');
+                });
             });
         });
     },
@@ -81,13 +87,15 @@ var speakerManager = {
     },
     
     alsSpeakers: function(callback) {
+        var visible = 3;
         $("#speakers-list").als({
-            visible_items: 3,
-            scrolling_items: 1,
+            visible_items: visible,
+            scrolling_items: visible,
             orientation: "horizontal",
             circular: "no",
-            autoscroll: "no",
-            speed: 150,
+            autoscroll: "yes",
+            interval: 4000,
+            speed: 1000,
             easing: "linear",
         });
         if (callback) {

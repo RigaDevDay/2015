@@ -55,8 +55,6 @@
 
 #speakers-list .als-prev {
     background: url('../img/arrow-prev.png') no-repeat;
-    background-position: 0 -280px;
-    cursor: default;
 	left: -30px;
 }
 

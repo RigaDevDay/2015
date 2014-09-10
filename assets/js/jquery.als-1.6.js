@@ -83,6 +83,7 @@
 				$options = $(),
 				$item = $(),
 				$wrapper = $(),
+				$arrows = $(),
 				$viewport = $(),
 				$prev = $(),
 				$next = $(),
@@ -133,6 +134,7 @@
 				$obj.attr("data-id","als-container_" + instance);
 				$viewport = $obj.find(".als-viewport").attr("data-id","als-viewport_" + instance);
 				$wrapper = $obj.find(".als-wrapper").attr("data-id","als-wrapper_" + instance);
+				$arrows = $(".als-prev, .als-next");
 				$item = $obj.find(".als-item");
 				num_items = $item.size();
 				
@@ -367,6 +369,7 @@
 					options : $options,
 					viewport : $viewport,
 					wrapper : $wrapper,
+					arrows: $arrows,
 					prev : $prev,
 					next : $next,
 					item : $item,
@@ -397,6 +400,7 @@
 					{
 						$.fn.als('start',$(this).attr("data-id"));
 					});
+						
 				}
 				else if($options.autoscroll == "no") 
 				{
@@ -541,14 +545,12 @@
 							 **********************************************************/
 							if(data.current > 0)
 							{
-								data.prev.css('background-position', '0 0');
-								data.prev.css('cursor', 'pointer');
+
 							}
 							
 							if (data.current + data.options.visible_items >= data.num_items) 
 							{
-								data.next.css('background-position', '0 -280px');
-								data.next.css('cursor', 'default');
+
 							}
 						break;
 						/****************************
@@ -792,14 +794,12 @@
 							 ****************************************************/
 							if(data.current > 0)
 							{
-								data.prev.css('background-position', '0 0');
-								data.prev.css('cursor', 'pointer');
+
 							}
 							
 							if (data.current + data.options.visible_items >= data.num_items) 
 							{
-								data.next.css('background-position', '0 -280px');
-								data.next.css('cursor', 'default');
+
 							}
 						break;
 						/****************************
@@ -939,6 +939,11 @@
 			 * return als object
 			 ***********************************/
 			als[id] = data;
+			$("#left-arrow, #right-arrow").hover(function() {
+        $.fn.als('stop', 'als-wrapper_0');
+    }, function() {
+    	$.fn.als('start', 'als-wrapper_0');
+    });
 			return als;
 		},
 		/*****************************************************
@@ -1072,13 +1077,11 @@
 							 **********************************************************/
 							if(data.current <= 0)
 							{
-								data.prev.css('background-position', '0 -280px');
-								data.prev.css('cursor', 'default');
+
 							}
 							if (data.current + data.options.visible_items < data.num_items) 
 							{
-								data.next.css('background-position', '0 0');
-								data.next.css('cursor', 'pointer');
+
 							}
 						break;
 						/*****************************
@@ -1328,13 +1331,11 @@
 							 **********************************************************/
 							if(data.current <= 0)
 							{
-								data.prev.css('background-position', '0 -280px');
-								data.prev.css('cursor', 'default');
+
 							}
 							if (data.current + data.options.visible_items < data.num_items) 
 							{
-								data.next.css('background-position', '0 0');
-								data.next.css('cursor', 'pointer');
+
 							}
 						break;
 						case "yes":
@@ -1485,6 +1486,11 @@
 			 * returning als object
 			 ***********************************/
 			als[id] = data;
+			$("#left-arrow, #right-arrow").hover(function() {
+        $.fn.als('stop', 'als-wrapper_0');
+    }, function() {
+    	$.fn.als('start', 'als-wrapper_0');
+    });
 			return als;
 		},
 		/**************************************************************
@@ -1550,6 +1556,11 @@
 			 * returning als object
 			 ***********************************/
 			als[id] = data;
+			$("#left-arrow, #right-arrow").hover(function() {
+        $.fn.als('stop', 'als-wrapper_0');
+    }, function() {
+    	$.fn.als('start', 'als-wrapper_0');
+    });
 			return als;
 		},
 		/**************************************************************
@@ -1570,6 +1581,11 @@
 			 * and returning als object
 			 ***********************************/
 			als[id] = data;
+			$("#left-arrow, #right-arrow").hover(function() {
+        $.fn.als('stop', 'als-wrapper_0');
+    }, function() {
+    	$.fn.als('start', 'als-wrapper_0');
+    });
 			return als;
 		},
 		/**************************************
@@ -1625,7 +1641,7 @@
 			$obj = $(this);
 		var id = find_instance($obj.attr("data-id")),
 			data = als[id];
-	if (data.current + data.options.visible_items < data.num_items) {
+
 							/*********************************************
 							 * unbinding next and prev buttons so that
 							 * they don't interfere with current animation
@@ -1637,7 +1653,12 @@
 							 * calling next function on this instance
 							 ********************************************/
 									$.fn.als('next',id);
-		 }
+									$("#left-arrow, #right-arrow").hover(function() {
+        $.fn.als('stop', 'als-wrapper_0');
+    }, function() {
+    	$.fn.als('start', 'als-wrapper_0');
+    });
+
 	}
 	
 	/******************************************************
@@ -1655,7 +1676,7 @@
 		 * unbinding next and prev buttons so that
 		 * they don't interfere with current animation
 		 **********************************************/	
-		 if(data.current > 0) {
+
 				data.prev.off();
 				data.next.off();
 				data.viewport.off("touchend");
@@ -1663,7 +1684,12 @@
 		 * calling prev function on this instance
 		 *********************************************/
 				$.fn.als('prev',id);
-			}
+				$("#left-arrow, #right-arrow").hover(function() {
+        $.fn.als('stop', 'als-wrapper_0');
+    }, function() {
+    	$.fn.als('start', 'als-wrapper_0');
+    });
+
 	}
 	
 	/********************************************************************
