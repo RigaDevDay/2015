@@ -6,8 +6,7 @@ var speakerManager = {
                 twttr.widgets.load();
                 speakerManager.initEventHandlers();
                 speakerManager.alsSpeakers();
-                $('#speakers .loader').remove();
-                $('#speakers-list').css('display', 'block');
+                speakerManager.displayWidget();
                 $('#speakers .description').dotdotdot();
             });
         });
@@ -139,5 +138,10 @@ var speakerManager = {
             });
             $('#speaker-popup').css('top', '100px');
         });
+    },
+    
+    displayWidget: function() {
+        $('#speakers .loader').remove();
+        $('#speakers-list').css('display', 'block');
     }
 };
