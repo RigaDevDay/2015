@@ -141,6 +141,13 @@ var speakerManager = {
             });
 
             $('#speaker-popup').modal({
+                onOpen: function (dialog) {
+                	dialog.overlay.fadeIn('fast', function () {
+                		dialog.container.slideDown('fast', function () {
+                			dialog.data.fadeIn('slow');
+                		});
+                	});
+                },
                 opacity: 60,
 	            overlayCss: {backgroundColor: '#000000'}
             });

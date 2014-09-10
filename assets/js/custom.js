@@ -90,7 +90,7 @@ $(document).ready(function() {
     });
 
     $("#speaker-popup .close").click(function() {
-	$.modal.close(); 
+	    $.modal.close(); 
     });
     
     speakerManager.loadSection();
