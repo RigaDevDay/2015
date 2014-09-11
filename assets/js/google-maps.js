@@ -1,10 +1,10 @@
 function initialize() {
 	var myLatlng = new google.maps.LatLng(56.92562599999999,24.105833800000028);
 	var mapOptions = {
-		zoom: 12,
+		zoom: 13,
 		center: myLatlng,
 		zoomControlOptions: {
-			position: google.maps.ControlPosition.RIGHT_CENTER
+			position: google.maps.ControlPosition.LEFT_CENTER
 		},
 		mapTypeControl: false,
 		streetViewControl: false,
@@ -13,6 +13,9 @@ function initialize() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 	var map = new google.maps.Map(document.getElementById('map-container'), mapOptions);
+	
+	var styles = [{ "stylers": [{"hue": "#00aaff"}, {"saturation": -23}, {"gamma": 1.37}, {"lightness": -5} ] }];
+	map.setOptions({styles: styles});
 
 	var multikinoMarker = new MarkerWithLabel({
 		position: myLatlng,
@@ -54,6 +57,9 @@ function initialize() {
 
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+var image = new Image();
+image.src = '/assets/img/islande.jpg';
+
+google.maps.event.addDomListener(image, 'load', initialize);
 
 
