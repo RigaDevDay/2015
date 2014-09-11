@@ -8,7 +8,7 @@ var speakerManager = {
                 speakerManager.alsSpeakers();
                 speakerManager.displayWidget();
                 $('#speakers .description').dotdotdot();
-                
+
                 $("#left-arrow, #right-arrow").hover(function() {
                     $.fn.als('stop', 'als-wrapper_0');
                 }, function() {
@@ -119,6 +119,10 @@ var speakerManager = {
 		            return 'fr.png';
             case 'Belgium':
                 return 'be.png';
+            case 'Israel':
+                return 'il.png';
+            case 'USA':
+                return 'us.png';
         }
     },
 
@@ -156,7 +160,7 @@ var speakerManager = {
             $('#speaker-popup').css('top', '100px');
         });
     },
-    
+
     displayWidget: function() {
         $('#speakers .loader').remove();
         $('#speakers-list').css('display', 'block');

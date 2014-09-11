@@ -105,5 +105,29 @@
       "twitter": "delabassee",
       "blog": "http://delabassee.com/"
     }
+  },
+  {
+    "id": "10",
+    "order": -2,
+    "name": "Shai Almog",
+    "bio": "Shai is a 20 year industry vendor and former Sun Microsystem engineer, co-founder of the LWUIT project and member of the original WTK team. Shai has worked with all major operators and manufactures world wide and has partnered with Chen Fishbein to form the open source Codename One project.",
+    "country": "Israel",
+    "company": "Codename One",
+    "contacts": {
+      "twitter": "Codename_One",
+      "blog": "http://www.codenameone.com/"
+    }
+  },
+  {
+    "id": "11",
+    "order": -3,
+    "name": "Arun Gupta",
+    "bio": "Arun Gupta is Director of Developer Advocacy at Red Hat and focuses on JBoss Middleware. A founding member of the Java EE team at Sun Microsystems, he led a cross-functional team at Oracle to drive the global launch of the Java EE 7 platform through strategy, planning, and execution of content, marketing campaigns, and program. Arun has extensive speaking experience in ~40 countries on myriad topics and is a JavaOne Rockstar. He also founded the Devoxx4Kids chapter in the USA and continues to promoting technology education amongst kids. An author of a best-selling book, an avid runner, a globe trotter, a Java Champion, JUG leader",
+    "country": "USA",
+    "company": "Red Hat",
+    "contacts": {
+      "twitter": "arungupta",
+      "blog": "http://blog.arungupta.me/"
+    }
   }
 ]
