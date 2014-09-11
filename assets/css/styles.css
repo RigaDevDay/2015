@@ -361,10 +361,10 @@ button:hover {background-color: #0193e0;}
 
 #map #map-description {
 	position: absolute;
-	width:714px;
+	width:514px;
 	height: 161px;
     left: 50%;
-    margin: 430px 0 0 -357px;
+    margin: 410px 0 0 -280px;
     color: #384d66;
     text-align: center;
 	z-index: 1;
