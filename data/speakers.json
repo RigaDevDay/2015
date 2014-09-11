@@ -129,5 +129,17 @@
       "twitter": "arungupta",
       "blog": "http://blog.arungupta.me/"
     }
+  },
+  {
+    "id": "12",
+    "order": -4,
+    "name": "Robin Moffatt",
+    "bio": "Robin Moffatt is a Principal Consultant and Trainer at Rittman Mead. He specialises in Exalytics and OBIEE, with particular interests in systems architecture, administration, and performance testing and optimisation. He blogs at http://ritt.md/rmoff and can be found tweeting grumpy geek thoughts as @rmoff.",
+    "country": "UK",
+    "company": "Rittman Mead",
+    "contacts": {
+      "twitter": "rmoff",
+      "blog": "http://ritt.md/rmoff"
+    }
   }
 ]

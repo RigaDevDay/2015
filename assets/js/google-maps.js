@@ -31,7 +31,7 @@ function initialize() {
       '<div id="siteNotice">'+
       '</div>'+
       '<div id="bodyContent">'+
-      '<a href="http://www.islandehotel.lv/"><img src="/assets/img/islande.jpg"></a>'+
+      '<a href="http://www.islandehotel.lv/"><img src="assets/img/islande.jpg"></a>'+
       '</div>'+
       '</div>';
       
@@ -58,7 +58,7 @@ function initialize() {
 }
 
 var image = new Image();
-image.src = '/assets/img/islande.jpg';
+image.src = 'assets/img/islande.jpg';
 
 google.maps.event.addDomListener(image, 'load', initialize);
 
