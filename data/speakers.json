@@ -152,5 +152,29 @@
     "contacts": {
       "twitter": "philipto"
     }
+  },
+  {
+    "id": "14",
+    "order": -6,
+    "name": "Fernando Cejas",
+    "bio": "Software Engineer. Geek. GDG Barcelona Organizer. Agile methodologies, programming and technology fun. Biography: Passionate mobile application developer. Currently working as Android Consultant. He has been involved in android app development since 2010 for several companies. He is also Organizer of the Barcelona Google Developers Group (GDG).",
+    "country": "Spain",
+    "company": "android10",
+    "contacts": {
+      "twitter": "fernando_cejas",
+      "blog": "http://fernandocejas.com/"
+    }
+  },
+  {
+    "id": "15",
+    "order": -7,
+    "name": "David Vávra",
+    "bio": "Android Dev, Glass Explorer, Android Wear Dev, GDG Prague Organizer, Early Adopter",
+    "country": "Czech Republic",
+    "company": "Avast Mobile",
+    "contacts": {
+      "twitter": "destil",
+      "blog": "http://www.destil.cz/"
+    }
   }
 ]

@@ -123,6 +123,10 @@ var speakerManager = {
                 return 'il.png';
             case 'USA':
                 return 'us.png';
+            case 'Spain':
+                return 'es.png';
+            case 'Czech Republic':
+                return 'cz.png';
         }
     },
 
