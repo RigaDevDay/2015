@@ -200,9 +200,17 @@ button {
 }
 button:hover {background-color: #0193e0;}
 
-#call-for-papers-wrapper {
-	margin-top: 60px;
-	text-align: center;
+#register-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#register {
+    background-color: #cc3a41;
+}
+
+#register:hover {
+    background-color: #D14D54;
 }
 
 #counter {
