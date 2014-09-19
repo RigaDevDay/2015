@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    
+
     $("#map-description .photos a").fancybox({
         closeBtn: false,
         nextEffect: 'elastic',
         prevEffect: 'elastic'
     });
-    
+
     var rightSidePanel = {
         element: $('#right-menu'),
         visible: false,
@@ -45,11 +45,11 @@ $(document).ready(function() {
             'scrollTop': $(anchor).offset().top
         }, 1000);
     });
-	
+
 	$("#date").click(function() {
 		 window.location.href='http://lanyrd.com/2015/rigadevday/save-to-calendar/';
 	});
-	
+
 	$("#place").click(function() {
 	    $('html, body').animate({
             'scrollTop': $('#venue').offset().top
@@ -62,9 +62,9 @@ $(document).ready(function() {
         speedFlip:60
     });
 
-	$('section header')
+	/*$('section header')
         .positionSticky()
-        .css('width', '100%');
+        .css('width', '100%');*/
 
 
     $('#register').click(function() {
@@ -86,18 +86,18 @@ $(document).ready(function() {
     $('#lvoug').click(function() {
        window.location.href = 'http://lvoug.lv';
     });
-	
+
     $('#oreilly').click(function() {
         window.location.href = 'http://www.oreilly.com/';
     });
-	
+
     $('#ok').click(function() {
         window.location.href = 'http://ok.ru/';
     });
 
     $("#speaker-popup .close").click(function() {
-	    $.modal.close(); 
+	    $.modal.close();
     });
-    
+
     speakerManager.loadSection();
 });
