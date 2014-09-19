@@ -211,8 +211,7 @@
       "twitter": "KrasimirTsonev",
       "blog": "http://krasimirtsonev.com/"
     }
-  }
-  ,
+  },
   {
     "id": "19",
     "order": -11,
@@ -222,6 +221,18 @@
     "company": "Game Insight",
     "contacts": {
       "twitter": "tolik"
+    }
+  },
+  {
+    "id": "20",
+    "order": -12,
+    "name": "James Nugent",
+    "bio": "James is a developer and consultant living in Bath, England. He works on the open-source Event Store database and is a connoisseur of cider and old guitars.",
+    "country": "UK",
+    "company": "Event Store LLP",
+    "contacts": {
+      "twitter": "jen20",
+      "blog": "http://jen20.com/"
     }
   }
 ]
