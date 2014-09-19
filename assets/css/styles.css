@@ -234,7 +234,7 @@ button:hover {background-color: #0193e0;}
 
 #about-content {
     width: 1000px;
-    height: 680px;
+    height: 950px;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -254,7 +254,36 @@ button:hover {background-color: #0193e0;}
 #about #gallery {
     height:173px;
     margin-top: 70px;
-    background: url('../img/photogallery.png') no-repeat;
+    background: url('../img/photogallery.png') no-repeat center top;
+}
+
+#about-points {
+}
+#about-points h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+#about-points .about-point {
+  position: relative;
+  margin: 40px 40px 0 0;
+  font-size: 14px;
+}
+#about-points .about-point h2 {
+  margin: 0 0 10px 160px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: italic;
+}
+#about-points .about-point p {
+  margin-left: 160px;
+}
+#about-points .about-point img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
 }
 
 #speakers header h1 {background-image: url('../img/speakers-icon.png');}
