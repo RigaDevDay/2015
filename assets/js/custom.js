@@ -62,9 +62,9 @@ $(document).ready(function() {
         speedFlip:60
     });
 
-	$('section header')
+	/*$('section > header')
         .positionSticky()
-        .css('width', '100%');
+        .css('width', '100%');*/
 
 
     $('#register').click(function() {

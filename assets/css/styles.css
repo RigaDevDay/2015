@@ -101,7 +101,7 @@ article > .title {
 #venue-link {background-image: url('../img/right-side-menu/venue.png');}
 #organizers-link {background-image: url('../img/right-side-menu/sponsors.png');}
 
-section header {
+section > header {
     width: 100%;
     padding: 25px 0;
     z-index: 2;
@@ -347,6 +347,73 @@ button:hover {background-color: #0193e0;}
 }
 #speaker-popup .contacts a.blog:hover {color: #6f241c;}
 
+#schedule header h1 {background-image: url('../img/schedule-icon.png');}
+#schedule > article > table {
+	margin: 20px auto 30px auto;
+}
+
+#schedule> article > table th {
+	padding: 20px 0;
+	font: bold 25px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #2c3e50;
+	background-color: #FFFFFF;
+}
+
+#schedule > article > table td {padding: 20px 0; vertical-align: top; text-align: center;}
+#schedule > article > table tr:nth-child(odd) {background-color: #F5F5F5;}
+#schedule > article > table tr td:last-child {padding-right: 30px;}
+#schedule > article > table tr th:last-child {padding-right: 30px;}
+
+#schedule .time {
+	width: 55px;
+	text-align: right;
+	padding-right: 10px;
+	font: lighter 18px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#schedule .icon {
+	width: 25px;
+	background-image: url('../img/5px-gray.png');
+	background-position: center;
+	background-repeat: repeat-y;
+}
+
+#schedule .content {width: 170px; padding-left: 7px; padding-right: 7px;}
+#schedule .unique.content {width: auto; text-align: center;}
+#schedule .content header {font: 500 18px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;}
+#schedule .light-blue header {color: #0dacfe;}
+#schedule .dark-blue header {color: #2c3e50;}
+#schedule .red header {color: #e74c3c;}
+#schedule .content .desc {
+	color: #5e6e7e;
+	font: lighter 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#schedule .icon > div {width: 25px; height: 25px; background-repeat: no-repeat;}
+
+#schedule .registration.icon div {background-image: url('../img/registration-small-icon.png');}
+#schedule .clock.icon div {background-image: url('../img/time-small-icon.png');}
+#schedule .speaker.icon div {background-image: url('../img/speaker-small-icon.png');}
+#schedule .coffee.icon div {background-image: url('../img/coffee-small-icon.png');}
+#schedule .lunch.icon div {background-image: url('../img/lunch-small-icon.png');}
+#schedule .end.icon div {background-image: url('../img/end-small-icon.png');}
+#schedule .afterparty.icon div {background-image: url('../img/afterparty-small-icon.png');}
+
+#schedule .locked.content {
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	font: 500 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#schedule > article > table tr:nth-child(odd) .locked.content {
+	background-image: url('../img/locked-light.png');
+}
+
+#schedule > article > table tr:nth-child(even) .locked.content {
+	background-image: url('../img/locked-dark.png');
+}
+
 #venue {height: 800px;}
 #venue header h1 {background-image: url('../img/venue-icon.png');}
 
@@ -405,6 +472,8 @@ button:hover {background-color: #0193e0;}
 #map .description {
 	font: lighter 14px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
+
+#talks header h1 {background-image: url('../img/talks-icon.png');}
 
 #organizers header h1 {background-image: url('../img/organizers-icon.png');}
 #organizers ul {list-style-type: none; text-align: center;}
