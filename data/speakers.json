@@ -199,5 +199,29 @@
     "contacts": {
       "twitter": "dchuyko"
     }
+  },
+  {
+    "id": "18",
+    "order": -10,
+    "name": "Krasimir Tsonev",
+    "bio": "Krasimir Tsonev is a front-end developer, blogger and speaker. He loves writing JavaScript and experimenting with the latest CSS and HTML features. Author of the 'Node.js blueprints' book he is focused on delivering cutting edge applications. Krasimir started his career as graphic designer, he spent several years coding in ActionScript3. Right now, with the rise of the mobile development, he is enthusiastic to work on responsive applications targeted to various devices. Living and working in Bulgaria he graduated at the Technical University of Varna with bachelor and master degree in computer science.",
+    "country": "Bulgaria",
+    "company": "Independent",
+    "contacts": {
+      "twitter": "KrasimirTsonev",
+      "blog": "http://krasimirtsonev.com/"
+    }
+  }
+  ,
+  {
+    "id": "19",
+    "order": -11,
+    "name": "Anatoly Ropotov",
+    "bio": "Anatoly is CEO of Game Insight, a leading global game company that makes free-to-play mobile and social games with a combined audience of over 250 million players. He's been making games for more than 15 years and has over 100 products to his credit.",
+    "country": "Latvia",
+    "company": "Game Insight",
+    "contacts": {
+      "twitter": "tolik"
+    }
   }
 ]
