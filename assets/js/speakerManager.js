@@ -128,7 +128,11 @@ var speakerManager = {
             case 'Czech Republic':
                 return 'cz.png';
             case 'Netherlands':
-                return 'nl.png';                
+                return 'nl.png';
+            case 'Bulgaria':
+                return 'bg.png';  
+            case 'Latvia':
+                return 'lv.png';
         }
     },
 
