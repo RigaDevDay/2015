@@ -1,0 +1,177 @@
+{
+  "roomNames": ["Track 1", "Track 2", "Track 3", "Track 4", "Track 5"],
+  "schedule": [
+    {
+       "time": "8:30",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Registration"
+          }
+       ]
+    },
+    {
+       "time": "9:45",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Conference Opening"
+          }
+       ]
+    },
+    {
+       "time": "10:00",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Keynote"
+          }
+       ]
+    },
+    {
+       "time": "11:00",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Coffee Pause"
+          }
+       ]
+    },
+    {
+      "time": "11:30",
+      "icon": "time",
+      "color": "black",
+      "events": [
+         {
+           "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
+           "description": "Lorem",
+           "speakers": [
+              1
+           ]
+         },
+         {
+           "subtitle": "Architecting Hybrid mobile apps with PhoneGap",
+           "description": "lorem",
+           "speakers": [
+              1
+           ]
+         },
+         {
+           "subtitle": "Using Node.js for everything or what it is to write a book about it",
+           "description": "lorem",
+           "speakers": [
+              1
+           ]
+         },
+         {
+           "subtitle": "Programming Bitcoin in Java",
+           "description": "lorem",
+           "speakers": [
+              1
+           ]
+         },
+         {
+           "subtitle": "Source Control, Versioning and Concurrent Development for OBIEE using Git",
+           "description": "lorem",
+           "speakers": [
+              1, 2
+           ]
+         }
+      ]
+    },
+    {
+       "time": "12:20",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Lunch"
+          }
+       ]
+    },
+    {
+      "time": "13:20",
+      "icon": "time",
+      "color": "black",
+      "events": [
+         null,
+         null,
+         null,
+         null,
+         null
+      ]
+    },
+    {
+      "time": "14:10",
+      "icon": "time",
+      "color": "black",
+      "events": [
+         null,
+         null,
+         null,
+         null,
+         null
+      ]
+    },
+    {
+       "time": "15:00",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Coffee Pause"
+          }
+       ]
+    },
+    {
+      "time": "15:30",
+      "icon": "time",
+      "color": "black",
+      "events": [
+         null,
+         null,
+         null,
+         null,
+         null
+      ]
+    },
+    {
+      "time": "16:20",
+      "icon": "time",
+      "color": "black",
+      "events": [
+         null,
+         null,
+         null,
+         null,
+         null
+      ]
+    },
+    {
+      "time": "17:10",
+      "icon": "time",
+      "color": "black",
+      "events": [
+         null,
+         null,
+         null,
+         null,
+         null
+      ]
+    },
+    {
+       "time": "18:00",
+       "icon": "time",
+       "color": "blue",
+       "events": [
+          {
+            "title": "Conference closing"
+          }
+       ]
+    }
+  ]
+}
