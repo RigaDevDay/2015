@@ -449,7 +449,8 @@ button:hover {background-color: #0193e0;}
 }
 
 #organizers .platinum li {
-	width: 250px;
+	width: 500px;
+	margin-bottom: 10px;
 }
 
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
@@ -459,11 +460,11 @@ button:hover {background-color: #0193e0;}
 #organizers #ok {
 	background-position: top;
 	background-image: url('../img/partners/ok_logo.png');
-	background-size: 250px 75px;
-    	background-repeat: no-repeat;
+	background-size: 350px 100px;
+	background-repeat: no-repeat;
 }
 
-#organizers #oreilly {	
+#organizers #oreilly {
 	background-position: top;
 	background-image: url('../img/partners/oreilly.jpg');
 }
