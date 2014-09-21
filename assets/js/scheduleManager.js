@@ -209,7 +209,7 @@ var scheduleHelper = {
             for (var i in timeLine.events) {
                 var event = timeLine.events[i];
                 if (event) {
-                    output += '<td class="content" data-id="' + event.id + '">';
+                    output += '<td class="clickable content" data-id="' + event.id + '">';
                     var speakerNames = [];
                     for (var i in event.speakers) {
                         speakerNames.push(scheduleManager.speakers[event.speakers[i]].name);

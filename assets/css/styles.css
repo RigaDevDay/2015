@@ -417,6 +417,18 @@ button:hover {background-color: #0193e0;}
 	background-image: url('../img/locked-dark.png');
 }
 
+#schedule > article > table td.clickable {cursor: pointer;}
+
+#schedule > article > table td.clickable:hover {
+	background: repeating-linear-gradient(
+	  -45deg,
+	  #EEEEEE,
+	  #EEEEEE 5px,
+	  #FCFCFC 5px,
+	  #FCFCFC 10px
+	);
+}
+
 #schedule-popup {
 	display: none;
 	width: 1000px;
