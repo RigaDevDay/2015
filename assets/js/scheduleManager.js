@@ -1,6 +1,7 @@
 var scheduleManager = {
     
     table: '#schedule > article > table',
+    speakers: {},
     
     // Adding cell captions to schedule table
     displayRoomNames: function(roomNames, callback) {
@@ -38,14 +39,25 @@ var scheduleManager = {
         }
     },
     
+    initSpeakers: function(speakers) {
+        for (var i in speakers) {
+            var speaker = speakers[i];
+            scheduleManager.speakers[speaker.id] = {};
+            scheduleManager.speakers[speaker.id].name = speaker.name;
+        }
+    },
+    
     // Constructing the widget
     loadSection: function() {
-        scheduleManager.getSchedule(function(schedule) {
-            var roomNames = scheduleHelper.getRoomNames(schedule);
-            scheduleManager.displayRoomNames(roomNames, function() {
-                var timeLines = scheduleHelper.getTimelines(schedule);
-                scheduleManager.displayTimelines(timeLines, function() {
-                    scheduleManager.displayWidget();
+        speakerManager.getSpeakers(function(speakers) {
+            scheduleManager.initSpeakers(speakers);
+            scheduleManager.getSchedule(function(schedule) {
+                var roomNames = scheduleHelper.getRoomNames(schedule);
+                scheduleManager.displayRoomNames(roomNames, function() {
+                    var timeLines = scheduleHelper.getTimelines(schedule);
+                    scheduleManager.displayTimelines(timeLines, function() {
+                        scheduleManager.displayWidget();
+                    });
                 });
             });
         });
@@ -116,7 +128,12 @@ var scheduleHelper = {
                 var event = timeLine.events[i];
                 if (event) {
                     output += '<td class="content">';
-                    output += '     <header>' + event.title + '</header>';
+                    var speakerNames = [];
+                    for (var i in event.speakers) {
+                        speakerNames.push(scheduleManager.speakers[event.speakers[i]].name);
+                    }
+                    var title = speakerNames.join(',<br />');
+                    output += '     <header>' + title + '</header>';
                     if (event.subtitle) {
                         output += '<div class="desc">' + event.subtitle + '</div>';
                     }
