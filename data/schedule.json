@@ -3,8 +3,8 @@
   "schedule": [
     {
        "time": "8:30",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Registration"
@@ -13,8 +13,8 @@
     },
     {
        "time": "9:45",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Conference Opening"
@@ -23,8 +23,8 @@
     },
     {
        "time": "10:00",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Keynote"
@@ -33,8 +33,8 @@
     },
     {
        "time": "11:00",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Coffee Pause"
@@ -43,8 +43,8 @@
     },
     {
       "time": "11:30",
-      "icon": "time",
-      "color": "black",
+      "icon": "clock",
+      "color": "dark-blue",
       "events": [
          {
            "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
@@ -85,8 +85,8 @@
     },
     {
        "time": "12:20",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Lunch"
@@ -95,7 +95,7 @@
     },
     {
       "time": "13:20",
-      "icon": "time",
+      "icon": "clock",
       "color": "black",
       "events": [
          null,
@@ -107,8 +107,8 @@
     },
     {
       "time": "14:10",
-      "icon": "time",
-      "color": "black",
+      "icon": "clock",
+      "color": "dark-blue",
       "events": [
          null,
          null,
@@ -119,8 +119,8 @@
     },
     {
        "time": "15:00",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Coffee Pause"
@@ -129,8 +129,8 @@
     },
     {
       "time": "15:30",
-      "icon": "time",
-      "color": "black",
+      "icon": "clock",
+      "color": "dark-blue",
       "events": [
          null,
          null,
@@ -141,8 +141,8 @@
     },
     {
       "time": "16:20",
-      "icon": "time",
-      "color": "black",
+      "icon": "clock",
+      "color": "dark-blue",
       "events": [
          null,
          null,
@@ -153,8 +153,8 @@
     },
     {
       "time": "17:10",
-      "icon": "time",
-      "color": "black",
+      "icon": "clock",
+      "color": "dark-blue",
       "events": [
          null,
          null,
@@ -165,8 +165,8 @@
     },
     {
        "time": "18:00",
-       "icon": "time",
-       "color": "blue",
+       "icon": "clock",
+       "color": "light-blue",
        "events": [
           {
             "title": "Conference closing"

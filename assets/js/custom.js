@@ -95,4 +95,5 @@ $(document).ready(function() {
     });
     
     speakerManager.loadSection();
+    scheduleManager.loadSection();
 });
