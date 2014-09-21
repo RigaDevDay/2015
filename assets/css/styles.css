@@ -101,6 +101,7 @@ article > .title {
 #speakers-link {background-image: url('../img/right-side-menu/speakers.png');}
 #venue-link {background-image: url('../img/right-side-menu/venue.png');}
 #organizers-link {background-image: url('../img/right-side-menu/sponsors.png');}
+#schedule-link {background-image: url('../img/right-side-menu/schedule.png');}
 
 section > header {
     width: 100%;
