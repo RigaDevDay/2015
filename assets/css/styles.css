@@ -431,7 +431,7 @@ button:hover {background-color: #0193e0;}
 
 #map #map-container {
 	width: 100%;
-	height: 700px;
+	height: 680px;
 	position: absolute;
 	z-index: 0;
 }
