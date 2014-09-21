@@ -2,6 +2,7 @@ var scheduleManager = {
     
     table: '#schedule > article > table',
     speakers: {},
+    schedule: null,
     
     // Adding cell captions to schedule table
     displayRoomNames: function(roomNames, callback) {
@@ -44,7 +45,68 @@ var scheduleManager = {
             var speaker = speakers[i];
             scheduleManager.speakers[speaker.id] = {};
             scheduleManager.speakers[speaker.id].name = speaker.name;
+            scheduleManager.speakers[speaker.id].twitter = speaker.contacts.twitter;
         }
+    },
+    
+    initEventHandlers: function() {
+        $(scheduleManager.table + ' td').click(function() {
+            var id = $(this).data('id');
+            if (id) {
+                $('#schedule-popup .speakers').html('');
+                var eventInfo = scheduleManager.getEventInfo(id);
+                $('#schedule-popup .title').html(eventInfo.title);
+                $('#schedule-popup .description').html(eventInfo.description);
+                var speakerHTMLs = scheduleHelper.buildSpeakerHTMLs(eventInfo.speakers);
+                for (var i in speakerHTMLs) {
+                    var speakerHTML = speakerHTMLs[i];
+                    $('#schedule-popup .speakers').append(speakerHTML);
+                }
+                twttr.widgets.load();
+                $('#schedule-popup').modal({
+                    onOpen: function (dialog) {
+                    	dialog.overlay.fadeIn('fast', function () {
+                    		dialog.container.slideDown('fast', function () {
+                    			dialog.data.fadeIn('slow');
+                    		});
+                    	});
+                    },
+                    opacity: 60,
+    	            overlayCss: {backgroundColor: '#000000'}
+                });
+                $('#schedule-popup').css('top', '100px');
+            }
+        });
+    },
+    
+    getEventInfo: function(id) {
+        var schedule = scheduleManager.schedule.schedule;
+        var event;
+        // Getting event by id
+        searchLoop: for (var i in schedule) {
+            var timeLine = schedule[i];
+            for (var j in timeLine.events) {
+                if (timeLine.events[j].id == id) {
+                    event = timeLine.events[j];
+                    break searchLoop;
+                }
+            }
+        }
+        
+        // Preparing event info result
+        var result = {};
+        result.speakers = [];
+        for (var i in event.speakers) {
+            var speakerId = event.speakers[i];
+            result.speakers.push({
+                name: scheduleManager.speakers[speakerId].name,
+                photo: speakerId + '.png',
+                twitter: scheduleManager.speakers[speakerId].twitter
+            });
+            result.title = event.subtitle;
+            result.description = event.description;
+        }
+        return result;
     },
     
     // Constructing the widget
@@ -52,15 +114,35 @@ var scheduleManager = {
         speakerManager.getSpeakers(function(speakers) {
             scheduleManager.initSpeakers(speakers);
             scheduleManager.getSchedule(function(schedule) {
-                var roomNames = scheduleHelper.getRoomNames(schedule);
+                scheduleManager.initSchedule(schedule);
+                var roomNames = scheduleHelper.getRoomNames(scheduleManager.schedule);
                 scheduleManager.displayRoomNames(roomNames, function() {
-                    var timeLines = scheduleHelper.getTimelines(schedule);
+                    var timeLines = scheduleHelper.getTimelines(scheduleManager.schedule);
                     scheduleManager.displayTimelines(timeLines, function() {
                         scheduleManager.displayWidget();
+                        scheduleManager.initEventHandlers();
                     });
                 });
             });
         });
+    },
+    
+    // Saving schedule to object property
+    initSchedule: function(scheduleObj) {
+        var schedule = scheduleObj.schedule;
+        var id = 0;
+        for (var i in schedule) {
+            var timeLine = schedule[i];
+            for (var j in timeLine.events) {
+                var event = timeLine.events[j];
+                if (event) {
+                    event.id = ++id;
+                }
+                schedule[i].events[j] = event;
+            }
+        }
+        scheduleObj.schedule = schedule;
+        scheduleManager.schedule = scheduleObj;
     },
     
     // Getting schedule from JSON file
@@ -127,7 +209,7 @@ var scheduleHelper = {
             for (var i in timeLine.events) {
                 var event = timeLine.events[i];
                 if (event) {
-                    output += '<td class="content">';
+                    output += '<td class="content" data-id="' + event.id + '">';
                     var speakerNames = [];
                     for (var i in event.speakers) {
                         speakerNames.push(scheduleManager.speakers[event.speakers[i]].name);
@@ -146,5 +228,19 @@ var scheduleHelper = {
         }
         
         return output;
+    },
+    
+    buildSpeakerHTMLs: function(speakers) {
+        var results = [];
+        for (var i in speakers) {
+            var output = '<li>';
+            var speaker = speakers[i];
+            output += '<div class="name">' + speaker.name + '</div>';
+            output += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.photo + '"></div>';
+            output += '<div class="twitter"> <a href="https://twitter.com/' + speaker.twitter + '" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow @twitterapi</a></div>';
+            output += '</li>';
+            results.push(output);
+        }
+        return results;
     },
 };

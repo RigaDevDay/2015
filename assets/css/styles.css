@@ -406,6 +406,7 @@ button:hover {background-color: #0193e0;}
 	background-repeat: no-repeat;
 	background-position: center;
 	font: 500 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+	padding: 35px 0;
 }
 
 #schedule > article > table tr:nth-child(odd) .locked.content {
@@ -414,6 +415,56 @@ button:hover {background-color: #0193e0;}
 
 #schedule > article > table tr:nth-child(even) .locked.content {
 	background-image: url('../img/locked-dark.png');
+}
+
+#schedule-popup {
+	display: none;
+	width: 1000px;
+	background-color: #ffffff;
+}
+
+#schedule-popup header {
+	background-color: #0dacfe;
+}
+
+#schedule-popup header img {
+	margin: 15px 0 10px 35px;
+}
+
+#schedule-popup .content {
+	padding: 40px;
+	text-align: center;
+}
+
+#schedule-popup .close {
+	width: 37px;
+	height: 37px;
+	margin: 15px 15px 0 0;
+	background: url('../img/modal-close.png') no-repeat;
+	float: right;
+	cursor: pointer;
+}
+
+#schedule-popup .title {
+	font: bold 25px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#schedule-popup .description {
+	margin-top: 15px;
+	font: lighter 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#schedule-popup .speakers {margin: 0; padding: 0; list-style-type: none;}
+#schedule-popup .speakers > li {display: inline-block; text-align: center; margin: 0 50px;}
+
+#schedule-popup .speakers .name {
+	margin-top: 20px;
+	font: bold 20px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: #e74c3c
+}
+
+#schedule-popup .speakers .twitter {
+	margin: 10px 0 0 25px;
 }
 
 #venue {height: 800px;}

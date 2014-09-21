@@ -94,6 +94,10 @@ $(document).ready(function() {
 	    $.modal.close(); 
     });
     
+    $("#schedule-popup .close").click(function() {
+	    $.modal.close(); 
+    });
+    
     speakerManager.loadSection();
     scheduleManager.loadSection();
 });
