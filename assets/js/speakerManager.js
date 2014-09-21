@@ -130,9 +130,11 @@ var speakerManager = {
             case 'Netherlands':
                 return 'nl.png';
             case 'Bulgaria':
-                return 'bg.png';  
+                return 'bg.png';
             case 'Latvia':
                 return 'lv.png';
+            case 'Germany':
+                return 'de.png';
         }
     },
 

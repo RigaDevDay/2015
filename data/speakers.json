@@ -234,5 +234,17 @@
       "twitter": "jen20",
       "blog": "http://jen20.com/"
     }
+  },
+  {
+    "id": "21",
+    "order": -13,
+    "name": "Kai Kreuzer",
+    "bio": "Kai Kreuzer is a Java and OSGi expert, a Home Automation enthusiast, founder of openHAB.org, project lead of Eclipse SmartHome and co-lead of the Eclipse IoT top-level project. He works as a Developer Evangelist in the Connected Home department of Deutsche Telekom AG, which develops a smart home platform called QIVICON.",
+    "country": "Germany",
+    "company": "Deutsche Telekom AG",
+    "contacts": {
+      "twitter": "kaikreuzer",
+      "blog": "http://kaikreuzer.blogspot.com/"
+    }
   }
 ]
