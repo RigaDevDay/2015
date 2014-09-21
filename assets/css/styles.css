@@ -473,8 +473,6 @@ button:hover {background-color: #0193e0;}
 	font: lighter 14px Roboto, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
-#talks header h1 {background-image: url('../img/talks-icon.png');}
-
 #organizers header h1 {background-image: url('../img/organizers-icon.png');}
 #organizers ul {list-style-type: none; text-align: center;}
 
