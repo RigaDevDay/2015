@@ -3,7 +3,7 @@
   "schedule": [
     {
        "time": "8:30",
-       "icon": "clock",
+       "icon": "registration",
        "color": "light-blue",
        "events": [
           {
@@ -14,7 +14,7 @@
     {
        "time": "9:45",
        "icon": "clock",
-       "color": "light-blue",
+       "color": "dark-blue",
        "events": [
           {
             "title": "Conference Opening"
@@ -23,8 +23,8 @@
     },
     {
        "time": "10:00",
-       "icon": "clock",
-       "color": "light-blue",
+       "icon": "speaker",
+       "color": "dark-blue",
        "events": [
           {
             "title": "Keynote"
@@ -33,7 +33,7 @@
     },
     {
        "time": "11:00",
-       "icon": "clock",
+       "icon": "coffee",
        "color": "light-blue",
        "events": [
           {
@@ -43,49 +43,49 @@
     },
     {
       "time": "11:30",
-      "icon": "clock",
+      "icon": "speaker",
       "color": "dark-blue",
       "events": [
          {
            "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
-           "description": "Lorem",
+           "description": "Java EE 7, released over a year ago, introduced several new technologies such as WebSocket, Batch, and JSON. There are already three compliant application servers: WildFly, GlassFish, and Tmaxsoft. NetBeans, Eclipse, and IntelliJ provide extensive tooling support for the APIs. What are the best practices for building and deploying Java EE 7 applications? What to do and not to do? This session takes three Java EE 7 applications running in production and shares lessons learned from each one. It attempts to answer questions such as Is WebSocket ready for production? How do we migrate from Spring Batch to JSR 352 batch? Any change in DevOps? Are additional libraries still needed? Which is more prominent, EJB/JSF or REST/JavaScript?",
            "speakers": [
-              "1"
+              "11"
            ]
          },
          {
-           "subtitle": "Architecting Hybrid mobile apps with PhoneGap",
-           "description": "lorem",
+           "subtitle": "The Mythical Silver Bullet - How Codename One solves mobility differently ",
+           "description": "In January 2012 Chen Fishbein and myself summed up over 28 years of combined mobile development experience to form Codename One. We built it on the extensive work we lead at Sun Microsystems but took it into a bold new direction that most major companies weren't willing to risk: the cloud.</br></br>More than 2 years later our vision has taken roots in Fortune 500 companies, banks & governments. This talk covers why Codename One is indeed a silver bullet for many use cases, why it can succeed where so many have failed and how it is moving forward with the help of the community.",
            "speakers": [
-              "1"
+              "10"
            ]
          },
          {
            "subtitle": "Using Node.js for everything or what it is to write a book about it",
-           "description": "lorem",
+           "description": "Node.js is one of the most interesting technologies nowadays. We all know that we could run a web server and process HTTP requests. However, Node.js is a lot more and could be used for everything. In this talk we will see the various use cases of our lovely Node.js.</br></br>Before a couple of months I finished Node.js Blueprints book. It was a long 7/8 months journey and I'll be happy to share my experience. 90% of the talk is about the popular use cases of Node.js and the rest contains tips for writing about Node.js. Here are the main points:</br></br>Node.js and the popular client side frameworks like Angular, Ember and Backbone</br>Node.js and realtime</br>Node.js as a command line tool</br>Automation with Grunt and Gulp</br>Writing flexible CSS</br>Automating your tests</br>Writing Rest APIs</br>Desktop apps with Node.js",
            "speakers": [
-              "1"
+              "18"
            ]
          },
          {
-           "subtitle": "Programming Bitcoin in Java",
-           "description": "lorem",
+           "subtitle": "Introduction to Google Glass development",
+           "description": "Google Glass is an futuristic and controversial device. What possibilities are there for developers? Come to learn up-to-date information about the platform. All the code examples will be taken from an open-source production app used by Glass Explorers on daily basis.",
            "speakers": [
-              "1"
+              "15"
            ]
          },
          {
            "subtitle": "Source Control, Versioning and Concurrent Development for OBIEE using Git",
-           "description": "lorem",
+           "description": "In this session we will look at options for integrating OBIEE 11g with source control tools including Subversion and Git, focusing on Git as our preferred SCM tool. We will look at how Git can make use of the new MDS XML Documents repository format, and see how it permits versioning of individual repository element over time. We'll also look at how Git supports concurrent development including branching and merging of repositories, and whether Git + MDS XML can replace MUDE as a platform for concurrent development of the repository.",
            "speakers": [
-              "1", "2"
+              "5", "12"
            ]
          }
       ]
     },
     {
        "time": "12:20",
-       "icon": "clock",
+       "icon": "lunch",
        "color": "light-blue",
        "events": [
           {
@@ -95,19 +95,49 @@
     },
     {
       "time": "13:20",
-      "icon": "clock",
+      "icon": "speaker",
       "color": "black",
       "events": [
-         null,
-         null,
-         null,
-         null,
-         null
+         {
+           "subtitle": "Java Concurrency Under the Hood",
+           "description": "In this age when parallelism matters, being able to write proper concurrent code is paramount. While Java hides lots of implementation details by its 'Write Once, Run Anywhere' motto, all abstractions will eventually leak. When they do, you will have to go deeper and see how that thing actually works.",
+           "speakers": [
+              "3"
+           ]
+         },
+         {
+           "subtitle": "Genymotion, the new Android emulator",
+           "description": "I'll will present you what Genymotion is, how it works, and why we built such a tool. I'll give you a brief history of the project, a demonstration of the main Genymotion features, and a sneak peek of what we are working on.",
+           "speakers": [
+              "7"
+           ]
+         },
+         {
+           "subtitle": "A deep dive into Event Store",
+           "description": "Event Store is an ACID-compliant stream database with just 24 bytes of mutable state. It is also open source on GitHub and largely written in managed code, making it an excellent code base to start investigating database internals.</br></br>In this session we'll take a deep dive into the SEDA architecture of Event Store, from the client protocol down to the storage engine and replication model, We'll discuss some of the hard decisions and why we made them, and discuss some of the tradeoffs which must be considered when building large scale systems on a managed platform.",
+           "speakers": [
+              "20"
+           ]
+         },
+         {
+           "subtitle": "Android Wear deep dive",
+           "description": "Android Wear from glanceable notifications to the deep view of what are the limits of what is possible on such small form factor.",
+           "speakers": [
+              "4"
+           ]
+         },
+         {
+           "subtitle": "9 use cases for Oracle SQL Developer Data Modeler",
+           "description": "Data Modeler is known to be an amazing tool for database design. But are there any other use cases for the tool? In this presentation Heli will explain how to use the tool for database design and 8 other use cases.",
+           "speakers": [
+              "6"
+           ]
+         }
       ]
     },
     {
       "time": "14:10",
-      "icon": "clock",
+      "icon": "end",
       "color": "dark-blue",
       "events": [
          null,
@@ -119,7 +149,7 @@
     },
     {
        "time": "15:00",
-       "icon": "clock",
+       "icon": "coffee",
        "color": "light-blue",
        "events": [
           {
@@ -129,7 +159,7 @@
     },
     {
       "time": "15:30",
-      "icon": "clock",
+      "icon": "end",
       "color": "dark-blue",
       "events": [
          null,
@@ -141,7 +171,7 @@
     },
     {
       "time": "16:20",
-      "icon": "clock",
+      "icon": "end",
       "color": "dark-blue",
       "events": [
          null,
@@ -153,7 +183,7 @@
     },
     {
       "time": "17:10",
-      "icon": "clock",
+      "icon": "end",
       "color": "dark-blue",
       "events": [
          null,
@@ -165,7 +195,7 @@
     },
     {
        "time": "18:00",
-       "icon": "clock",
+       "icon": "afterparty",
        "color": "light-blue",
        "events": [
           {
