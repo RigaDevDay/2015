@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="assets/flipcountdown/jquery.flipcountdown.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="assets/flipcountdown/jquery.flipcountdown.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web:700,300,200"/>
     <link rel="stylesheet" type="text/css" href="assets/css/als.css"/>
     <link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-	<script src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.9/src/markerwithlabel_packed.js"></script>
-	<script src="assets/js/jquery.simplemodal.1.4.4.min.js"></script>
-	<script src="assets/js/jquery.dotdotdot.min.js"></script>
-	<script src="assets/js/google-maps.js"></script>
-	<script src="assets/js/positionSticky.js"></script>
-	<script src="assets/flipcountdown/jquery.flipcountdown.js"></script>
-    <script src="assets/js/jquery.als-1.6.js"></script>
-    <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="assets/js/speakerManager.js"></script>
-    <script src="assets/js/scheduleManager.js"></script>
-	<script src="assets/js/custom.js"></script>
-	<title>Riga Dev Day</title>
+    <meta name="keywords" content="Training,Solutions,Information,Innovation,Engeneering,Technologies,Communication,Java,Web,Technology,Oracle,Development,Programming,OpenSource,Development,Data,Career,Agile,Web,LVOUG,JUG,GDG,Design,Tools,Technology,Self-Improvement,Android">
+    <title>Riga Dev Day</title>
 </head>
 <body>
-
-	<div id="socials">
-		<a href="https://www.facebook.com/rigadevday"></a>
-		<a href="https://twitter.com/RigaDevDay"></a>
-		<a href="https://www.linkedin.com/groups/Riga-Dev-Day-2015-6734834/about"></a>
-		<a href="https://plus.google.com/104346723645688269517/posts"></a>
-	</div>
+    <div id="socials">
+        <a href="https://www.facebook.com/rigadevday"></a>
+        <a href="https://twitter.com/RigaDevDay"></a>
+        <a href="https://www.linkedin.com/groups/Riga-Dev-Day-2015-6734834/about"></a>
+        <a href="https://plus.google.com/104346723645688269517/posts"></a>
+    </div>
 
     <nav id="right-menu">
         <a id="top-link" href="#top"></a>
@@ -41,9 +28,9 @@
         <a id="organizers-link" href="#organizers"></a>
     </nav>
 
-	<header id="top">
-		<div class="wrapper">
-            <img src="assets/img/logo.png">
+    <header id="top">
+        <div class="wrapper">
+            <img src="assets/img/logo.png" alt="">
 
             <nav>
                 <a href="#" class="active">Home</a>
@@ -65,44 +52,52 @@
             <div id="register-wrapper">
                 <button id="register">Register Now</button>
             </div>
-		</div>
-	</header>
-	
-	<section id="counter">
-		<div id="countdown"></div>
-		<div class="label" id="days">Days</div>
-		<div class="label" id="hours">Hours</div>
-		<div class="label" id="minutes">Minutes</div>
-		<div class="label" id="seconds">Seconds</div>
-	</section>
+        </div>
+    </header>
 
-	<section id="about">
-		<header class="blue">
-			<h1>About Riga Dev Day</h1>
-		</header>
-		<article id="about-content">
-            <div class="left">
-                <p>Riga Dev Day is a software development conference organised by local Java User Group, Oracle User Group and Google Development Group. This social event is produced by software developers for software developers. All topics will be hands-on and beneficial for your daily job. And we have zero tolerance for sales pitches. Conference takes place in Multikino cinema on 22nd of January, 2015.</p>
+    <section id="counter">
+        <div id="countdown"></div>
+        <div class="label" id="days">Days</div>
+        <div class="label" id="hours">Hours</div>
+        <div class="label" id="minutes">Minutes</div>
+        <div class="label" id="seconds">Seconds</div>
+    </section>
 
-                <p>It is the first time this conference brand takes place in Riga, Latvia, accumulating three years of previous experience organizing similar events. This is going to be one of the largest IT events in Baltic States welcoming 400+ participants and 25+ internationally acclaimed speakers.</p>
-
-                <p>Talks will be around the following topics: </p>
-
-                <ul>
-                    <li>Software development on Java Virtual Machine</li>
-                    <li>Oracle technologies (Oracle, MySQL, BI, etc.)</li>
-                    <li>Web and Mobile development</li>
-                    <li>DevOps and Continuous Delivery</li>
-                    <li>Wearable technologies and embedded programming</li>
-                </ul>
-                <div id="gallery"></div>
+    <section id="about">
+        <header class="blue">
+            <h1>About Riga Dev Day</h1>
+        </header>
+        <article id="about-content">
+            <div id="about-points" class="left">
+                <h1>Riga Dev Day is...</h1>
+                <div class="about-point">
+                    <h2>...a joint project by three of the most active user groups in Latvia.</h2>
+                    <img src="assets/img/about/community.png" alt="">
+                    <p>Google Developer Group Riga, Java User Group Latvia, Oracle User Group Latvia: responsible for close to a hundred events for IT professionals (and counting!), as well as Java Day Riga 2011-2013 and OUG Harmony 2012 conferences.</p>
+                </div>
+                <div class="about-point">
+                    <h2>...an event by software developers for software developers.</h2>
+                    <img src="assets/img/about/hackathon.png" alt="">
+                    <p>All of the organizers come straight from the trenches of the industry. We know first-hand the meaning of high-quality when it comes to putting together a developer conference.</p>
+                </div>
+                <div class="about-point">
+                    <h2>...for professionals who value their time.</h2>
+                    <img src="assets/img/about/professional.png" alt="">
+                    <p>The agenda is carefully organized to include over 25 of only the most relevant topics and technologies. Expect the delivery to be hands-on and immediately useful. Oh, and we have zero tolerance for sales pitches.</p>
+                </div>
+                <div class="about-point">
+                    <h2>...for cross-functional developers and teams.</h2>
+                    <img src="assets/img/about/networking.png" alt="">
+                    <p>With five different tracks, covering JVM and web development, databases, DevOps and other case studies, you have a lot of space to share ideas across different backgrounds, with estimated 400+ participants.</p>
+                </div>
             </div>
             <div class="right">
-                <a class="twitter-timeline" href="https://twitter.com/hashtag/rigadevday" data-widget-id="494202577274163200">#rigadevday Tweets</a>
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/rigadevday" data-widget-id="494202577274163200" height="680">#rigadevday Tweets</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
-		</article>
-	</section>
+            <div id="gallery"></div>
+        </article>
+    </section>
 
     <section id="speakers">
         <header class="dark-blue">
@@ -131,29 +126,29 @@
     	</article>
     </section>
 
-	<section id="venue">
-		<header class="red">
-			<h1>Venue</h1>
-		</header>
-		<article id="map">
-			<div id="map-container"></div>
-			<div id="map-description">
-				<div class="title">Multikino</div>
-				<ul class="photos">
-				    <li><a rel="mk_photo" href="assets/img/mk/2.jpg"><img src="assets/img/mk/2_small.jpg"></a></li>
-				    <li><a rel="mk_photo" href="assets/img/mk/3.jpg"><img src="assets/img/mk/3_small.jpg"></a></li>
-				    <li><a rel="mk_photo" href="assets/img/mk/4.jpg"><img src="assets/img/mk/4_small.jpg"></a></li>
-				    <li><a rel="mk_photo" href="assets/img/mk/6.jpg"><img src="assets/img/mk/6_small.jpg"></a></li>
-				    <li><a rel="mk_photo" href="assets/img/mk/7.jpg"><img src="assets/img/mk/7_small.jpg"></a></li>
-				</ul>
-			</div>
-		</article>
-	</section>
+    <section id="venue">
+        <header class="red">
+            <h1>Venue</h1>
+        </header>
+        <article id="map">
+            <div id="map-container"></div>
+            <div id="map-description">
+                <div class="title">Multikino</div>
+                <ul class="photos">
+                    <li><a rel="mk_photo" href="assets/img/mk/2.jpg"><img src="assets/img/mk/2_small.jpg"></a></li>
+                    <li><a rel="mk_photo" href="assets/img/mk/3.jpg"><img src="assets/img/mk/3_small.jpg"></a></li>
+                    <li><a rel="mk_photo" href="assets/img/mk/4.jpg"><img src="assets/img/mk/4_small.jpg"></a></li>
+                    <li><a rel="mk_photo" href="assets/img/mk/6.jpg"><img src="assets/img/mk/6_small.jpg"></a></li>
+                    <li><a rel="mk_photo" href="assets/img/mk/7.jpg"><img src="assets/img/mk/7_small.jpg"></a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
 
-	<section id="organizers">
-		<header class="dark-blue">
-			<h1>Organizers</h1>
-		</header>
+    <section id="organizers">
+        <header class="dark-blue">
+            <h1>Organizers</h1>
+        </header>
         <article>
             <div class="title">Organizers of the Event</div>
             <ul>
@@ -164,72 +159,72 @@
         </article>
         <article>
             <div class="title">Our dear Sponsors</div>
-	    <ul class="platinum">
+            <ul class="platinum">
                 <li id="ok"></li>
-	    </ul>	    
-	    <div class="centered">
+            </ul>
+            <div class="centered">
                 <button id="sponsors">Become a Sponsor</button>
             </div>
         </article>
-	<article>
-	    <div class="title">Our Partners and Media Sponsors</div>
-            <ul>
-		<li id="oreilly"></li>
-	    </ul>
-	</article>
-	</section>
+        <article>
+            <div class="title">Our Partners and Media Sponsors</div>
+                <ul>
+            <li id="oreilly"></li>
+            </ul>
+        </article>
+    </section>
 
-	<div id="footer">
-		<div class="wrapper">
-			<div class="logo"></div>
-		</div>
-		<ul>
-			<li class="twitter">
-				<a href="https://twitter.com/share" data-url="http://rigadevday.lv/" class="twitter-share-button" data-hashtags="rigadevday">Tweet</a>
-			</li>
-			<li class="facebook">
-				<div class="social facebook">
-					<div class="fb-like" data-href="http://rigadevday.lv/" data-send="false" data-layout="button_count" data-show-faces="false"></div>
-				</div>
-			</li>
-			<li class="gplus">
-				<div class="g-plusone" data-size="medium" data-href="http://rigadevday.lv/"></div>
-			</li>
-			<li class="in">
-				<script type="IN/Share" data-url="http://rigadevday.lv/" data-counter="right"></script>
-			</li>
-		</ul>
-		<div class="description">
-			Riga Dev Day -  Multikino, Riga, Latvia - <a href="mailto:info@rigadevday.lv">info@rigadevday.lv</a>
-		</div>
-		<div class="copyright">Riga Dev Day © 2015 All rights reserved</div>
-	</div>
+    <div id="footer">
+        <div class="wrapper">
+            <div class="logo"></div>
+        </div>
+        <ul>
+            <li class="twitter">
+                <a href="https://twitter.com/share" data-url="http://rigadevday.lv/" class="twitter-share-button" data-hashtags="rigadevday">Tweet</a>
+            </li>
+            <li class="facebook">
+                <div class="social facebook">
+                    <div class="fb-like" data-href="http://rigadevday.lv/" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+                </div>
+            </li>
+            <li class="gplus">
+                <div class="g-plusone" data-size="medium" data-href="http://rigadevday.lv/"></div>
+            </li>
+            <li class="in">
+                <script type="IN/Share" data-url="http://rigadevday.lv/" data-counter="right"></script>
+            </li>
+        </ul>
+        <div class="description">
+            Riga Dev Day -  Multikino, Riga, Latvia - <a href="mailto:info@rigadevday.lv">info@rigadevday.lv</a>
+        </div>
+        <div class="copyright">Riga Dev Day © 2015 All rights reserved</div>
+    </div>
 
     <!-- Social share Scripts -->
-	<script src="https://platform.twitter.com/widgets.js"></script>
-	<script src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-	<script type="text/javascript">
-		(function() {
-			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			po.src = 'https://apis.google.com/js/plusone.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		})();
-	</script>
-	<script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
-	
-	<div id="speaker-popup">
-		<header>
-			<div class="close"></div>
-			<img src="assets/img/logo2.png"/>
-		</header>
-		<section class="content">
-			<div class="photo"></div>
-			<div class="name"></div>
-			<div class="description"></div>
-			<div class="contacts"></div>
-		</section>
-	</div>
-	
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    <script src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+    <script type="text/javascript">
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
+
+    <div id="speaker-popup">
+        <header>
+            <div class="close"></div>
+            <img src="assets/img/logo2.png" alt=""/>
+        </header>
+        <section class="content">
+            <div class="photo"></div>
+            <div class="name"></div>
+            <div class="description"></div>
+            <div class="contacts"></div>
+        </section>
+    </div>
+
 	<div id="schedule-popup">
 		<header>
 			<div class="close"></div>
@@ -242,33 +237,44 @@
 		</section>
 	</div>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter26201010 = new Ya.Metrika({id:26201010,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter26201010 = new Ya.Metrika({id:26201010,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+            } catch(e) { }
+        });
 
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/26201010" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/26201010" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.9/src/markerwithlabel_packed.js"></script>
+    <script src="assets/js/jquery.simplemodal.1.4.4.min.js"></script>
+    <script src="assets/js/jquery.dotdotdot.min.js"></script>
+    <script src="assets/js/google-maps.js"></script>
+    <!--<script src="assets/js/positionSticky.js"></script>-->
+    <script src="assets/flipcountdown/jquery.flipcountdown.js"></script>
+    <script src="assets/js/jquery.als-1.6.js"></script>
+    <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="assets/js/speakerManager.js"></script>
+    <script src="assets/js/scheduleManager.js"></script>  
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
