@@ -246,5 +246,16 @@
       "twitter": "kaikreuzer",
       "blog": "http://kaikreuzer.blogspot.com/"
     }
+  },
+  {
+    "id": "22",
+    "order": -14,
+    "name": "Henrik Ståhl",
+    "bio": "Henrik Stahl is VP of Product Management for Java and Internet of Things for Oracle, responsible for product vision and strategy for these areas. He joined Oracle as part of the BEA Systems acquisition, where he served in a similar capacity for the JRockit family of products, which sums up to over 10 years working with JVM and Java strategy and development. During his time at Oracle, Henrik lead the effort getting the Exalogic engineered system out of the door, and for the past three years he has been driving Internet of Things strategy across Oracle focused on intelligent devices and value from business processes and data analytics. Mr. Stahl holds a Master of Science in Engineering Physics from the Royal Institute of Technology in Sweden. He lives with his family in Sweden and spends his spare time doing random sports, gardening and playing flamenco guitar.",
+    "country": "Sweden",
+    "company": "Oracle",
+    "contacts": {
+      "blog": "blogs.oracle.com/henrik"
+    }
   }
 ]

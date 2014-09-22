@@ -1,9 +1,9 @@
 var scheduleManager = {
-    
+
     table: '#schedule > article > table',
     speakers: {},
     schedule: null,
-    
+
     // Adding cell captions to schedule table
     displayRoomNames: function(roomNames, callback) {
         var newRow = '';
@@ -14,32 +14,32 @@ var scheduleManager = {
             newRow += '<th>' + roomNames[i] + '</th>';
         }
         newRow += '</tr>';
-        
+
         $(scheduleManager.table).append(newRow);
-        
+
         if (typeof(callback) == typeof(Function)) {
             callback();
         }
     },
-    
+
     displayTimelines: function(timeLines, callback) {
         for (var i in timeLines) {
             var timeLine = timeLines[i];
-            
+
             var output = '<tr class="' + timeLine.color + '">';
             output += scheduleHelper.buildTimeCell(timeLine);
             output += scheduleHelper.buildIconCell(timeLine);
             output += scheduleHelper.buildEventCells(timeLine);
             output += '</tr>';
-            
+
             $(scheduleManager.table).append(output);
         }
-        
+
         if (typeof(callback) == typeof(Function)) {
             callback();
         }
     },
-    
+
     initSpeakers: function(speakers) {
         for (var i in speakers) {
             var speaker = speakers[i];
@@ -48,7 +48,7 @@ var scheduleManager = {
             scheduleManager.speakers[speaker.id].twitter = speaker.contacts.twitter;
         }
     },
-    
+
     initEventHandlers: function() {
         $(scheduleManager.table + ' td').click(function() {
             var id = $(this).data('id');
@@ -78,7 +78,7 @@ var scheduleManager = {
             }
         });
     },
-    
+
     getEventInfo: function(id) {
         var schedule = scheduleManager.schedule.schedule;
         var event;
@@ -92,7 +92,7 @@ var scheduleManager = {
                 }
             }
         }
-        
+
         // Preparing event info result
         var result = {};
         result.speakers = [];
@@ -108,7 +108,7 @@ var scheduleManager = {
         }
         return result;
     },
-    
+
     // Constructing the widget
     loadSection: function() {
         speakerManager.getSpeakers(function(speakers) {
@@ -126,7 +126,7 @@ var scheduleManager = {
             });
         });
     },
-    
+
     // Saving schedule to object property
     initSchedule: function(scheduleObj) {
         var schedule = scheduleObj.schedule;
@@ -144,7 +144,7 @@ var scheduleManager = {
         scheduleObj.schedule = schedule;
         scheduleManager.schedule = scheduleObj;
     },
-    
+
     // Getting schedule from JSON file
     getSchedule: function(callback) {
         $.getJSON('data/schedule.json', function(schedule) {
@@ -153,7 +153,7 @@ var scheduleManager = {
             }
         });
     },
-    
+
     // Hidding loader, Showing schedule table
     displayWidget: function() {
         $("#schedule .loader").css('display', 'none');
@@ -166,10 +166,10 @@ var scheduleHelper = {
     getRoomNames: function(jsonObj) {
         return jsonObj.roomNames;
     },
-    
+
     getTimelines: function(jsonObj) {
         var timeLines = jsonObj.schedule;
-        
+
         // If the event is common for all auditories,
         // Setting single to true
         for (var i in timeLines) {
@@ -184,18 +184,18 @@ var scheduleHelper = {
         }
         return timeLines;
     },
-    
+
     buildTimeCell: function(timeLine) {
         return '<td class="time">' + timeLine.time + '</td>';
     },
-    
+
     buildIconCell: function(timeLine) {
         return '<td class="' + timeLine.icon + ' icon"><div></div></td>';
     },
-    
+
     buildEventCells: function(timeLine) {
         var output = '';
-        
+
         if (timeLine.single) {
             output += '<td class="unique content" colspan="5">';
             output += '     <header>' + timeLine.events[0].title + '</header>';
@@ -203,7 +203,7 @@ var scheduleHelper = {
                 output += '<div class="desc">' + timeLine.events[0].subtitle + '</div>';
             }
             output += '</td>';
-            
+
         }
         else {
             for (var i in timeLine.events) {
@@ -226,10 +226,10 @@ var scheduleHelper = {
                 }
             }
         }
-        
+
         return output;
     },
-    
+
     buildSpeakerHTMLs: function(speakers) {
         var results = [];
         for (var i in speakers) {
@@ -237,7 +237,9 @@ var scheduleHelper = {
             var speaker = speakers[i];
             output += '<div class="name">' + speaker.name + '</div>';
             output += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.photo + '"></div>';
-            output += '<div class="twitter"> <a href="https://twitter.com/' + speaker.twitter + '" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow @twitterapi</a></div>';
+            if(speaker.twitter) {
+                output += '<div class="twitter"> <a href="https://twitter.com/' + speaker.twitter + '" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow @twitterapi</a></div>';
+            }
             output += '</li>';
             results.push(output);
         }

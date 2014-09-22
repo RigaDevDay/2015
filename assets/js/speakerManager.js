@@ -75,8 +75,10 @@ var speakerManager = {
             loadingContent += '<div class="company">' + speaker.company + '</div>';
             loadingContent += '<div class="description">' + speaker.bio + '</div>';
             loadingContent += '<div class="read-more" data-id="' + speaker.id + '">read more+</div>';
-            loadingContent += '<div class="follow">';
-            loadingContent += '<a href="https://twitter.com/' + speaker.contacts.twitter + '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>';
+            if (speaker.contacts.twitter) {
+                loadingContent += '<div class="follow">';
+                loadingContent += '<a href="https://twitter.com/' + speaker.contacts.twitter + '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>';
+            }
             loadingContent += '</div>';
             loadingContent += '</li>';
             $('.als-wrapper').append(loadingContent);
@@ -135,6 +137,8 @@ var speakerManager = {
                 return 'lv.png';
             case 'Germany':
                 return 'de.png';
+            case 'Sweden':
+                return 'se.png';
         }
     },
 
@@ -148,7 +152,9 @@ var speakerManager = {
                         $("#speaker-popup .photo").html('<img src="assets/img/speaker-photos/' + speaker.id + '.png"></div>');
                         $("#speaker-popup .name").html(speaker.name);
                         $("#speaker-popup .description").html(speaker.bio);
-                        $("#speaker-popup .contacts").html('<a href="https://twitter.com/' + speaker.contacts.twitter + '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>');
+                        if (speaker.contacts.twitter) {
+                            $("#speaker-popup .contacts").html('<a href="https://twitter.com/' + speaker.contacts.twitter + '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>');
+                        }
                         if (speaker.contacts.blog) {
                             var html = $("#speaker-popup .contacts").html();
                             $("#speaker-popup .contacts").html(html + ' <a class="blog" href="' + speaker.contacts.blog + '">' + speaker.contacts.blog + '</a></div>');
