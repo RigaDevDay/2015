@@ -47,10 +47,10 @@
       "color": "dark-blue",
       "events": [
          {
-           "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
-           "description": "Java EE 7, released over a year ago, introduced several new technologies such as WebSocket, Batch, and JSON. There are already three compliant application servers: WildFly, GlassFish, and Tmaxsoft. NetBeans, Eclipse, and IntelliJ provide extensive tooling support for the APIs. What are the best practices for building and deploying Java EE 7 applications? What to do and not to do? This session takes three Java EE 7 applications running in production and shares lessons learned from each one. It attempts to answer questions such as Is WebSocket ready for production? How do we migrate from Spring Batch to JSR 352 batch? Any change in DevOps? Are additional libraries still needed? Which is more prominent, EJB/JSF or REST/JavaScript?",
+           "subtitle": "Java Roadmap",
+           "description": "Straight from the source: An update on Java 8, Java 9 and new and upcoming features in Oracle's Java implementation.",
            "speakers": [
-              "11"
+              "22"
            ]
          },
          {
@@ -137,14 +137,44 @@
     },
     {
       "time": "14:10",
-      "icon": "end",
+      "icon": "speaker",
       "color": "dark-blue",
       "events": [
-         null,
-         null,
-         null,
-         null,
-         null
+         {
+           "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
+           "description": "Java EE 7, released over a year ago, introduced several new technologies such as WebSocket, Batch, and JSON. There are already three compliant application servers: WildFly, GlassFish, and Tmaxsoft. NetBeans, Eclipse, and IntelliJ provide extensive tooling support for the APIs. What are the best practices for building and deploying Java EE 7 applications? What to do and not to do? This session takes three Java EE 7 applications running in production and shares lessons learned from each one. It attempts to answer questions such as Is WebSocket ready for production? How do we migrate from Spring Batch to JSR 352 batch? Any change in DevOps? Are additional libraries still needed? Which is more prominent, EJB/JSF or REST/JavaScript?",
+           "speakers": [
+              "11"
+           ]
+         },
+         {
+           "subtitle": "How to Become the MacGyver of Android Custom Views",
+           "description": "MacGyver is part Indiana Jones, part Sherlock Holmes. He can turn a bicycle frame into a blowtorch, disarm a bomb with a hockey ticket, create a time machine with some duct tape and a paper clip or CREATE A CUSTOM VIEW IN ANDROID. </br></br>In this talk we will walk through the Android UI framework and learn how to push it to the next level by learning how views work and how to build custom ones that will let us create innovative UIs.",
+           "speakers": [
+              "14"
+           ]
+         },
+         {
+           "subtitle": "45 valuable tips for developers in 45 minutes",
+           "description": "In this sessions Jan-Willem Eshuis takes you into a fast journey along 45 valuable tips for developers using real world practical examples. In his talk Jan-Willem covers topics like clean code, testing, deploying, hosting, infrastructure and service and support. After the 45 minutes of passion, humor and speed you'll remember at least a couple of tips to apply them in practice.",
+           "speakers": [
+              "16"
+           ]
+         },
+         {
+           "subtitle": "Eclipse Home",
+           "description": "2014 was the year of the Smart Home - not only have Apple, Google/Nest and Samsung/SmartThings entered the stage, but there was a lot of buzz around the Internet of Things in general and Smart Homes in particular. After the 'smartphone battle' the 'smarthome battle' is now at the horizon for this year. Wouldn't it be great to escape from this battle and use something truly open and independent instead?</br></br>The Eclipse SmartHome project fills this gap. It was initiated by the popular open-source project openHAB, which makes it possible to realize advanced vendor-independent home automation use cases in no time. While openHAB's target audience were so far tech-savvy people and early adopters, the Eclipse SmartHome project leads the way from the niche to the mass market by fostering industry adoption as it provides a flexible framework with many options for building Smart Home solutions. </br></br>This session includes live hacking and you will of course see a smart home live demo that goes way beyond the standard use cases.",
+           "speakers": [
+              "21"
+           ]
+         },
+         {
+           "subtitle": "PL/SQL : Stop Making The Same Performance Mistakes",
+           "description": "PL/SQL is great, but like any programming language it is capable of being misused. Rather than listing a bunch of 'best practices', this presentation highlights the common mistakes made when developing in PL/SQL, turning what should be an elegant solution into a resource hog. With live demonstrations, this presentation will help you get the best performance from your PL/SQL.",
+           "speakers": [
+              "8"
+           ]
+         }
       ]
     },
     {

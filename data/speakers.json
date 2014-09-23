@@ -257,5 +257,29 @@
     "contacts": {
       "blog": "blogs.oracle.com/henrik"
     }
+  },
+  {
+    "id": "23",
+    "order": -15,
+    "name": "Gerrit Grunwald",
+    "bio": "Gerrit is a software engineer with more than 10 years of experience in software development. He has been involved in Java desktop application developments and controls development. His current interests include JavaFX, HTML5 and Swing especially development of custom controls in one of these technologies. He is also very interested in Java on embedded devices like Raspberry Pi, BeagleBoneBlack, CubieBoard, Odroid-U3, BananaPi, i.MX6 and others. He is a true believer in open source and has participated in popular projects like JFXtras as well as his own projects (SteelSeries Swing, SteelSeries Canvas, Enzo, FXGConverter). As a Java Champion he is an active member of the Java community, where he founded and lead the Java User Group Münster (Germany), co leads the JavaFX and IoT community.",
+    "country": "Germany",
+    "company": "Oracle",
+    "contacts": {
+      "twitter": "hansolo_",
+      "blog": "http://harmoniccode.blogspot.com/"
+    }
+  },
+  {
+    "id": "24",
+    "order": -16,
+    "name": "Roel Hartman",
+    "bio": "Roel is a very experienced Oracle Software Architect. He started a long time ago using Oracle RDBMS 5, Oracle Forms 2.3, RPT/RPF and Oracle*Case 4.5. Since a few years he focuses mainly on Oracle Application Express. Roel has been a speaker on UKOUG, OOW, Collaborate, ODTUG's KSCOPE and a number of local Oracle User Groups. He is an active participant of the Oracle APEX Forum and keeps an (APEX-related) blog on http://roelhartman.blogspot.com. In June 2009 Roel received an Oracle ACE award and in August 2010 he's appointed as Oracle ACE Director. Roel is a co-writer of the 'Expert Oracle Application Express' and 'Oracle Application Express for Mobile Web Applications' books. Roel is Director at APEX Consulting in The Netherlands.",
+    "country": "Netherlands",
+    "company": "APEX Consulting",
+    "contacts": {
+      "twitter": "RoelH",
+      "blog": "http://roelhartman.blogspot.com"
+    }
   }
 ]
