@@ -509,7 +509,7 @@ button:hover {background-color: #0193e0;}
 	margin: 10px 0 0 25px;
 }
 
-#venue {height: 820px;}
+#venue {height: 800px;}
 #venue header h1 {background-image: url('../img/venue-icon.png');}
 
 #map {height: 700px;}
