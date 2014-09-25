@@ -120,10 +120,10 @@
            ]
          },
          {
-           "subtitle": "Android Wear deep dive",
-           "description": "Android Wear from glanceable notifications to the deep view of what are the limits of what is possible on such small form factor.",
+           "subtitle": "Enterprise flight into DevOps space",
+           "description": "Enterprise adoption of DevOps is something that is already happening, but like with other trendy methodologies it happens quite differently with different level of success. This presentation accumulates speaker's experience in helping different size organizations to implement DevOps initiatives and gives interesting real life examples: war stories, jokes, myths. </br></br>During last years we accumulated a lot of experience helping our clients automating their JVM projects starting from automated deployments and ending with fully automated production infrastructure configuration. ",
            "speakers": [
-              "4"
+              "25"
            ]
          },
          {
@@ -189,14 +189,44 @@
     },
     {
       "time": "15:30",
-      "icon": "end",
+      "icon": "speaker",
       "color": "dark-blue",
       "events": [
-         null,
-         null,
-         null,
-         null,
-         null
+         {
+           "subtitle": "Java EE 8, a snapshot overview!",
+           "description": "Java EE 7 was released 18 months ago and from J2EE to Java EE 7, much has changed but we are not done yet! Through the years, Java EE has always reinventing itself. Java EE 8 will be no exception to this rule!</br></br>In this session, we will look at the Java EE 8 plans. We will review the various new JSRs that will be part of Java EE 8 (e.g. MVC JSR, JSON-B JSR, Security JSR, Configuration JSR...). We will obviously also looks how the existing technologies will evolves for Java EE 8 (eg. Servlet 4 with the HTTP 2 support, JMS's plan to replace Message Driven Beans, CDI/EJB alignment, etc).</br></br>We will conclude by looking at how the community can get involved in those works.",
+           "speakers": [
+              "9"
+           ]
+         },
+         {
+           "subtitle": "Android Wear deep dive",
+           "description": "Android Wear from glanceable notifications to the deep view of what are the limits of what is possible on such small form factor.",
+           "speakers": [
+              "4"
+           ]
+         },
+         {
+           "subtitle": "Effective Design of RESTful APIs",
+           "description": "Developers creating websites needs to know how to build RESTful APIs correctly. This session will help you plan and model your own APIs and understand the six REST design constraints that help guide your architecture. I will starts with a simple overview, including advice on identifying the users or 'participants' of your system and the activities they might perform with it. I'll help you paper test your model, validating the design before you build it. You'll then explore the HTTP concepts and REST constraints needed to build your API. </br></br>Topics include:</br>The three approaches to adding an API, Modeling tips, Creating and grouping API methods, Mapping activities to, verbs and actions, Validating your API, Working with HTTP headers and response codes, Caching, Layered systems, Creating a uniform interface.</br></br>All those explanations topics will be provided by examples to clear up the idea and demonstrate the concept.",
+           "speakers": [
+              "1"
+           ]
+         },
+         {
+           "subtitle": "'Catch me if you can' - Java on wearables",
+           "description": "Wearable computers are one of the next big things. But at the moment, one can buy only specialized systems such as motion trackers, GPS watches, and the like. So why not use existing cheap technology to build your own wearable Java-powered device? This session shows what you can do with affordable technology and Java today. It uses a Raspberry Pi in combination with a heart rate sensor and a GPS sensor to track the heart rate and the location of a runner. The battery-powered Pi measures the data and publishes it via MQTT to different clients such as Java(FX)-based desktop clients and a smartwatch the runner can wear. Come get some ideas of what you can do with Java and wearable devices.",
+           "speakers": [
+              "23"
+           ]
+         },
+         {
+           "subtitle": "The best of both worlds : Going hybrid with your mobile APEX Oracle Application",
+           "description": "According to Gartner in 2015 50% of all mobile applications will be hybrid. So it is the right time to jump on the bandwagon and start building hybrid mobile applications yourself. And you don't need to know Java, Object C, C++ or other 'strange' languages. Using Oracle Application Express and PhoneGap / Cordova you can create awesome looking and functioning near-to-native applications. In this session we will go through a step-by-step example of an application that synchronises the (native) Contacts on your phone with your customer database.",
+           "speakers": [
+              "24"
+           ]
+         }
       ]
     },
     {
