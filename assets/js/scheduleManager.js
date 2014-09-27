@@ -174,11 +174,16 @@ var scheduleHelper = {
         // Setting single to true
         for (var i in timeLines) {
             var timeLine = timeLines[i];
-            if (timeLine.events.length == 1) {
+            if (timeLine.events.length == 1 && !timeLine.events[0].speakers) {
                 timeLine.single = true;
-            }
-            else {
-                timeLine.single = false;
+            } else {
+                if (timeLine.events.length == 1 && timeLine.events[0].speakers) {
+                    timeLine.clickable = true;
+                    timeLine.single = true;
+                }
+                else {
+                    timeLine.single = false;
+                }
             }
             timeLines[i] = timeLine;
         }
@@ -197,12 +202,27 @@ var scheduleHelper = {
         var output = '';
 
         if (timeLine.single) {
-            output += '<td class="unique content" colspan="5">';
-            output += '     <header>' + timeLine.events[0].title + '</header>';
-            if (timeLine.events[0].subtitle) {
-                output += '<div class="desc">' + timeLine.events[0].subtitle + '</div>';
+            if (!timeLine.clickable) {
+                output += '<td class="unique content" colspan="5">';
+                output += '     <header>' + timeLine.events[0].title + '</header>';
+                if (timeLine.events[0].subtitle) {
+                    output += '<div class="desc">' + timeLine.events[0].subtitle + '</div>';
+                }
+                output += '</td>';
+            } else {
+                var event = timeLine.events[0];
+                output += '<td class="clickable content" data-id="' + event.id + '" colspan="5">';
+                var speakerNames = [];
+                for (var i in event.speakers) {
+                    speakerNames.push(scheduleManager.speakers[event.speakers[i]].name);
+                }
+                var title = speakerNames.join(',<br />');
+                output += '     <header>' + title + '</header>';
+                if (event.subtitle) {
+                    output += '<div class="desc">' + event.subtitle + '</div>';
+                }
+                output += '</td>';
             }
-            output += '</td>';
 
         }
         else {
