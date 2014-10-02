@@ -231,14 +231,44 @@
     },
     {
       "time": "16:20",
-      "icon": "end",
+      "icon": "speaker",
       "color": "dark-blue",
       "events": [
-         null,
-         null,
-         null,
-         null,
-         null
+         {
+           "subtitle": "CompletableFuture is here",
+           "description": "Many have said that Java has no future. But it is now 2014, the new java.time. *, stream-style and trendy lambda dances in Java 8. And a crowd of advanced neighbors​​ that have their own means of asynchronous processing for 'going to production quickly.'' </br></br>Let's talk about other languages ​​and libraries a bit. Buf of JDK 5, we already had Future and ExecutorService for asynchronous execution. However, with the advent of CompletableFuture in JDK 8, the way opened from callback hell to clean and more functional code.</br></br>We look at practical examples of the challenges CompletableFuture 'with streams and lambdas' takes and it's efficiency.",
+           "speakers": [
+              "17"
+           ]
+         },
+         {
+           "subtitle": "Why and How: Starting development in Kotlin for Android",
+           "description": "Kotlin is a new JVM language, improving programming experience for Android similarly to Swift for iOS. Kotlin rapidly penetrate Google Play and become popular among OSS developers as well as corporations. The talk shows what Kotlin is good for, and how to start developing in Kotlin on an example of a simple Android application already published in Google Play.",
+           "speakers": [
+              "13"
+           ]
+         },
+         {
+           "subtitle": "Nuts and Bolts of WebSocket",
+           "description": "WebSocket provides a rich and powerful communication channel where client and server can communicate with each other in a standard way. JavaScript API in Web browsers is also quite prevalent making it easier to support it.</br></br>Would you like to learn how to build WebSocket applications in Java ? How and where do you deploy these applications ? What are the concerns around firewall, DNS and routers ? How do you debug message exchanges ? What to do if WebSocket is not supported in the browser or app server ? Debugging and Production tips ? Learn about phantom WebSockets.</br></br>This university session is for you! Here is what we'll cover:</br></br>Introduction to WebSocket</br>WebSocket using JSR 356</br>WebSocket using Undertow/WildFly</br>WebSocket using Atmosphere</br>Surviving Firewall and Proxy</br>WebSocket Debugging</br>WebSocket Production Tips",
+           "speakers": [
+              "11"
+           ]
+         },
+         {
+           "subtitle": "Programming Bitcoin in Java",
+           "description": "The first half of this talk will cover what bitcoin is as well as a  technical overview of how it works.  The second part will focus on how Java developers can use the open-source bitcoinj library to program the bitcoin blockchain to send and receive payments as well as create smart contracts.</br></br>For more details on bitcoinj, see https://bitcoinj.github.io/",
+           "speakers": [
+              "2"
+           ]
+         },
+         {
+           "subtitle": "No Silver Bullets - OBIEE Performance in the Real World",
+           "description": "Are you involved in the design and development of OBIEE systems and want to know the best way to go about ensuring good performance? Maybe you've an existing OBIEE system with performance 'challenges' that you need to diagnose?</br>This presentation looks at the practical elements of diagnosing the causes of performance issues in OBIEE, and discusses good practices to observe when developing new systems. ",
+           "speakers": [
+              "12"
+           ]
+         }
       ]
     },
     {
