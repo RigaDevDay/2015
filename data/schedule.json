@@ -241,13 +241,7 @@
               "17"
            ]
          },
-         {
-           "subtitle": "Why and How: Starting development in Kotlin for Android",
-           "description": "Kotlin is a new JVM language, improving programming experience for Android similarly to Swift for iOS. Kotlin rapidly penetrate Google Play and become popular among OSS developers as well as corporations. The talk shows what Kotlin is good for, and how to start developing in Kotlin on an example of a simple Android application already published in Google Play.",
-           "speakers": [
-              "13"
-           ]
-         },
+         null,
          {
            "subtitle": "Nuts and Bolts of WebSocket",
            "description": "WebSocket provides a rich and powerful communication channel where client and server can communicate with each other in a standard way. JavaScript API in Web browsers is also quite prevalent making it easier to support it.</br></br>Would you like to learn how to build WebSocket applications in Java ? How and where do you deploy these applications ? What are the concerns around firewall, DNS and routers ? How do you debug message exchanges ? What to do if WebSocket is not supported in the browser or app server ? Debugging and Production tips ? Learn about phantom WebSockets.</br></br>This university session is for you! Here is what we'll cover:</br></br>Introduction to WebSocket</br>WebSocket using JSR 356</br>WebSocket using Undertow/WildFly</br>WebSocket using Atmosphere</br>Surviving Firewall and Proxy</br>WebSocket Debugging</br>WebSocket Production Tips",
