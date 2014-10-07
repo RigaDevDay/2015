@@ -143,17 +143,6 @@
     }
   },
   {
-    "id": "13",
-    "order": -5,
-    "name": "Philip Torchinsky",
-    "bio": "Philip Torchinsky is a technology evangelist at JetBrains. His main specialization is UNIX technologies, his main interests at the moment are cloud technologies, issue trackers, and other developer tools. Philip has led trainings for IT specialists since 1993, wrote two books on UNIX, and used to work at Sun Microsystems before he joined JetBrains.",
-    "country": "Russia",
-    "company": "Jetbrains",
-    "contacts": {
-      "twitter": "philipto"
-    }
-  },
-  {
     "id": "14",
     "order": -6,
     "name": "Fernando Cejas",
