@@ -12,20 +12,6 @@
        ]
     },
     {
-       "time": "8:30",
-       "icon": "registration",
-       "color": "light-blue",
-       "events": [
-          {
-           "subtitle": "Java Roadmap",
-           "description": "Straight from the source: An update on Java 8, Java 9 and new and upcoming features in Oracle's Java implementation.",
-           "speakers": [
-              "22"
-           ]
-         }
-       ]
-    },
-    {
        "time": "9:45",
        "icon": "clock",
        "color": "dark-blue",
