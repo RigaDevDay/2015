@@ -143,17 +143,6 @@
     }
   },
   {
-    "id": "13",
-    "order": -5,
-    "name": "Philip Torchinsky",
-    "bio": "Philip Torchinsky is a technology evangelist at JetBrains. His main specialization is UNIX technologies, his main interests at the moment are cloud technologies, issue trackers, and other developer tools. Philip has led trainings for IT specialists since 1993, wrote two books on UNIX, and used to work at Sun Microsystems before he joined JetBrains.",
-    "country": "Russia",
-    "company": "Jetbrains",
-    "contacts": {
-      "twitter": "philipto"
-    }
-  },
-  {
     "id": "14",
     "order": -6,
     "name": "Fernando Cejas",
@@ -291,6 +280,18 @@
     "company": "Aestas IT",
     "contacts": {
       "twitter": "aestasit"
+    }
+  },
+  {
+    "id": "26",
+    "order": -18,
+    "name": "Ted Neward",
+    "bio": "Ted Neward is an industry professional of twenty years' experience. He speaks at conferences all over the world and writes regularly for a variety of publications across the Java, .NET, and other ecosystems. He currently resides in the Pacific Northwest with his wife, two sons, dog, four cats, eight laptops, seven tablets, nine phones, and a rather large utility bill.",
+    "country": "USA",
+    "company": "Neward & Associates",
+    "contacts": {
+      "twitter": "tedneward",
+      "blog": "http://blogs.tedneward.com/"
     }
   }
 ]

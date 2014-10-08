@@ -86,7 +86,7 @@ var scheduleManager = {
         searchLoop: for (var i in schedule) {
             var timeLine = schedule[i];
             for (var j in timeLine.events) {
-                if (timeLine.events[j].id == id) {
+                if (timeLine.events[j] != null && timeLine.events[j].id == id) {
                     event = timeLine.events[j];
                     break searchLoop;
                 }
@@ -177,15 +177,15 @@ var scheduleHelper = {
             if (timeLine.events.length == 1 && !timeLine.events[0].speakers) {
                 timeLine.single = true;
             } else {
-                if (timeLine.events.length == 1 && timeLine.events[0].speakers) {
-                    timeLine.clickable = true;
-                    timeLine.single = true;
-                }
-                else {
-                    timeLine.single = false;
-                }
+              if (timeLine.events.length == 1 && timeLine.events[0].speakers) {
+                timeLine.clickable = true;
+                timeLine.single = true;
+              }
+              else {
+                timeLine.single = false;
+              }
             }
-            timeLines[i] = timeLine;
+          timeLines[i] = timeLine;
         }
         return timeLines;
     },
@@ -202,7 +202,7 @@ var scheduleHelper = {
         var output = '';
 
         if (timeLine.single) {
-            if (!timeLine.clickable) {
+          if (!timeLine.clickable) {
                 output += '<td class="unique content" colspan="5">';
                 output += '     <header>' + timeLine.events[0].title + '</header>';
                 if (timeLine.events[0].subtitle) {
