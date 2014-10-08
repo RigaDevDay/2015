@@ -27,7 +27,11 @@
        "color": "dark-blue",
        "events": [
           {
-            "title": "Keynote"
+            "subtitle": "Keynote",
+            "description": "",
+            "speakers": [
+               "26"
+            ]
           }
        ]
     },
@@ -258,7 +262,7 @@
          },
          {
            "subtitle": "No Silver Bullets - OBIEE Performance in the Real World",
-           "description": "Are you involved in the design and development of OBIEE systems and want to know the best way to go about ensuring good performance? Maybe you've an existing OBIEE system with performance 'challenges' that you need to diagnose?</br>This presentation looks at the practical elements of diagnosing the causes of performance issues in OBIEE, and discusses good practices to observe when developing new systems. ",
+           "description": "Are you involved in the design and development of OBIEE systems and want to know the best way to go about ensuring good performance? Maybe you've an existing OBIEE system with performance 'challenges' that you need to diagnose?</br>This presentation looks at the practical elements of diagnosing the causes of performance issues in OBIEE, and discusses good practices to observe when developing new systems.",
            "speakers": [
               "12"
            ]
@@ -274,7 +278,13 @@
          null,
          null,
          null,
-         null
+         {
+           "subtitle": "An Oracle DBA's Guide to WebLogic Server",
+           "description": "WebLogic Server is Oracle's flagship Java application server and a pivotal piece of the infrastructure supporting many of their applications, including Fusion Apps and Enterprise Manager Cloud Control. This session introduces the basic concepts behind WebLogic Server and discusses the installation, configuration and management of systems to support both ADF and Oracle Forms/Reports applications. The presentation is aimed at those who are new to WebLogic Server, especially DBAs who are increasingly being expected to know about middle-tier administration.",
+           "speakers": [
+              "8"
+           ]
+         }
       ]
     },
     {
