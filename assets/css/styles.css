@@ -251,7 +251,7 @@ button:hover {background-color: #0193e0;}
     text-align: justify;
     color: #686b70;
 }
-#about .right {width: 370px; padding-left: 30px;}
+#about .right {width: 370px; padding-left: 29px;}
 
 #about #gallery {
     height:173px;
@@ -512,7 +512,10 @@ button:hover {background-color: #0193e0;}
 #venue {height: 800px;}
 #venue header h1 {background-image: url('../img/venue-icon.png');}
 
-#map {height: 700px;}
+#map {
+    height: 700px;
+    position: relative;
+}
 
 .map-label {
 	font: normal 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
