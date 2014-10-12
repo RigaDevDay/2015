@@ -92,7 +92,7 @@ var speakerManager = {
         var visible = 3;
         $("#speakers-list").als({
             visible_items: visible,
-            scrolling_items: visible,
+            scrolling_items: 1,
             orientation: "horizontal",
             circular: "yes",
             autoscroll: "yes",
