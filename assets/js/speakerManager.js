@@ -69,7 +69,7 @@ var speakerManager = {
         img.onload = function() {
             var loadingContent = '';
             loadingContent += '<li class="als-item speaker">';
-            loadingContent += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.id + '.png"></div>';
+            loadingContent += '<div class="photo" data-id="' + speaker.id + '"><img src="assets/img/speaker-photos/' + speaker.id + '.png"></div>';
             loadingContent += '<div class="country"><img src="assets/img/countries/' + flag + '"></div>';
             loadingContent += '<div class="name">' + speaker.name + '</div>';
             loadingContent += '<div class="company">' + speaker.company + '</div>';
@@ -143,7 +143,7 @@ var speakerManager = {
     },
 
     initEventHandlers: function() {
-        $('.als-item.speaker .read-more').click(function() {
+        $('.als-item.speaker .read-more,.photo').click(function() {
             var speakerId = $(this).data('id');
             speakerManager.getSpeakers(function(list) {
                 for (var i=0; i<list.length; i++) {
