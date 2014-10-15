@@ -27,8 +27,8 @@
        "color": "dark-blue",
        "events": [
           {
-            "subtitle": "Keynote",
-            "description": "",
+            "subtitle": "Keynote - Iconoclasm",
+            "description": "History is littered with the stories of iconoclasts--people who truly stood out as pioneers, lateral thinkers, and in some cases, outright heroes--and their successes and failures. From the baseball management vision of Branch Hickey to the glassblowing vision of Dale Chihuly to the engineering design vision of Steve Jobs, iconoclasts have changed our world in subtle and profound ways, sometimes loudly, sometimes quietly. For an industry that seems so ripe and so rife with 'special personalities', it would seem that programming is tied up deeply with iconoclasm. But what defines the iconoclast, what demarcates the 'true' iconoclast from the mere pretender, and how can we use the characteristics of the iconoclast to change our own immediate surroundings for the better?",
             "speakers": [
                "26"
             ]
@@ -72,10 +72,10 @@
            ]
          },
          {
-           "subtitle": "Introduction to Google Glass development",
-           "description": "Google Glass is an futuristic and controversial device. What possibilities are there for developers? Come to learn up-to-date information about the platform. All the code examples will be taken from an open-source production app used by Glass Explorers on daily basis.",
+           "subtitle": "Beyond NoSQL: NewSQL on top of Cassandra",
+           "description": "ok.ru (AKA odnoklassniki.ru) is one of the largest social networks for Russian-speaking audiences with 80+ million unique user’s visits monthly.</br></br></br>Until recent time more than 50 TB of data at ok.ru OLTP systems was managed by Microsoft SQL Sever. It’s very expensive, hard to scale solution and cannot save us from outage if one of our data centers fail.</br>Typically a NoSQL solution is selected to address such high availability requirements, but unfortunately these all data could be migrated to NoSQL due to ACID transaction guarantees requirements.</br>So we implemented a NewSQL system, which provides scalable performance and availability of NoSQL while still maintaining the ACID guarantees and deployed it to production.</br>We’ll discuss the internals of the new storage and its operational experience. This talk could be of interest for anyone who follows the development of database technologies and has experience with (No)SQL implementations.",
            "speakers": [
-              "15"
+              "27"
            ]
          },
          {
@@ -245,7 +245,13 @@
               "17"
            ]
          },
-         null,
+         {
+           "subtitle": "Introduction to Google Glass development",
+           "description": "Google Glass is an futuristic and controversial device. What possibilities are there for developers? Come to learn up-to-date information about the platform. All the code examples will be taken from an open-source production app used by Glass Explorers on daily basis.",
+           "speakers": [
+              "15"
+           ]
+         },
          {
            "subtitle": "Nuts and Bolts of WebSocket",
            "description": "WebSocket provides a rich and powerful communication channel where client and server can communicate with each other in a standard way. JavaScript API in Web browsers is also quite prevalent making it easier to support it.</br></br>Would you like to learn how to build WebSocket applications in Java ? How and where do you deploy these applications ? What are the concerns around firewall, DNS and routers ? How do you debug message exchanges ? What to do if WebSocket is not supported in the browser or app server ? Debugging and Production tips ? Learn about phantom WebSockets.</br></br>This university session is for you! Here is what we'll cover:</br></br>Introduction to WebSocket</br>WebSocket using JSR 356</br>WebSocket using Undertow/WildFly</br>WebSocket using Atmosphere</br>Surviving Firewall and Proxy</br>WebSocket Debugging</br>WebSocket Production Tips",
@@ -254,10 +260,10 @@
            ]
          },
          {
-           "subtitle": "Programming Bitcoin in Java",
-           "description": "The first half of this talk will cover what bitcoin is as well as a  technical overview of how it works.  The second part will focus on how Java developers can use the open-source bitcoinj library to program the bitcoin blockchain to send and receive payments as well as create smart contracts.</br></br>For more details on bitcoinj, see https://bitcoinj.github.io/",
+           "subtitle": "",
+           "description": "",
            "speakers": [
-              "2"
+              "29"
            ]
          },
          {
@@ -271,13 +277,37 @@
     },
     {
       "time": "17:10",
-      "icon": "end",
+      "icon": "speaker",
       "color": "dark-blue",
       "events": [
-         null,
-         null,
-         null,
-         null,
+         {
+           "subtitle": "JVM crash dump analysis",
+           "description": "Java Virtual Machine can handle a wide range of coding errors by throwing an exception with a readable stack trace. But what to do if JVM crashes on its own? What is hs_err.log, the only postmortem message with mysterious contents?</br></br>This talk will shed light on the information encoded in crash dumps. We will see how this data is useful in problem investigation. The live demo will review the real cases of JVM crash and postmortem analysis.",
+           "speakers": [
+              "28"
+           ]
+         },
+         {
+           "subtitle": "",
+           "description": "",
+           "speakers": [
+              "19"
+           ]
+         },
+         {
+           "subtitle": "The Busy Javascript Developer’s Guide to MEAN",
+           "description": "The MEAN Stack (Mongo, Express, Angular, Node) has taken the open-source world by storm, and many developers consider it to be 'the next big thing' in the world of building Web-based applications. In this lecture, we're going to embrace our inner JavaScript and build a simple application from scratch using the MEANJS package, including tests against the server-side API and the client-side UI. We'll talk about how Node works on the server, how the various Node packages combine, and examine one such package (MeanJS) that collects several Node packages together to create a (somewhat) seamless development experience, while still leaving room for extension and/or replacement if desired or necessary.",
+           "speakers": [
+              "26"
+           ]
+         },
+         {
+           "subtitle": "Programming Bitcoin in Java",
+           "description": "The first half of this talk will cover what bitcoin is as well as a  technical overview of how it works.  The second part will focus on how Java developers can use the open-source bitcoinj library to program the bitcoin blockchain to send and receive payments as well as create smart contracts.</br></br>For more details on bitcoinj, see https://bitcoinj.github.io/",
+           "speakers": [
+              "2"
+           ]
+         },
          {
            "subtitle": "An Oracle DBA's Guide to WebLogic Server",
            "description": "WebLogic Server is Oracle's flagship Java application server and a pivotal piece of the infrastructure supporting many of their applications, including Fusion Apps and Enterprise Manager Cloud Control. This session introduces the basic concepts behind WebLogic Server and discusses the installation, configuration and management of systems to support both ADF and Oracle Forms/Reports applications. The presentation is aimed at those who are new to WebLogic Server, especially DBAs who are increasingly being expected to know about middle-tier administration.",

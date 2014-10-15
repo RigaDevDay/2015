@@ -185,8 +185,7 @@
     "bio": "Employee of Oracle. Was engaged in development of both mobile and cloud software, in large companies and in startups as well. In the past, an employee of Borland, Yota, QuickOffice and Deutsche Bank.",
     "country": "Russia",
     "company": "Oracle",
-    "contacts": {
-      "twitter": "dchuyko"
+    "contacts": {      
     }
   },
   {
@@ -292,6 +291,39 @@
     "contacts": {
       "twitter": "tedneward",
       "blog": "http://blogs.tedneward.com/"
+    }
+  },
+  {
+    "id": "27",
+    "order": -19,
+    "name": "Oleg Anastasyev",
+    "bio": "Oleg Anastasyev started his career in computer programming in 1995. He developed banking, telecom software as well as software for the government of Latvia. </br>Oleg is a leading developer at Ok.ru. His primary responsibilities as a Platform Team member are development of architectures and solutions for highly loaded as well as big data services, solving performance and availability problems.",
+    "country": "Latvia",
+    "company": "Odnoklassniki.ru",
+    "contacts": {
+      "twitter": "m0nstermind"
+    }
+  },
+  {
+    "id": "28",
+    "order": -20,
+    "name": "Andrei Pangin",
+    "bio": "Andrei Pangin is the lead software engineer at Mail.ru Group since 2011. He develops the platform of OK.RU, the popular social network.</br></br>Previously he worked at Oracle on HotSpot JVM. Andrei's areas of expertise are Java Virtual Machines as well as high-loaded projects in Java.",
+    "country": "Russia",
+    "company": "Odnoklassniki.ru",
+    "contacts": {
+    }
+  },
+  {
+    "id": "29",
+    "order": -21,
+    "name": "Simon Ritter",
+    "bio": "Simon Ritter is a Java Technology Evangelist at Oracle Corporation. Simon has been in the IT business since 1984 and holds a Bachelor of Science degree in Physics from Brunel University in the U.K. Originally working in the area of UNIX development for AT&T UNIX System Labs and then Novell, Simon moved to Sun in 1996. At this time he started working with Java technology and has spent time working both in Java technology development and consultancy. Having moved to Oracle as part of the Sun acquisition he now focuses on the core Java platform, Java for client applications and embedded Java. He also continues to develop demonstrations that push the boundaries of Java for applications like gestural interfaces and embedded robot controllers.",
+    "country": "UK",
+    "company": "Oracle",
+    "contacts": {
+      "twitter": "speakjava",
+      "blog": "blogs.oracle.com/speakjava"
     }
   }
 ]
