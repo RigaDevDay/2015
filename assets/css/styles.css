@@ -589,6 +589,11 @@ button:hover {background-color: #0193e0;}
 	margin-bottom: 10px;
 }
 
+#organizers .gold li {
+	width: 500px;
+	margin-bottom: 15px;
+}
+
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
 #organizers #jug {background-image: url('../img/jug.png');}
 #organizers #lvoug {background-image: url('../img/lvoug.png');}
@@ -597,6 +602,13 @@ button:hover {background-color: #0193e0;}
 	background-position: top;
 	background-image: url('../img/partners/ok_logo.png');
 	background-size: 350px 100px;
+	background-repeat: no-repeat;
+}
+
+#organizers #ctco {
+	background-position: top;
+	background-image: url('../img/partners/ctco_logo.png');
+	background-size: 200px 65px;
 	background-repeat: no-repeat;
 }
 

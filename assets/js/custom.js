@@ -90,12 +90,17 @@ $(document).ready(function() {
         window.location.href = 'http://ok.ru/';
     });
 
-    $("#speaker-popup .close").click(function() {
-	    $.modal.close(); 
+
+    $('#ctco').click(function() {
+        window.location.href = 'http://ctco.lv/';
     });
-    
+
+    $("#speaker-popup .close").click(function() {
+	    $.modal.close();
+    });
+
     $("#schedule-popup .close").click(function() {
-	    $.modal.close(); 
+	    $.modal.close();
     });
 
     speakerManager.loadSection();
