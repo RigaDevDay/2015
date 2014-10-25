@@ -90,9 +90,12 @@ $(document).ready(function() {
         window.location.href = 'http://ok.ru/';
     });
 
-
     $('#ctco').click(function() {
         window.location.href = 'http://ctco.lv/';
+    });
+
+    $('#fourfinance').click(function() {
+        window.location.href = 'http://www.4finance.com/';
     });
 
     $("#speaker-popup .close").click(function() {

@@ -586,12 +586,12 @@ button:hover {background-color: #0193e0;}
 
 #organizers .platinum li {
 	width: 500px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 #organizers .gold li {
-	width: 500px;
-	margin-bottom: 15px;
+	width: 250px;
+	margin-bottom: 20px;
 }
 
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
@@ -601,7 +601,7 @@ button:hover {background-color: #0193e0;}
 #organizers #ok {
 	background-position: top;
 	background-image: url('../img/partners/ok_logo.png');
-	background-size: 350px 100px;
+	background-size: 363px 100px;
 	background-repeat: no-repeat;
 }
 
@@ -609,6 +609,14 @@ button:hover {background-color: #0193e0;}
 	background-position: top;
 	background-image: url('../img/partners/ctco_logo.png');
 	background-size: 200px 65px;
+	background-repeat: no-repeat;
+}
+
+
+#organizers #fourfinance {
+	background-position: top;
+	background-image: url('../img/partners/4finance_logo.png');
+	background-size: 250px 50px;
 	background-repeat: no-repeat;
 }
 

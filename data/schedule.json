@@ -260,8 +260,8 @@
            ]
          },
          {
-           "subtitle": "",
-           "description": "",
+           "subtitle": "Lambda Expressions In Java: Going Beyond the Basics",
+           "description": "Lambda expressions were introduced in Java SE 8 to replace many uses of inner classes and greatly simplify how we can parameterise behaviour as well as values in our code.  Lambda expressions made the Streams API possible without having to write huge amounts of boiler-plate code.  This session will look in some depth at details of Lambda expressions, both from how to use them and how they are implemented, as well as provide some ideas about how to approach debugging.  We'll look at a number of examples of Lambda expressions and explain how they work and some key points that you should be aware of to use them as effectively as possible.",
            "speakers": [
               "29"
            ]
