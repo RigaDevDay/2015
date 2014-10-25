@@ -70,34 +70,6 @@ $(document).ready(function() {
         window.location.href='https://docs.google.com/file/d/0BxMQv-svniw_dnNWTV8tQXMyVmM/edit?pli=1';
     });
 
-    $('#gdg-riga').click(function() {
-        window.location.href = 'http://gdgriga.lv';
-    });
-
-    $('#jug').click(function() {
-       window.location.href = 'http://jug.lv';
-    });
-
-    $('#lvoug').click(function() {
-       window.location.href = 'http://lvoug.lv';
-    });
-
-    $('#oreilly').click(function() {
-        window.location.href = 'http://www.oreilly.com/';
-    });
-
-    $('#ok').click(function() {
-        window.location.href = 'http://ok.ru/';
-    });
-
-    $('#ctco').click(function() {
-        window.location.href = 'http://ctco.lv/';
-    });
-
-    $('#fourfinance').click(function() {
-        window.location.href = 'http://www.4finance.com/';
-    });
-
     $("#speaker-popup .close").click(function() {
 	    $.modal.close();
     });

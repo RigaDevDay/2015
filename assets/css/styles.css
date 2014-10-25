@@ -572,14 +572,13 @@ button:hover {background-color: #0193e0;}
 }
 
 #organizers header h1 {background-image: url('../img/organizers-icon.png');}
-#organizers ul {list-style-type: none; text-align: center;}
+#organizers ul {list-style-type: none; text-align: center; display: table; margin: 0 auto;}
 
 #organizers li {
-	display: inline-block;
+	display: table-cell;
+	vertical-align: middle;
 	width: 200px;
 	height: 100px;
-	background-position: center;
-	background-repeat: no-repeat;
 	margin: 0 25px;
 	cursor: pointer;
 }
@@ -597,33 +596,6 @@ button:hover {background-color: #0193e0;}
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
 #organizers #jug {background-image: url('../img/jug.png');}
 #organizers #lvoug {background-image: url('../img/lvoug.png');}
-
-#organizers #ok {
-	background-position: top;
-	background-image: url('../img/partners/ok_logo.png');
-	background-size: 363px 100px;
-	background-repeat: no-repeat;
-}
-
-#organizers #ctco {
-	background-position: top;
-	background-image: url('../img/partners/ctco_logo.png');
-	background-size: 200px 65px;
-	background-repeat: no-repeat;
-}
-
-
-#organizers #fourfinance {
-	background-position: top;
-	background-image: url('../img/partners/4finance_logo.png');
-	background-size: 250px 50px;
-	background-repeat: no-repeat;
-}
-
-#organizers #oreilly {
-	background-position: top;
-	background-image: url('../img/partners/oreilly.jpg');
-}
 
 .centered {text-align: center;}
 
