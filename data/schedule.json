@@ -58,10 +58,10 @@
            ]
          },
          {
-           "subtitle": "The Mythical Silver Bullet - How Codename One solves mobility differently ",
-           "description": "In January 2012 Chen Fishbein and myself summed up over 28 years of combined mobile development experience to form Codename One. We built it on the extensive work we lead at Sun Microsystems but took it into a bold new direction that most major companies weren't willing to risk: the cloud.</br></br>More than 2 years later our vision has taken roots in Fortune 500 companies, banks & governments. This talk covers why Codename One is indeed a silver bullet for many use cases, why it can succeed where so many have failed and how it is moving forward with the help of the community.",
+           "subtitle": "Genymotion, the new Android emulator",
+           "description": "I'll will present you what Genymotion is, how it works, and why we built such a tool. I'll give you a brief history of the project, a demonstration of the main Genymotion features, and a sneak peek of what we are working on.",
            "speakers": [
-              "10"
+              "7"
            ]
          },
          {
@@ -72,10 +72,10 @@
            ]
          },
          {
-           "subtitle": "Beyond NoSQL: NewSQL on top of Cassandra",
-           "description": "ok.ru (AKA odnoklassniki.ru) is one of the largest social networks for Russian-speaking audiences with 80+ million unique user’s visits monthly.</br></br></br>Until recent time more than 50 TB of data at ok.ru OLTP systems was managed by Microsoft SQL Sever. It’s very expensive, hard to scale solution and cannot save us from outage if one of our data centers fail.</br>Typically a NoSQL solution is selected to address such high availability requirements, but unfortunately these all data could be migrated to NoSQL due to ACID transaction guarantees requirements.</br>So we implemented a NewSQL system, which provides scalable performance and availability of NoSQL while still maintaining the ACID guarantees and deployed it to production.</br>We’ll discuss the internals of the new storage and its operational experience. This talk could be of interest for anyone who follows the development of database technologies and has experience with (No)SQL implementations.",
+           "subtitle": "45 valuable tips for developers in 45 minutes",
+           "description": "In this sessions Jan-Willem Eshuis takes you into a fast journey along 45 valuable tips for developers using real world practical examples. In his talk Jan-Willem covers topics like clean code, testing, deploying, hosting, infrastructure and service and support. After the 45 minutes of passion, humor and speed you'll remember at least a couple of tips to apply them in practice.",
            "speakers": [
-              "27"
+              "16"
            ]
          },
          {
@@ -103,17 +103,17 @@
       "color": "black",
       "events": [
          {
-           "subtitle": "Java Concurrency Under the Hood",
-           "description": "In this age when parallelism matters, being able to write proper concurrent code is paramount. While Java hides lots of implementation details by its 'Write Once, Run Anywhere' motto, all abstractions will eventually leak. When they do, you will have to go deeper and see how that thing actually works.",
+           "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
+           "description": "Java EE 7, released over a year ago, introduced several new technologies such as WebSocket, Batch, and JSON. There are already three compliant application servers: WildFly, GlassFish, and Tmaxsoft. NetBeans, Eclipse, and IntelliJ provide extensive tooling support for the APIs. What are the best practices for building and deploying Java EE 7 applications? What to do and not to do? This session takes three Java EE 7 applications running in production and shares lessons learned from each one. It attempts to answer questions such as Is WebSocket ready for production? How do we migrate from Spring Batch to JSR 352 batch? Any change in DevOps? Are additional libraries still needed? Which is more prominent, EJB/JSF or REST/JavaScript?",
            "speakers": [
-              "3"
+              "11"
            ]
          },
          {
-           "subtitle": "Genymotion, the new Android emulator",
-           "description": "I'll will present you what Genymotion is, how it works, and why we built such a tool. I'll give you a brief history of the project, a demonstration of the main Genymotion features, and a sneak peek of what we are working on.",
+           "subtitle": "The Mythical Silver Bullet - How Codename One solves mobility differently ",
+           "description": "In January 2012 Chen Fishbein and myself summed up over 28 years of combined mobile development experience to form Codename One. We built it on the extensive work we lead at Sun Microsystems but took it into a bold new direction that most major companies weren't willing to risk: the cloud.</br></br>More than 2 years later our vision has taken roots in Fortune 500 companies, banks & governments. This talk covers why Codename One is indeed a silver bullet for many use cases, why it can succeed where so many have failed and how it is moving forward with the help of the community.",
            "speakers": [
-              "7"
+              "10"
            ]
          },
          {
@@ -124,10 +124,10 @@
            ]
          },
          {
-           "subtitle": "Enterprise flight into DevOps space",
-           "description": "Enterprise adoption of DevOps is something that is already happening, but like with other trendy methodologies it happens quite differently with different level of success. This presentation accumulates speaker's experience in helping different size organizations to implement DevOps initiatives and gives interesting real life examples: war stories, jokes, myths. </br></br>During last years we accumulated a lot of experience helping our clients automating their JVM projects starting from automated deployments and ending with fully automated production infrastructure configuration. ",
+           "subtitle": "Beyond NoSQL: NewSQL on top of Cassandra",
+           "description": "ok.ru (AKA odnoklassniki.ru) is one of the largest social networks for Russian-speaking audiences with 80+ million unique user’s visits monthly.</br></br></br>Until recent time more than 50 TB of data at ok.ru OLTP systems was managed by Microsoft SQL Sever. It’s very expensive, hard to scale solution and cannot save us from outage if one of our data centers fail.</br>Typically a NoSQL solution is selected to address such high availability requirements, but unfortunately these all data could be migrated to NoSQL due to ACID transaction guarantees requirements.</br>So we implemented a NewSQL system, which provides scalable performance and availability of NoSQL while still maintaining the ACID guarantees and deployed it to production.</br>We’ll discuss the internals of the new storage and its operational experience. This talk could be of interest for anyone who follows the development of database technologies and has experience with (No)SQL implementations.",
            "speakers": [
-              "25"
+              "27"
            ]
          },
          {
@@ -145,31 +145,31 @@
       "color": "dark-blue",
       "events": [
          {
-           "subtitle": "Lessons Learned from Real-World Deployments of Java EE 7",
-           "description": "Java EE 7, released over a year ago, introduced several new technologies such as WebSocket, Batch, and JSON. There are already three compliant application servers: WildFly, GlassFish, and Tmaxsoft. NetBeans, Eclipse, and IntelliJ provide extensive tooling support for the APIs. What are the best practices for building and deploying Java EE 7 applications? What to do and not to do? This session takes three Java EE 7 applications running in production and shares lessons learned from each one. It attempts to answer questions such as Is WebSocket ready for production? How do we migrate from Spring Batch to JSR 352 batch? Any change in DevOps? Are additional libraries still needed? Which is more prominent, EJB/JSF or REST/JavaScript?",
+           "subtitle": "Java EE 8, a snapshot overview!",
+           "description": "Java EE 7 was released 18 months ago and from J2EE to Java EE 7, much has changed but we are not done yet! Through the years, Java EE has always reinventing itself. Java EE 8 will be no exception to this rule!</br></br>In this session, we will look at the Java EE 8 plans. We will review the various new JSRs that will be part of Java EE 8 (e.g. MVC JSR, JSON-B JSR, Security JSR, Configuration JSR...). We will obviously also looks how the existing technologies will evolves for Java EE 8 (eg. Servlet 4 with the HTTP 2 support, JMS's plan to replace Message Driven Beans, CDI/EJB alignment, etc).</br></br>We will conclude by looking at how the community can get involved in those works.",
            "speakers": [
-              "11"
+              "9"
            ]
          },
          {
-           "subtitle": "How to Become the MacGyver of Android Custom Views",
-           "description": "MacGyver is part Indiana Jones, part Sherlock Holmes. He can turn a bicycle frame into a blowtorch, disarm a bomb with a hockey ticket, create a time machine with some duct tape and a paper clip or CREATE A CUSTOM VIEW IN ANDROID. </br></br>In this talk we will walk through the Android UI framework and learn how to push it to the next level by learning how views work and how to build custom ones that will let us create innovative UIs.",
+           "subtitle": "",
+           "description": "",
            "speakers": [
-              "14"
+              "19"
            ]
          },
          {
-           "subtitle": "45 valuable tips for developers in 45 minutes",
-           "description": "In this sessions Jan-Willem Eshuis takes you into a fast journey along 45 valuable tips for developers using real world practical examples. In his talk Jan-Willem covers topics like clean code, testing, deploying, hosting, infrastructure and service and support. After the 45 minutes of passion, humor and speed you'll remember at least a couple of tips to apply them in practice.",
+           "subtitle": "CompletableFuture is here",
+           "description": "Many have said that Java has no future. But it is now 2014, the new java.time. *, stream-style and trendy lambda dances in Java 8. And a crowd of advanced neighbors​​ that have their own means of asynchronous processing for 'going to production quickly.'' </br></br>Let's talk about other languages ​​and libraries a bit. Buf of JDK 5, we already had Future and ExecutorService for asynchronous execution. However, with the advent of CompletableFuture in JDK 8, the way opened from callback hell to clean and more functional code.</br></br>We look at practical examples of the challenges CompletableFuture 'with streams and lambdas' takes and it's efficiency.",
            "speakers": [
-              "16"
+              "17"
            ]
          },
          {
-           "subtitle": "Smart Home Development Made Easy",
-           "description": "2014 was the year of the Smart Home - not only have Apple, Google/Nest and Samsung/SmartThings entered the stage, but there was a lot of buzz around the Internet of Things in general and Smart Homes in particular. After the 'smartphone battle' the 'smarthome battle' is now at the horizon for this year. Wouldn't it be great to escape from this battle and use something truly open and independent instead?</br></br>The Eclipse SmartHome project fills this gap. It was initiated by the popular open-source project openHAB, which makes it possible to realize advanced vendor-independent home automation use cases in no time. While openHAB's target audience were so far tech-savvy people and early adopters, the Eclipse SmartHome project leads the way from the niche to the mass market by fostering industry adoption as it provides a flexible framework with many options for building Smart Home solutions. </br></br>This session includes live hacking and you will of course see a smart home live demo that goes way beyond the standard use cases.",
+           "subtitle": "Enterprise flight into DevOps space",
+           "description": "Enterprise adoption of DevOps is something that is already happening, but like with other trendy methodologies it happens quite differently with different level of success. This presentation accumulates speaker's experience in helping different size organizations to implement DevOps initiatives and gives interesting real life examples: war stories, jokes, myths. </br></br>During last years we accumulated a lot of experience helping our clients automating their JVM projects starting from automated deployments and ending with fully automated production infrastructure configuration. ",
            "speakers": [
-              "21"
+              "25"
            ]
          },
          {
@@ -197,31 +197,31 @@
       "color": "dark-blue",
       "events": [
          {
-           "subtitle": "Java EE 8, a snapshot overview!",
-           "description": "Java EE 7 was released 18 months ago and from J2EE to Java EE 7, much has changed but we are not done yet! Through the years, Java EE has always reinventing itself. Java EE 8 will be no exception to this rule!</br></br>In this session, we will look at the Java EE 8 plans. We will review the various new JSRs that will be part of Java EE 8 (e.g. MVC JSR, JSON-B JSR, Security JSR, Configuration JSR...). We will obviously also looks how the existing technologies will evolves for Java EE 8 (eg. Servlet 4 with the HTTP 2 support, JMS's plan to replace Message Driven Beans, CDI/EJB alignment, etc).</br></br>We will conclude by looking at how the community can get involved in those works.",
+           "subtitle": "Lambda Expressions In Java: Going Beyond the Basics",
+           "description": "Lambda expressions were introduced in Java SE 8 to replace many uses of inner classes and greatly simplify how we can parameterise behaviour as well as values in our code.  Lambda expressions made the Streams API possible without having to write huge amounts of boiler-plate code.  This session will look in some depth at details of Lambda expressions, both from how to use them and how they are implemented, as well as provide some ideas about how to approach debugging.  We'll look at a number of examples of Lambda expressions and explain how they work and some key points that you should be aware of to use them as effectively as possible.",
            "speakers": [
-              "9"
+              "29"
            ]
          },
          {
-           "subtitle": "Android Wear deep dive",
-           "description": "Android Wear from glanceable notifications to the deep view of what are the limits of what is possible on such small form factor.",
+           "subtitle": "How to Become the MacGyver of Android Custom Views",
+           "description": "MacGyver is part Indiana Jones, part Sherlock Holmes. He can turn a bicycle frame into a blowtorch, disarm a bomb with a hockey ticket, create a time machine with some duct tape and a paper clip or CREATE A CUSTOM VIEW IN ANDROID. </br></br>In this talk we will walk through the Android UI framework and learn how to push it to the next level by learning how views work and how to build custom ones that will let us create innovative UIs.",
            "speakers": [
-              "4"
+              "14"
            ]
          },
          {
-           "subtitle": "Effective Design of RESTful APIs",
-           "description": "Developers creating websites needs to know how to build RESTful APIs correctly. This session will help you plan and model your own APIs and understand the six REST design constraints that help guide your architecture. I will starts with a simple overview, including advice on identifying the users or 'participants' of your system and the activities they might perform with it. I'll help you paper test your model, validating the design before you build it. You'll then explore the HTTP concepts and REST constraints needed to build your API. </br></br>Topics include:</br>The three approaches to adding an API, Modeling tips, Creating and grouping API methods, Mapping activities to, verbs and actions, Validating your API, Working with HTTP headers and response codes, Caching, Layered systems, Creating a uniform interface.</br></br>All those explanations topics will be provided by examples to clear up the idea and demonstrate the concept.",
+           "subtitle": "The Busy Javascript Developer’s Guide to MEAN",
+           "description": "The MEAN Stack (Mongo, Express, Angular, Node) has taken the open-source world by storm, and many developers consider it to be 'the next big thing' in the world of building Web-based applications. In this lecture, we're going to embrace our inner JavaScript and build a simple application from scratch using the MEANJS package, including tests against the server-side API and the client-side UI. We'll talk about how Node works on the server, how the various Node packages combine, and examine one such package (MeanJS) that collects several Node packages together to create a (somewhat) seamless development experience, while still leaving room for extension and/or replacement if desired or necessary.",
            "speakers": [
-              "1"
+              "26"
            ]
          },
          {
-           "subtitle": "'Catch me if you can' - Java on wearables",
-           "description": "Wearable computers are one of the next big things. But at the moment, one can buy only specialized systems such as motion trackers, GPS watches, and the like. So why not use existing cheap technology to build your own wearable Java-powered device? This session shows what you can do with affordable technology and Java today. It uses a Raspberry Pi in combination with a heart rate sensor and a GPS sensor to track the heart rate and the location of a runner. The battery-powered Pi measures the data and publishes it via MQTT to different clients such as Java(FX)-based desktop clients and a smartwatch the runner can wear. Come get some ideas of what you can do with Java and wearable devices.",
+           "subtitle": "Smart Home Development Made Easy",
+           "description": "2014 was the year of the Smart Home - not only have Apple, Google/Nest and Samsung/SmartThings entered the stage, but there was a lot of buzz around the Internet of Things in general and Smart Homes in particular. After the 'smartphone battle' the 'smarthome battle' is now at the horizon for this year. Wouldn't it be great to escape from this battle and use something truly open and independent instead?</br></br>The Eclipse SmartHome project fills this gap. It was initiated by the popular open-source project openHAB, which makes it possible to realize advanced vendor-independent home automation use cases in no time. While openHAB's target audience were so far tech-savvy people and early adopters, the Eclipse SmartHome project leads the way from the niche to the mass market by fostering industry adoption as it provides a flexible framework with many options for building Smart Home solutions. </br></br>This session includes live hacking and you will of course see a smart home live demo that goes way beyond the standard use cases.",
            "speakers": [
-              "23"
+              "21"
            ]
          },
          {
@@ -239,17 +239,17 @@
       "color": "dark-blue",
       "events": [
          {
-           "subtitle": "CompletableFuture is here",
-           "description": "Many have said that Java has no future. But it is now 2014, the new java.time. *, stream-style and trendy lambda dances in Java 8. And a crowd of advanced neighbors​​ that have their own means of asynchronous processing for 'going to production quickly.'' </br></br>Let's talk about other languages ​​and libraries a bit. Buf of JDK 5, we already had Future and ExecutorService for asynchronous execution. However, with the advent of CompletableFuture in JDK 8, the way opened from callback hell to clean and more functional code.</br></br>We look at practical examples of the challenges CompletableFuture 'with streams and lambdas' takes and it's efficiency.",
+           "subtitle": "Effective Design of RESTful APIs",
+           "description": "Developers creating websites needs to know how to build RESTful APIs correctly. This session will help you plan and model your own APIs and understand the six REST design constraints that help guide your architecture. I will starts with a simple overview, including advice on identifying the users or 'participants' of your system and the activities they might perform with it. I'll help you paper test your model, validating the design before you build it. You'll then explore the HTTP concepts and REST constraints needed to build your API. </br></br>Topics include:</br>The three approaches to adding an API, Modeling tips, Creating and grouping API methods, Mapping activities to, verbs and actions, Validating your API, Working with HTTP headers and response codes, Caching, Layered systems, Creating a uniform interface.</br></br>All those explanations topics will be provided by examples to clear up the idea and demonstrate the concept.",
            "speakers": [
-              "17"
+              "1"
            ]
          },
          {
-           "subtitle": "Introduction to Google Glass development",
-           "description": "Google Glass is an futuristic and controversial device. What possibilities are there for developers? Come to learn up-to-date information about the platform. All the code examples will be taken from an open-source production app used by Glass Explorers on daily basis.",
+           "subtitle": "Android Wear deep dive",
+           "description": "Android Wear from glanceable notifications to the deep view of what are the limits of what is possible on such small form factor.",
            "speakers": [
-              "15"
+              "4"
            ]
          },
          {
@@ -260,10 +260,10 @@
            ]
          },
          {
-           "subtitle": "Lambda Expressions In Java: Going Beyond the Basics",
-           "description": "Lambda expressions were introduced in Java SE 8 to replace many uses of inner classes and greatly simplify how we can parameterise behaviour as well as values in our code.  Lambda expressions made the Streams API possible without having to write huge amounts of boiler-plate code.  This session will look in some depth at details of Lambda expressions, both from how to use them and how they are implemented, as well as provide some ideas about how to approach debugging.  We'll look at a number of examples of Lambda expressions and explain how they work and some key points that you should be aware of to use them as effectively as possible.",
+           "subtitle": "JVM crash dump analysis",
+           "description": "Java Virtual Machine can handle a wide range of coding errors by throwing an exception with a readable stack trace. But what to do if JVM crashes on its own? What is hs_err.log, the only postmortem message with mysterious contents?</br></br>This talk will shed light on the information encoded in crash dumps. We will see how this data is useful in problem investigation. The live demo will review the real cases of JVM crash and postmortem analysis.",
            "speakers": [
-              "29"
+              "28"
            ]
          },
          {
@@ -281,24 +281,24 @@
       "color": "dark-blue",
       "events": [
          {
-           "subtitle": "JVM crash dump analysis",
-           "description": "Java Virtual Machine can handle a wide range of coding errors by throwing an exception with a readable stack trace. But what to do if JVM crashes on its own? What is hs_err.log, the only postmortem message with mysterious contents?</br></br>This talk will shed light on the information encoded in crash dumps. We will see how this data is useful in problem investigation. The live demo will review the real cases of JVM crash and postmortem analysis.",
+           "subtitle": "'Catch me if you can' - Java on wearables",
+           "description": "Wearable computers are one of the next big things. But at the moment, one can buy only specialized systems such as motion trackers, GPS watches, and the like. So why not use existing cheap technology to build your own wearable Java-powered device? This session shows what you can do with affordable technology and Java today. It uses a Raspberry Pi in combination with a heart rate sensor and a GPS sensor to track the heart rate and the location of a runner. The battery-powered Pi measures the data and publishes it via MQTT to different clients such as Java(FX)-based desktop clients and a smartwatch the runner can wear. Come get some ideas of what you can do with Java and wearable devices.",
            "speakers": [
-              "28"
+              "23"
            ]
          },
          {
-           "subtitle": "",
-           "description": "",
+           "subtitle": "Introduction to Google Glass development",
+           "description": "Google Glass is an futuristic and controversial device. What possibilities are there for developers? Come to learn up-to-date information about the platform. All the code examples will be taken from an open-source production app used by Glass Explorers on daily basis.",
            "speakers": [
-              "19"
+              "15"
            ]
-         },
+         },         
          {
-           "subtitle": "The Busy Javascript Developer’s Guide to MEAN",
-           "description": "The MEAN Stack (Mongo, Express, Angular, Node) has taken the open-source world by storm, and many developers consider it to be 'the next big thing' in the world of building Web-based applications. In this lecture, we're going to embrace our inner JavaScript and build a simple application from scratch using the MEANJS package, including tests against the server-side API and the client-side UI. We'll talk about how Node works on the server, how the various Node packages combine, and examine one such package (MeanJS) that collects several Node packages together to create a (somewhat) seamless development experience, while still leaving room for extension and/or replacement if desired or necessary.",
+           "subtitle": "Java Concurrency Under the Hood",
+           "description": "In this age when parallelism matters, being able to write proper concurrent code is paramount. While Java hides lots of implementation details by its 'Write Once, Run Anywhere' motto, all abstractions will eventually leak. When they do, you will have to go deeper and see how that thing actually works.",
            "speakers": [
-              "26"
+              "3"
            ]
          },
          {
