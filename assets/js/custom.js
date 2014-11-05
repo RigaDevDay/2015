@@ -43,7 +43,9 @@ $(document).ready(function() {
         var anchor = $(this).attr('href');
         $('html, body').animate({
             'scrollTop': $(anchor).offset().top
-        }, 1000);
+        }, 1000, function () {
+            location.hash = anchor;
+        });
     });
 
 	$("#date").click(function() {
