@@ -39,13 +39,15 @@ $(document).ready(function() {
     rightSidePanel.listen('header nav');
 
     $("nav a").click(function(e) {
-        e.preventDefault();
         var anchor = $(this).attr('href');
-        $('html, body').animate({
-            'scrollTop': $(anchor).offset().top
-        }, 1000, function () {
-            location.hash = anchor;
-        });
+        if(anchor.indexOf("#") == 0) {
+            e.preventDefault();
+            $('html, body').animate({
+                'scrollTop': $(anchor).offset().top
+            }, 1000, function () {
+                location.hash = anchor;
+            });
+        }
     });
 
 	$("#date").click(function() {
