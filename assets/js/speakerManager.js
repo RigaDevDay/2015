@@ -115,10 +115,10 @@ var speakerManager = {
                 return 'eg.png';
             case 'Poland':
                 return 'pl.png';
-	          case 'Finland':
-		            return 'fi.png';
-	          case 'France':
-		            return 'fr.png';
+            case 'Finland':
+                return 'fi.png';
+            case 'France':
+                return 'fr.png';
             case 'Belgium':
                 return 'be.png';
             case 'Israel':
