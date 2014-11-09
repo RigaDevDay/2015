@@ -30,7 +30,7 @@ a img {
 article > .title {
     width: 1171px;
     margin: 60px auto 35px auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: solid 1px #dedede;
     text-align: center;
     color: #2c3e50;
@@ -56,23 +56,6 @@ article > .title {
 #socials a:nth-child(2) {background-image: url('../img/twitter.png');}
 #socials a:nth-child(3) {background-image: url('../img/linkedin.png');}
 #socials a:nth-child(4) {background-image: url('../img/gplus.png');}
-
-/*
-#right-menu, #socials {
-    opacity: 0.7;
-    filter: alpha(opacity=50);
-    -webkit-transition: opacity .75s ease-in-out;
-    -moz-transition: opacity .75s ease-in-out;
-    -ms-transition: opacity .75s ease-in-out;
-    -o-transition: opacity .75s ease-in-out;
-    transition: opacity .75s ease-in-out;
-}
-
-#right-menu:hover, #socials:hover {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-*/
 
 #right-menu {
     position: fixed;
@@ -188,7 +171,7 @@ header nav a.active {color: #0dacfe;}
 	padding: 25px 0;
 }
 
-button {
+.button {
 	background-color: #0dacfe;
 	color: #ffffff;
 	display: inline-block;
@@ -197,10 +180,10 @@ button {
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
-button:hover {background-color: #0193e0;}
+.button:hover {background-color: #0193e0;}
 
 #register-wrapper {
     margin-top: 20px;
@@ -216,7 +199,7 @@ button:hover {background-color: #0193e0;}
 }
 
 #counter {
-	width: 570px;
+	width: 515px;
 	height: 200px;
 	margin: -55px auto 0 auto;
 }
@@ -578,28 +561,31 @@ button:hover {background-color: #0193e0;}
 	display: table-cell;
 	vertical-align: middle;
 	width: 200px;
-	height: 100px;
-	margin: 0 25px;
+	padding: 0 25px 25px 25px;
 	cursor: pointer;
 }
 
 #organizers .platinum li {
 	width: 500px;
-	margin-bottom: 30px;
 }
 
 #organizers .gold li {
 	width: 250px;
-	margin-bottom: 20px;
 }
 
 #organizers #gdg-riga {background-image: url('../img/gdg-riga.png');}
 #organizers #jug {background-image: url('../img/jug.png');}
 #organizers #lvoug {background-image: url('../img/lvoug.png');}
 
+.margin-top-25 {margin-top: 25px;}
+
 .centered {text-align: center;}
 
-#footer {overflow: hidden; background-color: #2b3032;}
+#footer {
+	margin-top: 50px;
+	overflow: hidden;
+	background-color: #2b3032;
+}
 
 #footer ul {
 	margin-left: -40px;

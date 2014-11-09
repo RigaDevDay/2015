@@ -64,14 +64,6 @@ $(document).ready(function() {
         speedFlip:60
     });
 
-    $('#register').click(function() {
-        window.location.href='http://www.kalevatravel.lv/celojumi/page.php?id=664';
-    });
-
-    $('#sponsors').click(function() {
-        window.location.href='https://docs.google.com/file/d/0BxMQv-svniw_dnNWTV8tQXMyVmM/edit?pli=1';
-    });
-
     $("#speaker-popup .close").click(function() {
 	    $.modal.close();
     });
