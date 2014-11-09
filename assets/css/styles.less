@@ -183,6 +183,7 @@ body > header .detail {
 
 header nav {
     float: right;
+    margin-top: 8px;
 }
 
 header nav a {
@@ -613,7 +614,13 @@ header nav a.active {
 }
 
 #schedule > article > table td.clickable:hover {
-    background: repeating-linear-gradient(-45deg, #EEEEEE, #EEEEEE 5px, #FCFCFC 5px, #FCFCFC 10px);
+    background: repeating-linear-gradient(
+        -45deg,
+        #EEEEEE,
+        #EEEEEE 5px,
+        #FCFCFC 5px,
+        #FCFCFC 10px
+    );
 }
 
 #schedule-popup {
@@ -838,7 +845,6 @@ header nav a.active {
     color: #4a4d4e;
     text-align: center;
 }
-
 #fb_login_button {
     width: 80px;
 }
@@ -867,10 +873,6 @@ header nav a.active {
     box-shadow: 0px 2px 2px #888888;
 }
 
-.top-menu nav {
-    margin-top: 8px;
-}
-
 textarea {
     background: #F8F8FF;
     border: black dashed 1px;
@@ -880,6 +882,10 @@ textarea {
     width: 750px;
     height: 36px;
     resize: none;
+}
+
+textarea.large {
+    height: 150px;
 }
 
 .container {
