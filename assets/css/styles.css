@@ -888,6 +888,10 @@ textarea {
   resize: none;
 }
 
+textarea.large {
+  height: 150px;
+}
+
 .container {
   width: 100%;
   margin: 0 auto 35px auto;
