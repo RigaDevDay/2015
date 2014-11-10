@@ -44,8 +44,7 @@ header nav a.active{color:#0dacfe;}
 .button{background-color:#0dacfe;color:#ffffff;display:inline-block;padding:8px 25px;font:normal 20px Roboto,"lucida grande",tahoma,verdana,arial,sans-serif;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;border:none;cursor:pointer;}
 .button:hover{background-color:#0193e0;}
 #register-wrapper{margin-top:20px;text-align:center;}
-#register{background-color:#cc3a41;}
-#register:hover{background-color:#D14D54;}
+#register{width:240px;line-height:40px;font-size:30px;background-color:#cc3a41;}#register:hover{background-color:#D14D54;}
 #counter{width:515px;height:200px;margin:-55px auto 0 auto;}
 #counter .label{position:absolute;font:bold 20px "Titillium Web","lucida grande",tahoma,verdana,arial,sans-serif;color:#f05940;}
 #counter .label#days{margin-left:30px;}
