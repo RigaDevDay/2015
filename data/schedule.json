@@ -210,8 +210,8 @@
            ]
          },
          {
-           "subtitle": "",
-           "description": "",
+           "subtitle": "Beyond Development - Operating a Product at Light Speed",
+           "description": "So you know how to develop and ship a product. </br>What comes next is an endless uphill battle to measure, polish, update and analyze your product performance.</br>You'll get insights on how easy it is nowdays to run marketing campaigns and measure their performance, learn insights on what it takes to ship a product to all mobile and desktop platform app stores, including App Store, Google Play, OS X, Windows Store and Windows Phone...",
            "speakers": [
               "19"
            ],
@@ -424,7 +424,7 @@
              "Android",
              "Internet of Things"
            ]
-         },         
+         },
          {
            "subtitle": "Java Concurrency Under the Hood",
            "description": "In this age when parallelism matters, being able to write proper concurrent code is paramount. While Java hides lots of implementation details by its 'Write Once, Run Anywhere' motto, all abstractions will eventually leak. When they do, you will have to go deeper and see how that thing actually works.",
