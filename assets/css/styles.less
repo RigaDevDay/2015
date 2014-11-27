@@ -353,6 +353,9 @@ body > header {
         width: 280px;
         height: 360px;
     }
+    .photo {
+        cursor: pointer;
+    }
     .country {
         margin-top: 12px;
     }
@@ -629,12 +632,16 @@ body > header {
             font: bold 24px "Titillium Web","lucida grande",tahoma,verdana,arial,sans-serif;
         }
         .workshop_block {
-            display: inline-block;
             width: 300px;
-            padding: 10px;
+        }
+        .workshop_block, .workshop_details {
+            display: inline-block;
             vertical-align: top;
+            padding: 10px;
 
-            .photo {}
+            .photo {
+                cursor: pointer;
+            }
             .country {
                 margin-top: 12px;
             }
@@ -649,9 +656,46 @@ body > header {
             }
             .workshop_name {
                 margin-top: 10px;
-                font: bold 16px "Titillium Web","lucida grande",tahoma,verdana,arial,sans-serif;
+                font: bold 20px "Titillium Web","lucida grande",tahoma,verdana,arial,sans-serif;
                 text-transform: uppercase;
             }
+        }
+        .workshop_details {
+            width: 500px;
+            margin-bottom: 20px;
+            line-height: 24px;
+
+            .workshop_name {
+                font-size: 24px;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .photo {
+                cursor: default;
+            }
+            .description {
+                text-align: justify;
+            }
+            ul {
+                margin-left: 20px;
+            }
+            .important {
+                background-color: #DADADA;
+                padding: 10px;
+                border: 2px solid #CCCCCC;
+                border-radius: 5px;
+                margin: 10px 0;
+
+                p {
+                    margin-top: 0;
+                }
+                ul {
+                    margin-top: 10px;
+                }
+            }
+        }
+        .workshop_details + .workshop_details {
+            border-left: 1px solid #CCCCCC;
         }
     }
 }
@@ -814,6 +858,15 @@ body > header {
 
 .centered {
     text-align: center;
+
+    &.warning {
+        margin: 20px auto;
+        max-width: 1000px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: 2px solid #FF8800;
+        border-radius: 10px;
+    }
 }
 
 #fb_login_button {

@@ -7,7 +7,7 @@ var speakerManager = {
                 speakerManager.initEventHandlers();
                 speakerManager.alsSpeakers();
                 speakerManager.displayWidget();
-                $('#speakers .description').dotdotdot();
+                $('#speakers').find('.description').dotdotdot();
 
                 $("#left-arrow, #right-arrow").hover(function() {
                     $.fn.als('stop', 'als-wrapper_0');
@@ -45,19 +45,26 @@ var speakerManager = {
         var i = 0;
 
         var loadNext = function() {
+            var speaker = speakers[i];
+            if (speaker.type !== 'speaker') {
+                i++;
+                loadNext();
+                return;
+            }
+
             if (i < count - 1) {
-                speakerManager.addSpeaker(speakers[i], loadNext);
+                speakerManager.addSpeaker(speaker, loadNext);
             }
 
             if (i == count - 1) {
                 if (callback) {
-                    speakerManager.addSpeaker(speakers[i], callback);
+                    speakerManager.addSpeaker(speaker, callback);
                 } else {
-                    speakerManager.addSpeaker(speakers[i]);
+                    speakerManager.addSpeaker(speaker);
                 }
             }
             i++;
-        }
+        };
 
         loadNext();
     },
@@ -98,7 +105,7 @@ var speakerManager = {
             autoscroll: "yes",
             interval: 1400 * visible,
             speed: 250 * visible,
-            easing: "linear",
+            easing: "linear"
         });
         if (callback) {
             callback();
@@ -139,6 +146,8 @@ var speakerManager = {
                 return 'de.png';
             case 'Sweden':
                 return 'se.png';
+            case 'Greece':
+                return 'gr.png';
         }
     },
 
