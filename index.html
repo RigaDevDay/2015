@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="assets/flipcountdown/jquery.flipcountdown.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web:700,300,200"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/als.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.css"/>
+    <title>Riga Dev Day 2015</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Riga Dev Day">
     <meta name="description" content="Riga Dev Day 2015 is a one-day software development conference with topics related to Java, Android, Web, Wearable and Embedded programming."/>
     <meta name="robots" content="index,follow"/>
     <meta name="keywords" content="Training,Innovation,Engeneering,Technologies,Java,JAvaEE,Web,Oracle,Development,Programming,OpenSource,Data,LVOUG,JUG,GDG,Tools,Self-Improvement,Android,Home Automation"/>
-    <title>Riga Dev Day 2015</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/flipcountdown/jquery.flipcountdown.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web:700,300,200"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/fancybox/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css?v=1.3"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/als.css?v=1.2"/>
+
+    <script src="assets/js/libs/jquery.min.1.9.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="assets/js/libs/markerwithlabel_packed.1.1.9.js"></script>
+    <script src="assets/js/libs/jquery.simplemodal.1.4.4.min.js"></script>
+    <script src="assets/js/libs/jquery.dotdotdot.min.js"></script>
+    <script src="assets/js/libs/jquery.als-1.6.js"></script>
+    <script src="assets/libs/flipcountdown/jquery.flipcountdown.js"></script>
+    <script src="assets/libs/fancybox/jquery.fancybox.pack.js"></script>
+
+    <script src="assets/js/google-maps.js?v=1.1"></script>
+    <script src="assets/js/speakerManager.js?v=1.2"></script>
+    <script src="assets/js/scheduleManager.js?v=1.1"></script>
+    <script src="assets/js/index.js?v=1.1"></script>
 </head>
 <body>
     <a name="top"></a>
@@ -27,21 +45,24 @@
         <a id="about-link" href="#about"></a>
         <a id="speakers-link" href="#speakers"></a>
         <a id="schedule-link" href="#schedule"></a>
+        <a id="workshops-link" href="#workshops"></a>
         <a id="venue-link" href="#venue"></a>
         <a id="organizers-link" href="#organizers"></a>
     </nav>
 
     <header id="top">
         <div class="wrapper">
-            <img src="assets/img/logo.png" alt="">
+            <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
 
             <nav>
                 <a href="#" class="active">Home</a>
                 <a href="#about">About RDD</a>
-				<a href="#speakers">Speakers</a>
-				<a href="#schedule">Schedule</a>
-				<a href="#venue">Venue</a>
+                <a href="#speakers">Speakers</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#workshops">Workshops</a>
+                <a href="#venue">Venue</a>
                 <a href="#organizers">Organizers</a>
+                <a href="banners.html">Press</a>
             </nav>
 
             <div id="event-title" class="detail">Riga Dev Day</div>
@@ -53,7 +74,7 @@
 
             <div id="slogan" class="detail">Come. See. Develop.</div>
             <div id="register-wrapper">
-                <button id="register">Register Now</button>
+                <a class="button" id="register" href="http://www.kalevatravel.lv/celojumi/page.php?id=664">Register Now</a>
             </div>
         </div>
     </header>
@@ -173,9 +194,39 @@
     	</header>
     	<article>
     		<div class="loader"></div>
-    		<table cellspacing="0" cellpadding="0">
-    		</table>
+    		<table cellspacing="0" cellpadding="0"></table>
     	</article>
+    </section>
+
+    <section id="workshops">
+        <a name="workshops"></a>
+        <header class="blue">
+            <h1>Workshops</h1>
+        </header>
+        <article id="workshops-content">
+            <div class="workshops_description">
+                January 21st<br>
+                Time: 9:00-17:00<br>
+                Place: <a href="http://www.islandehotel.lv/" target="_blank">Islande hotel</a>
+            </div>
+            <div class="workshop_block">
+                <div class="photo" data-id="30"><img src="assets/img/speaker-photos/30.png"></div>
+                <div class="country"><img src="assets/img/countries/gr.png"></div>
+                <div class="name">Patroklos Papapetrou</div>
+                <div class="company">Freelancer</div>
+                <div class="workshop_name">SonarQube in Action</div>
+            </div>
+            <div class="workshop_block">
+                <div class="photo" data-id="31"><img src="assets/img/speaker-photos/31.png"></div>
+                <div class="country"><img src="assets/img/countries/england.png"></div>
+                <div class="name">Richard Warburton</div>
+                <div class="company">Monotonic Ltd.</div>
+                <div class="workshop_name">Java 8: Lambda Expressions & Streams</div>
+            </div>
+            <div class="centered">
+                <a class="button margin-top-25" href="workshops.html">More details</a>
+            </div>
+        </article>
     </section>
 
     <section id="venue">
@@ -206,19 +257,16 @@
         <article>
             <div class="title">Organizers of the Event</div>
             <ul>
-                <!-- GDG Riga -->
                 <li>
                     <a href="http://gdgriga.lv" target="blank">
                         <img src="assets/img/gdg-riga.png">
                     </a>
                 </li>
-                <!-- JUG -->
                 <li>
                     <a href="http://jug.lv" target="blank">
                         <img src="assets/img/jug.png">
                     </a>
                 </li>
-                <!-- Lvoug -->
                 <li>
                     <a href="http://lvoug.lv" target="blank">
                         <img src="assets/img/lvoug.png">
@@ -229,41 +277,147 @@
         <article>
             <div class="title">Our dear Sponsors</div>
             <ul class="platinum">
-                <!-- Odnoklassniki -->
-                <li>
+                <li id="ok">
                     <a href="http://ok.ru/" target="blank">
                         <img src="assets/img/partners/ok_logo.png">
                     </a>
                 </li>
             </ul>
             <ul class="gold">
-                <!-- C.T.Co -->
-                <li>
+                <li id="ctco">
                     <a href="http://ctco.lv/" target="blank">
                         <img src="assets/img/partners/ctco_logo.png">
                     </a>
                 </li>
-                <!-- 4finance -->
-                <li>
+                <li id="fourfinance">
                     <a href="http://www.4finance.com/" target="blank">
                         <img src="assets/img/partners/4finance_logo.png">
                     </a>
                 </li>
+                <li id="ipr">
+                    <a href="http://www.ideaportriga.com/" target="blank">
+                        <img src="assets/img/partners/idea-port-riga.png">
+                    </a>
+                </li>
+                <li id="rubylight">
+                    <a href="http://www.rubylight.com/" target="blank">
+                        <img src="assets/img/partners/rubylight.png">
+                    </a>
+                </li>
+                <li id="accenture">
+                    <a href="http://www.accenture.com/" target="blank">
+                        <img src="assets/img/partners/accenture.png">
+                    </a>
+                </li>
             </ul>
-            <div class="centered">
-                <button id="sponsors">Become a Sponsor</button>
-            </div>
+            <ul class="silver">
+                <li id="neueda">
+                    <a href="http://neueda.lv/" target="blank">
+                        <img src="assets/img/partners/neueda.png">
+                    </a>
+                </li>
+            </ul>
         </article>
         <article>
-            <div class="title">Our Partners and Media Sponsors</div>
+            <div class="title">Supported by</div>
             <ul>
-                <!-- Oreilly -->
                 <li>
                     <a href="http://www.oreilly.com/" target="blank">
                         <img src="assets/img/partners/oreilly.jpg">
                     </a>
                 </li>
+                <li>
+                    <a href="http://community.oraclepressbooks.com/" target="blank">
+                        <img src="assets/img/partners/oraclepress.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://github.com/" target="blank">
+                        <img src="assets/img/partners/github.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://riga.techhub.com/" target="blank">
+                        <img src="assets/img/partners/techhub.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://rigacomm.com/" target="blank">
+                        <img src="assets/img/partners/riga-comm.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://startuphunt.lv/" target="blank">
+                        <img src="assets/img/partners/startuphunt.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.enjoyrecruitment.lv/" target="blank">
+                        <img src="assets/img/partners/enjoy.png" style="background-color:#9ab944; padding:7px;">
+                    </a>
+                </li>
             </ul>
+            <div class="centered">
+                <a class="button margin-top-25" href="https://drive.google.com/file/d/0BxMQv-svniw_NWRyclRpV0oxbU0/view">Become a Media Partner</a>
+            </div>
+        </article>
+        <article>
+            <div class="title">With help from the Community</div>
+            <ul>
+                <li>
+                    <a href="http://jug.ua/" target="blank">
+                        <img src="assets/img/partners/jug-kpi.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kaunas-jug.lt/" target="blank">
+                        <img src="assets/img/partners/jug_kaunas.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vilnius-jug.lt/" target="blank">
+                        <img src="assets/img/partners/jug_vilnius.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://sites.google.com/site/stockholmgtug/" target="blank">
+                        <img src="assets/img/partners/gtug_sthlm.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.meetup.com/Latvian-Developers-Network/" target="blank">
+                        <img src="assets/img/partners/ldn.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://startuplatvia.eu/" target="blank">
+                        <img src="assets/img/partners/startup-latvia.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.devclub.eu/" target="blank">
+                        <img src="assets/img/partners/devclub.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.javaguru.lv/" target="blank">
+                        <img src="assets/img/partners/javaguru.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.progmeistars.lv/" target="blank">
+                        <img src="assets/img/partners/progmeistars.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ouge.eu/" target="blank">
+                        <img src="assets/img/partners/ouge.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="centered">
+                <a class="button margin-top-25" href="banners.html">Help Riga Dev Day</a>
+            </div>
         </article>
     </section>
 
@@ -290,7 +444,7 @@
         <div class="description">
             Riga Dev Day -  Multikino, Riga, Latvia - <a href="mailto:info@rigadevday.lv">info@rigadevday.lv</a>
         </div>
-        <div class="copyright">Riga Dev Day © 2015 All rights reserved</div>
+        <div class="copyright">Riga Dev Day &copy; 2015 All rights reserved</div>
     </div>
 
     <!-- Social share Scripts -->
@@ -355,19 +509,5 @@
     })(document, window, "yandex_metrika_callbacks");
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/26201010" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.9/src/markerwithlabel_packed.js"></script>
-    <script src="assets/js/jquery.simplemodal.1.4.4.min.js"></script>
-    <script src="assets/js/jquery.dotdotdot.min.js"></script>
-    <script src="assets/js/google-maps.js"></script>
-    <!--<script src="assets/js/positionSticky.js"></script>-->
-    <script src="assets/flipcountdown/jquery.flipcountdown.js"></script>
-    <script src="assets/js/jquery.als-1.6.js"></script>
-    <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="assets/js/speakerManager.js"></script>
-    <script src="assets/js/scheduleManager.js"></script>
-    <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -39,13 +39,15 @@ $(document).ready(function() {
     rightSidePanel.listen('header nav');
 
     $("nav a").click(function(e) {
-        e.preventDefault();
         var anchor = $(this).attr('href');
-        $('html, body').animate({
-            'scrollTop': $(anchor).offset().top
-        }, 1000, function () {
-            location.hash = anchor;
-        });
+        if(anchor.indexOf("#") == 0) {
+            e.preventDefault();
+            $('html, body').animate({
+                'scrollTop': $(anchor).offset().top
+            }, 1000, function () {
+                location.hash = anchor;
+            });
+        }
     });
 
 	$("#date").click(function() {
@@ -62,14 +64,6 @@ $(document).ready(function() {
         size:'lg',
         beforeDateTime:'01/22/2015 00:00:00',
         speedFlip:60
-    });
-
-    $('#register').click(function() {
-        window.location.href='http://www.kalevatravel.lv/celojumi/page.php?id=664';
-    });
-
-    $('#sponsors').click(function() {
-        window.location.href='https://docs.google.com/file/d/0BxMQv-svniw_dnNWTV8tQXMyVmM/edit?pli=1';
     });
 
     $("#speaker-popup .close").click(function() {
