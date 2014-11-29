@@ -132,6 +132,8 @@ var speakerManager = {
                 return 'il.png';
             case 'USA':
                 return 'us.png';
+            case 'Estonia':
+                return 'ee.png';
             case 'Spain':
                 return 'es.png';
             case 'Czech Republic':
