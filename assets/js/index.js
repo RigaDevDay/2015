@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#map-description .photos a").fancybox({
+    $("#map-description").find(".photos a").fancybox({
         closeBtn: false,
         nextEffect: 'elastic',
         prevEffect: 'elastic'
@@ -50,28 +50,25 @@ $(document).ready(function() {
         }
     });
 
-	$("#date").click(function() {
-		 window.location.href='http://lanyrd.com/2015/rigadevday/save-to-calendar/';
-	});
 
-	$("#place").click(function() {
-	    $('html, body').animate({
+    $("#place").click(function() {
+        $('html, body').animate({
             'scrollTop': $('#venue').offset().top
         }, 1000);
-	});
+    });
 
-	$('#countdown').flipcountdown({
+    $('#countdown').flipcountdown({
         size:'lg',
         beforeDateTime:'01/22/2015 00:00:00',
         speedFlip:60
     });
 
-    $("#speaker-popup .close").click(function() {
-	    $.modal.close();
+    $("#speaker-popup").find(".close").click(function() {
+        $.modal.close();
     });
 
-    $("#schedule-popup .close").click(function() {
-	    $.modal.close();
+    $("#schedule-popup").find(".close").click(function() {
+        $.modal.close();
     });
 
     speakerManager.loadSection();
