@@ -369,7 +369,11 @@ body > header {
         color: #161616;
     }
     .description {
+        display: block;
+        display: -webkit-box;
         height: 74px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-top: 8px;

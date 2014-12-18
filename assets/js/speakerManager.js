@@ -7,7 +7,6 @@ var speakerManager = {
                 speakerManager.initEventHandlers();
                 speakerManager.alsSpeakers();
                 speakerManager.displayWidget();
-                $('#speakers').find('.description').dotdotdot();
 
                 $("#left-arrow, #right-arrow").hover(function() {
                     $.fn.als('stop', 'als-wrapper_0');
