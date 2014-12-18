@@ -10,6 +10,7 @@
     <meta name="keywords" content="Training,Innovation,Engeneering,Technologies,Java,JAvaEE,Web,Oracle,Development,Programming,OpenSource,Data,LVOUG,JUG,GDG,Tools,Self-Improvement,Android,Home Automation"/>
 
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+
     <link rel="stylesheet" type="text/css" href="assets/libs/flipcountdown/jquery.flipcountdown.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web:700,300,200"/>
@@ -17,22 +18,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css?v=1.3"/>
     <link rel="stylesheet" type="text/css" href="assets/css/als.css?v=1.2"/>
 
-    <script src="assets/js/libs/jquery.min.1.9.1.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="assets/js/libs/markerwithlabel_packed.1.1.9.js"></script>
-    <script src="assets/js/libs/jquery.simplemodal.1.4.4.min.js"></script>
-    <script src="assets/js/libs/jquery.dotdotdot.min.js"></script>
-    <script src="assets/js/libs/jquery.als-1.6.js"></script>
-    <script src="assets/libs/flipcountdown/jquery.flipcountdown.js"></script>
-    <script src="assets/libs/fancybox/jquery.fancybox.pack.js"></script>
-
-    <script src="assets/js/google-maps.js?v=1.1"></script>
-    <script src="assets/js/speakerManager.js?v=1.2"></script>
-    <script src="assets/js/scheduleManager.js?v=1.1"></script>
-    <script src="assets/js/index.js?v=1.1"></script>
+    <!-- MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mailchimp.styles.css?v=1.0"/>
 </head>
 <body>
-    <a name="top"></a>
     <div id="socials">
         <a href="https://www.facebook.com/rigadevday"></a>
         <a href="https://twitter.com/RigaDevDay"></a>
@@ -88,9 +78,6 @@
     </section>
 
     <section id="subscribe">
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="assets/css/mailchimp.styles.css?v=1.0"/>
         <div id="mc_embed_signup">
             <form action="//jug.us5.list-manage.com/subscribe/post?u=2c6162a321d7d904c6abc618f&amp;id=1e6ff22259" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
@@ -117,12 +104,9 @@
                 </div>
             </form>
         </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
     </section>
 
     <section id="about">
-        <a name="about"></a>
         <header class="blue">
             <h1>About Riga Dev Day</h1>
         </header>
@@ -159,7 +143,6 @@
     </section>
 
     <section id="workshops">
-        <a name="workshops"></a>
         <header class="blue">
             <h1>Workshops</h1>
         </header>
@@ -190,7 +173,6 @@
     </section>
 
     <section id="speakers">
-        <a name="speakers"></a>
         <header class="dark-blue">
             <h1>Speakers</h1>
         </header>
@@ -207,18 +189,16 @@
     </section>
 
     <section id="schedule">
-        <a name="schedule"></a>
-    	<header class="blue">
-    		<h1>Schedule</h1>
-    	</header>
-    	<article>
-    		<div class="loader"></div>
-    		<table cellspacing="0" cellpadding="0"></table>
-    	</article>
+        <header class="blue">
+            <h1>Schedule</h1>
+        </header>
+        <article>
+            <div class="loader"></div>
+            <table></table>
+        </article>
     </section>
 
     <section id="venue">
-        <a name="venue"></a>
         <header class="red">
             <h1>Venue</h1>
         </header>
@@ -238,7 +218,6 @@
     </section>
 
     <section id="organizers">
-        <a name="organizers"></a>
         <header class="dark-blue">
             <h1>Organizers</h1>
         </header>
@@ -318,7 +297,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="silver"
+            <ul class="silver">
                 <li id="neueda">
                     <a href="http://neueda.lv/" target="blank">
                         <img src="assets/img/partners/neueda.png">
@@ -490,42 +469,34 @@
         </section>
     </div>
 
-	<div id="schedule-popup">
-		<header>
-			<div class="close"></div>
-			<img src="assets/img/logo2.png"/>
-		</header>
-		<section class="content">
-			<div class="title"></div>
-			<div class="description"></div>
-			<ul class="speakers"></ul>
-		</section>
-	</div>
+    <div id="schedule-popup">
+        <header>
+            <div class="close"></div>
+            <img src="assets/img/logo2.png"/>
+        </header>
+        <section class="content">
+            <div class="title"></div>
+            <div class="description"></div>
+            <ul class="speakers"></ul>
+        </section>
+    </div>
 
-    <script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter26201010 = new Ya.Metrika({id:26201010,
-                        webvisor:true,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true});
-            } catch(e) { }
-        });
+    <script src="assets/js/libs/jquery.min.1.9.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="assets/js/libs/markerwithlabel_packed.1.1.9.js"></script>
+    <script src="assets/js/libs/jquery.simplemodal.1.4.4.min.js"></script>
+    <script src="assets/js/libs/jquery.dotdotdot.min.js"></script>
+    <script src="assets/js/libs/jquery.als-1.6.js"></script>
+    <script src="assets/libs/flipcountdown/jquery.flipcountdown.js"></script>
+    <script src="assets/libs/fancybox/jquery.fancybox.pack.js"></script>
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+    <script src="assets/js/google-maps.js?v=1.1"></script>
+    <script src="assets/js/speakerManager.js?v=1.2"></script>
+    <script src="assets/js/scheduleManager.js?v=1.1"></script>
+    <script src="assets/js/index.js?v=1.1"></script>
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="//mc.yandex.ru/watch/26201010" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- Mailchimp -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 </html>
