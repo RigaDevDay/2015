@@ -8,7 +8,7 @@ var SpeakersBox = React.createClass({
     getInitialState: function () {
         return {speakers: []};
     },
-    componentDidMount: function () {
+    componentWillMount: function () {
         this.loadSpeakers();
     },
     render: function () {
@@ -18,6 +18,9 @@ var SpeakersBox = React.createClass({
 
 var SpeakersList = React.createClass({
     displayName: 'SpeakersList',
+    componentDidMount: function () {
+        console.log(this.twttr);
+    },
     render: function () {
         var speakerNodes = this.props.speakers.map(function (speaker, index) {
             return (
@@ -70,16 +73,41 @@ var Speaker = React.createClass({
     getInitialState: function () {
         return {
             speaker: {
-                id: "",
-                country: "",
-                name: "",
-                company: "",
-                bio: ""
+                id: null,
+                country: null,
+                name: null,
+                company: null,
+                bio: null,
+                contacts: {
+                    twitter: null,
+                    blog: null
+                }
             }
         };
     },
     render: function () {
-        return (this.props.speaker.type == 'speaker' ?
+        if (this.props.speaker.type !== 'speaker') return <div className="not-speaker"/>;
+
+        var twitterLink = "",
+            blogLink = "";
+
+        if (this.props.speaker.contacts.twitter) {
+            var twitterUrl = "https://twitter.com/" + this.props.speaker.contacts.twitter;
+            twitterLink = (
+                <a href={twitterUrl} className="twitter-follow-button" data-show-count="true" data-lang="en">
+                    Follow @twitterapi
+                </a>
+            );
+        }
+        if (this.props.speaker.contacts.blog) {
+            blogLink = (
+                <a href={this.props.speaker.contacts.blog} target="_blank">
+                    {this.props.speaker.contacts.blog}
+                </a>
+            );
+        }
+
+        return (
             <div className="speaker-item">
                 <div className="speaker-left-block">
                     <div className="speaker-logo">
@@ -98,8 +126,11 @@ var Speaker = React.createClass({
                 <div className="speaker-right-block">
                     <div className="speaker-bio" dangerouslySetInnerHTML={{__html: this.props.speaker.bio}} />
                 </div>
+                <div className="speaker-contacts">
+                    {blogLink}
+                    {twitterLink}
+                </div>
             </div>
-            : <div className="no-speaker"/>
         );
     }
 });

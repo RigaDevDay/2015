@@ -18,6 +18,7 @@
   }
 
   .speaker-item {
+    position: relative;
     padding: 25px 0;
     border-bottom: 1px solid #b4b4b4;
     &:last-child {
@@ -38,5 +39,17 @@
     .font-roboto;
     color: #161616;
     font-size: 14px;
+  }
+  .speaker-contacts {
+    position: absolute;
+    left: @speaker-left-block-width;
+    bottom: 20px;
+    a {
+      .font-roboto;
+      color: #e74c3c;
+      font-size: 14px;
+      vertical-align: top;
+      margin-right: 15px;
+    }
   }
 }

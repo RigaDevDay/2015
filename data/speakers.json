@@ -264,7 +264,7 @@
         "company": "Oracle",
         "type": "speaker",
         "contacts": {
-            "blog": "blogs.oracle.com/henrik"
+            "blog": "http://blogs.oracle.com/henrik"
         }
     },
     {
@@ -351,7 +351,7 @@
         "type": "speaker",
         "contacts": {
             "twitter": "speakjava",
-            "blog": "blogs.oracle.com/speakjava"
+            "blog": "http://blogs.oracle.com/speakjava"
         }
     },
     {
@@ -364,7 +364,7 @@
         "type": "workshoper",
         "contacts": {
             "twitter": "ppapapetrou76",
-            "blog": "softwaregarden.io/about-patroklos-papapetrou/"
+            "blog": "http://softwaregarden.io/about-patroklos-papapetrou/"
         }
     },
     {
