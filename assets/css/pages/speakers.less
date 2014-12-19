@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:700,300,200");
+
+@import "../shared/variables";
+@import "../shared/helpers";
+
+@import "../styles";
+
+.speakers-box {
+  .font-titillium;
+  width: @container-width;
+  margin: 25px auto 0;
+
+  @speaker-left-block-width: 200px;
+  .speaker-left-block {
+    display: inline-block;
+    width: @speaker-left-block-width;
+    text-align: center;
+  }
+  .speaker-right-block {
+    display: inline-block;
+    width: @container-width - @speaker-left-block-width;
+    vertical-align: top;
+  }
+
+  .speaker-item {
+    padding: 25px 0;
+    border-bottom: 1px solid #b4b4b4;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .speaker-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  .speaker-company {
+    color: #161616;
+    font-size: 16px;
+  }
+  .speaker-bio {
+    .font-roboto;
+    color: #161616;
+    font-size: 14px;
+  }
+}
