@@ -71,6 +71,5 @@ $(document).ready(function() {
         $.modal.close();
     });
 
-    speakerManager.loadSection();
     scheduleManager.loadSection();
 });

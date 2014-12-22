@@ -18,9 +18,6 @@ var SpeakersBox = React.createClass({
 
 var SpeakersList = React.createClass({
     displayName: 'SpeakersList',
-    componentDidMount: function () {
-        console.log(this.twttr);
-    },
     render: function () {
         var speakerNodes = this.props.speakers.map(function (speaker, index) {
             return (
@@ -39,33 +36,8 @@ var SpeakersList = React.createClass({
 
 var Speaker = React.createClass({
     displayName: 'Speaker',
-    getCountryShortname: function (countryName) {
-        var countryShortcodeMap = {
-            'UK': 'gb',
-            'Russia': 'ru',
-            'Egypt': 'eg',
-            'Poland': 'pl',
-            'Finland': 'fi',
-            'France': 'fr',
-            'Belgium': 'be',
-            'Israel': 'il',
-            'USA': 'us',
-            'Estonia': 'ee',
-            'Spain': 'es',
-            'Czech Republic': 'cz',
-            'Netherlands': 'nl',
-            'Bulgaria': 'bg',
-            'Latvia': 'lv',
-            'Germany': 'de',
-            'Sweden': 'se',
-            'Greece': 'gr'
-        };
-
-        // ToDo: Check for existance?
-        return countryShortcodeMap[countryName];
-    },
     speakerCountryIcon: function (countryName) {
-        return "assets/img/countries/" + this.getCountryShortname(countryName) + ".png"
+        return "assets/img/countries/" + country.nameToShortcode(countryName) + ".png"
     },
     speakerLogoUrl: function (id) {
         return "assets/img/speaker-photos/" + id + ".png";
