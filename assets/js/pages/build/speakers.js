@@ -99,8 +99,8 @@ var Speaker = React.createClass({
                     React.createElement("div", {className: "speaker-bio", dangerouslySetInnerHTML: {__html: this.props.speaker.bio}})
                 ), 
                 React.createElement("div", {className: "speaker-contacts"}, 
-                    blogLink, 
-                    twitterLink
+                    twitterLink, 
+                    blogLink
                 )
             )
         );

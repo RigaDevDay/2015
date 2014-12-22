@@ -99,8 +99,8 @@ var Speaker = React.createClass({
                     <div className="speaker-bio" dangerouslySetInnerHTML={{__html: this.props.speaker.bio}} />
                 </div>
                 <div className="speaker-contacts">
-                    {blogLink}
                     {twitterLink}
+                    {blogLink}
                 </div>
             </div>
         );
