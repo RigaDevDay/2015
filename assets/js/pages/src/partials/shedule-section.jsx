@@ -48,9 +48,10 @@ var Timeline = React.createClass({
     getEventTags: function (event, selectedTags) {
         if (event.tags && event.tags.length > 0) {
             return event.tags.map(function (tag, i) {
+                // TODO: move tag logic
                 return (
                     <a
-                        className={selectedTags[tag] === true ? "selected-tag" : ""}
+                        className={(selectedTags[tag] === true ? "selected-tag " : " ") + this.props.tagColorMap[tag]}
                         onClick={this.handleTagSelect.bind(this, tag)} key={i}>{tag}
                     </a>
                 );
@@ -121,7 +122,45 @@ var Timeline = React.createClass({
 
 var TimelineList = React.createClass({
     getInitialState: function () {
+        var tagColorMap = {};
+
+        this.props.timelines.forEach(function (timeline) {
+            timeline.events.forEach(function (event) {
+                if(event.tags) {
+                    event.tags.forEach(function (tag) {
+                        tagColorMap[tag] = null;
+                    });
+                }
+            });
+        });
+
+        var colors = [
+            'orchid',
+            'navy',
+            'orange',
+            'magenta',
+            'brown',
+            'aqua',
+            'chocolate',
+            'plum',
+            'salmon',
+            'sea-green',
+            'state-blue',
+            'yellow-green',
+            'dark-slate-gray'
+        ];
+
+        var colorId = 0;
+        for(key in tagColorMap) {
+            if(tagColorMap.hasOwnProperty(key)) {
+                tagColorMap[key] = colors[colorId];
+                colorId++;
+            }
+        }
+
+        console.log(tagColorMap);
         return {
+            tagColorMap: tagColorMap,
             selectedTags: simpleStorage.get('scheduleSelectedTags') || {}
         };
     },
@@ -214,6 +253,7 @@ var TimelineList = React.createClass({
                 key={i}
                 handleTagSelect={self.handleTagSelect}
                 selectedTags={self.state.selectedTags}
+                tagColorMap={self.state.tagColorMap}
             />);
         }
 
