@@ -6,9 +6,11 @@
     var _simpleStorageAvailable = simpleStorage.canUse(),
         _defaultTTL = 1000 * 60 * 30; // 30 minutes
 
-    // Speakers
-    var speakersEndpoint = 'data/speakers.json';
+    var speakersEndpoint = 'data/speakers.json?v=2';
+    var scheduleEndpoint = 'data/schedule.json?v=2';
+    // TODO: Too much duplication?
 
+    // Speakers
     function _sortSpeakers(speaker1, speaker2) {
         return speaker1.order < speaker2.order ? -1 : 1;
     }
@@ -39,8 +41,6 @@
     }
 
     // Schedule
-    var scheduleEndpoint = 'data/schedule.json';
-
     function _loadScheduleFromRemote(callback) {
         $.getJSON(scheduleEndpoint, function (schedule) {
             simpleStorage.set(scheduleEndpoint, schedule, _defaultTTL);
