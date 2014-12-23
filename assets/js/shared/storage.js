@@ -6,7 +6,7 @@
     var _simpleStorageAvailable = simpleStorage.canUse(),
         _defaultTTL = 1000 * 60 * 30; // 30 minutes
 
-    // Speakers parts
+    // Speakers
     var speakersEndpoint = 'data/speakers.json';
 
     function _sortSpeakers(speaker1, speaker2) {
@@ -16,10 +16,8 @@
     function _loadSpeakersFromLocalStorage(callback) {
         var speakers = simpleStorage.get(speakersEndpoint);
         if (speakers === undefined) {
-            console.log("Speakers not available in local storage. Load.")
             _loadSpeakersFromRemote(callback);
         } else {
-            console.log("Get speakers from local storage");
             callback(speakers);
         }
     }
@@ -40,9 +38,39 @@
         }
     }
 
+    // Schedule
+    var scheduleEndpoint = 'data/schedule.json';
+
+    function _loadScheduleFromRemote(callback) {
+        $.getJSON(scheduleEndpoint, function (schedule) {
+            simpleStorage.set(scheduleEndpoint, schedule, _defaultTTL);
+            callback(schedule);
+        });
+    }
+
+    function _loadScheduleFromLocalStorage(callback) {
+        var schedule = simpleStorage.get(scheduleEndpoint);
+        if (schedule === undefined) {
+            _loadScheduleFromRemote(callback);
+        } else {
+            callback(schedule);
+        }
+    }
+
+    function _loadSchedule(callback) {
+        if (_simpleStorageAvailable) {
+            _loadScheduleFromLocalStorage(callback);
+        } else {
+            _loadScheduleFromRemote(callback);
+        }
+    }
+
     return {
         getSpeakers: function (callback) {
             _loadSpeakers(callback);
+        },
+        getSchedule: function (callback) {
+            _loadSchedule(callback);
         }
     };
 }));

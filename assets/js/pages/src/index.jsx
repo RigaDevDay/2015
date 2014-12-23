@@ -1,3 +1,142 @@
+/*
+ * Global setup
+ */
+(function () {
+    $("#map-description").find(".photos a").fancybox({
+        closeBtn: false,
+        nextEffect: 'elastic',
+        prevEffect: 'elastic'
+    });
+
+    var rightSidePanel = {
+        element: $('#right-menu'),
+        visible: false,
+
+        changeVisibility: function () {
+            if (this.visible) {
+                this.element.stop(true).fadeOut(500);
+            } else {
+                this.element.stop(true).fadeIn(500);
+            }
+            this.visible = !this.visible;
+        },
+
+        listen: function (identifier) {
+            var self = this;
+            $(window).scroll(function () {
+                var currentPos = $(window).scrollTop();
+                var identBot = $(identifier).position().top + $(identifier).outerHeight(true);
+                // Need to show
+                if (currentPos > identBot && !self.visible) {
+                    self.changeVisibility();
+                }
+                // Need to hide
+                if (currentPos < identBot && self.visible) {
+                    self.changeVisibility();
+                }
+            });
+        }
+    };
+
+    rightSidePanel.listen('header nav');
+
+    $("nav a").click(function (e) {
+        var anchor = $(this).attr('href');
+        if (anchor.indexOf("#") == 0) {
+            e.preventDefault();
+            $('html, body').animate({
+                'scrollTop': $(anchor).offset().top
+            }, 1000, function () {
+                location.hash = anchor;
+            });
+        }
+    });
+
+    $("#place").click(function () {
+        $('html, body').animate({
+            'scrollTop': $('#venue').offset().top
+        }, 1000);
+    });
+
+    $('#countdown').flipcountdown({
+        size: 'lg',
+        beforeDateTime: '01/22/2015 00:00:00',
+        speedFlip: 60
+    });
+}());
+
+/*
+ * Map (google) initialization
+ */
+(function () {
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(56.92562599999999, 24.105833800000028);
+        var mapOptions = {
+            zoom: 13,
+            center: myLatlng,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.LEFT_CENTER
+            },
+            mapTypeControl: false,
+            streetViewControl: false,
+            panControl: false,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById('map-container'), mapOptions);
+
+        var styles = [{"stylers": [{"hue": "#00aaff"}, {"saturation": -23}, {"gamma": 1.37}, {"lightness": -5}]}];
+        map.setOptions({styles: styles});
+
+        var multikinoMarker = new MarkerWithLabel({
+            position: myLatlng,
+            map: map,
+            title: 'Riga Dev Day 2015',
+            icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+            labelContent: 'Multikino',
+            labelAnchor: new google.maps.Point(35, -5),
+            labelClass: 'map-label'
+        });
+
+        var contentString = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<div id="bodyContent">' +
+            '<a href="http://www.islandehotel.lv/"><img src="assets/img/islande.jpg"></a>' +
+            '</div>' +
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var hotelCoordinates = new google.maps.LatLng(56.951178, 24.08415, 17);
+
+        var hotelMarker = new MarkerWithLabel({
+            position: hotelCoordinates,
+            map: map,
+            title: 'Islande Hotel',
+            icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+            labelContent: 'Islande Hotel',
+            labelAnchor: new google.maps.Point(48, -5),
+            labelClass: 'map-label'
+        });
+
+        google.maps.event.addListener(hotelMarker, 'click', function () {
+            infowindow.open(map, hotelMarker);
+        });
+
+    }
+
+    var image = new Image();
+    image.src = 'assets/img/islande.jpg';
+
+    google.maps.event.addDomListener(image, 'load', initialize);
+}());
+
+/*
+ * Speakers section
+ */
 (function () {
     var SpeakersSection = React.createClass({
         displayName: 'SpeakersSection',
@@ -87,5 +226,15 @@
     React.render(
         <SpeakersSection/>,
         document.getElementById('speakers-list')
+    );
+}());
+
+/*
+ * Schedule section
+ */
+(function () {
+    React.render(
+        <Schedule/>,
+        document.getElementById('schedule')
     );
 }());

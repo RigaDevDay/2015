@@ -127,7 +127,7 @@ article > .title {
     background-image: url('../img/icons/right-side-menu/schedule.png');
 }
 
-section > header {
+section > header, header.huge {
     width: 100%;
     padding: 25px 0;
     z-index: 2;
@@ -454,9 +454,10 @@ body > header {
     header h1 {
         background-image: url('../img/icons/schedule-icon.png');
     }
-    & > article > table {
-        display: none;
+    article > table {
         margin: 20px auto 30px auto;
+        border-spacing: 0;
+        border-collapse: collapse;
         th {
             padding: 20px 0;
             font: bold 25px "Titillium Web", "lucida grande", tahoma, verdana, arial, sans-serif;
@@ -481,13 +482,13 @@ body > header {
             }
         }
         tr {
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 background-color: #F5F5F5;
                 .locked.content {
                     background-image: url('../img/locked-light.png');
                 }
             }
-            &:nth-child(even) {
+            &:nth-child(odd) {
                 .locked.content {
                     background-image: url('../img/locked-dark.png');
                 }
@@ -498,6 +499,9 @@ body > header {
             th:last-child {
                 padding-right: 30px;
             }
+        }
+        tbody tr {
+
         }
     }
 
