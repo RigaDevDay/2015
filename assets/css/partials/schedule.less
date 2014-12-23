@@ -88,6 +88,23 @@
       color: #5e6e7e;
       font: lighter 14px "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
     }
+
+    .favorite {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      height: 15px;
+      width: 15px;
+      &:hover {
+        cursor: pointer;
+      }
+      &.unselected {
+        color: #acacac;
+      }
+      &.selected {
+        color: #0d93e5;
+      }
+    }
     .tags {
       .font-roboto;
       position: absolute;

@@ -59,34 +59,45 @@ var Timeline = React.createClass({displayName: "Timeline",
             return "";
         }
     },
+    getEventIsFavorite: function (i) {
+        var key = "favorites-" + this.getEventId(i);
+
+        return simpleStorage.get(key) || false;
+    },
     handleTagSelect: function (tag) {
         this.props.handleTagSelect(tag);
     },
+    handleFavorites: function (i) {
+        var key = "favorites-" + this.getEventId(i);
+        var isFavorite = simpleStorage.get(key) || false;
+
+        simpleStorage.set(key, !isFavorite);
+        this.setState({});
+    },
     render: function () {
-        var timelineNodes = [];
-
-        timelineNodes.push(React.createElement("td", {className: "time", key: "time"}, this.props.timeline.time));
-        timelineNodes.push(
-            React.createElement("td", {className: this.props.timeline.icon + " icon", key: "icon"}, 
-                React.createElement("div", null)
-            )
-        );
-
         var single = this.props.timeline.events.length == 1;
         var clickable = !!this.props.timeline.events[0].speakers;
 
-        var self = this;
+        var timelineNodes = this.props.timeline.events.map(function (event, i) {
+            var cellClassName = this.getEventCellClassName(clickable, event, this.props.selectedTags);
+            var cellColSpan = this.getEventCellSize(single);
+            var eventHeader = this.getEventHeader(event);
+            var eventSubtitle = this.getEventSubtitle(event);
+            var eventId = this.getEventId(i);
+            var eventTags = this.getEventTags(event, this.props.selectedTags);
+            var eventFavorite = this.getEventIsFavorite(i);
 
-        function buildEventCell(event, i) {
-            var cellClassName = self.getEventCellClassName(clickable, event, self.props.selectedTags);
-            var cellColSpan = self.getEventCellSize(single);
-            var eventHeader = self.getEventHeader(event);
-            var eventSubtitle = self.getEventSubtitle(event);
-            var eventId = self.getEventId(i);
-            var eventTags = self.getEventTags(event, self.props.selectedTags);
-
-            timelineNodes.push(
+            var favoritesTag = null;
+            if (clickable) {
+                favoritesTag = (
+                    React.createElement("div", {className: eventFavorite ? "favorite selected" : "favorite unselected"}, 
+                        React.createElement("i", {className: "fa fa-star", onClick: this.handleFavorites.bind(this, i)})
+                    )
+                );
+            }
+            return (
                 React.createElement("td", {className: cellClassName, colSpan: cellColSpan, key: i, "data-event-id": eventId}, 
+                    favoritesTag, 
                     React.createElement("div", {className: "main"}, 
                         React.createElement("header", {dangerouslySetInnerHTML: {__html: eventHeader}}), 
                         React.createElement("div", {className: "desc"}, eventSubtitle)
@@ -94,12 +105,14 @@ var Timeline = React.createClass({displayName: "Timeline",
                     React.createElement("div", {className: "tags"}, eventTags)
                 )
             );
-        }
-
-        this.props.timeline.events.forEach(buildEventCell);
+        }, this);
 
         return (
             React.createElement("tr", {className: this.props.timeline.color}, 
+                React.createElement("td", {className: "time", key: "time"}, this.props.timeline.time), 
+                React.createElement("td", {className: this.props.timeline.icon + " icon", key: "icon"}, 
+                    React.createElement("div", null)
+                ), 
                 timelineNodes
             )
         );
