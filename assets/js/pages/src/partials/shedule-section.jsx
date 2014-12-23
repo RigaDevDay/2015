@@ -103,22 +103,18 @@ var TimelineList = React.createClass({
         var timelinePosition = eventIdParts[0];
         var eventPosition = eventIdParts[1];
 
-        var event = this.props.timelines[timelinePosition].events[eventPosition];
+        return this.props.timelines[timelinePosition].events[eventPosition];
+    },
+    getSpeakers: function (speakersIds) {
+        var self = this;
+        var speakers = [];
 
-        var eventSpeakers = [];
-        if (event.speakers) {
-            var self = this;
-
-            function getSpeaker(speakerId) {
-                eventSpeakers.push(self.props.speakers[speakerId]);
-            }
-
-            event.speakers.forEach(getSpeaker);
+        function getSpeaker(speakerId) {
+            speakers.push(self.props.speakers[speakerId]);
         }
 
-        event.speakers = eventSpeakers;
-
-        return event;
+        speakersIds.forEach(getSpeaker);
+        return speakers;
     },
     buildSpeakerHTMLs: function (speakers) {
         var results = [];
@@ -126,9 +122,9 @@ var TimelineList = React.createClass({
         function buildSpeaker(speaker) {
             var output = '<li>';
             output += '<div class="name">' + speaker.name + '</div>';
-            output += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.photo + '"></div>';
-            if (speaker.twitter) {
-                output += '<div class="twitter"> <a href="https://twitter.com/' + speaker.twitter + '" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow @twitterapi</a></div>';
+            output += '<div class="photo"><img src="assets/img/speaker-photos/' + speaker.id + '.png"></div>';
+            if (speaker.contacts.twitter) {
+                output += '<div class="twitter"> <a href="https://twitter.com/' + speaker.contacts.twitter + '" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow @twitterapi</a></div>';
             }
             output += '</li>';
             results.push(output);
@@ -142,6 +138,7 @@ var TimelineList = React.createClass({
         $(this.getDOMNode()).on("click", "td.clickable", function () {
             var eventId = $(this).data('event-id');
             var event = self.getEvent(eventId);
+            var speakers = self.getSpeakers(event.speakers);
 
             var $schedulePopup = $("#schedule-popup");
             $schedulePopup.find(".close").click($.modal.close);
@@ -149,12 +146,14 @@ var TimelineList = React.createClass({
             $schedulePopup.find('.speakers').html('');
             $schedulePopup.find('.title').html(event.subtitle);
             $schedulePopup.find('.description').html(event.description);
-            //var speakerHTMLs = scheduleHelper.buildSpeakerHTMLs(eventInfo.speakers);
-            //for (var i in speakerHTMLs) {
-            //    var speakerHTML = speakerHTMLs[i];
-            //    $schedulePopup.find('.speakers').append(speakerHTML);
-            //}
 
+            self.buildSpeakerHTMLs(speakers).forEach(
+                function (html) {
+                    $schedulePopup.find('.speakers').append(html);
+                }
+            );
+
+            twttr.widgets.load();
             $schedulePopup.modal({
                 onOpen: function (dialog) {
                     dialog.overlay.fadeIn('fast', function () {
@@ -167,7 +166,6 @@ var TimelineList = React.createClass({
                 overlayCss: {backgroundColor: '#000000'}
             });
             $schedulePopup.css('top', '100px');
-            //twttr.widgets.load();
         });
     },
     render: function () {
