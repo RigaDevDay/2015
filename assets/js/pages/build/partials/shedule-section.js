@@ -12,9 +12,6 @@ var ScheduleRoomNames = React.createClass({
 });
 
 var Timeline = React.createClass({displayName: "Timeline",
-    getDefaultProps: function () {
-
-    },
     collectSpeakerNames: function (speakerIds) {
         var speakerNames = [];
         speakerIds.forEach(function (speakerId) {
@@ -23,8 +20,18 @@ var Timeline = React.createClass({displayName: "Timeline",
 
         return speakerNames.join(", <br />");
     },
-    getEventCellClassName: function (clickable) {
-        return (clickable ? "clickable" : "unique") + " content";
+    getEventCellClassName: function (clickable, event, selectedTags) {
+        var className = (clickable ? "clickable" : "unique") + " content";
+
+        var hasSelectedTag = false;
+        if (event.tags && event.tags.length > 0) {
+            event.tags.forEach(function (tag) {
+                if (selectedTags[tag] === true) hasSelectedTag = true;
+            }.bind(this));
+        }
+
+        if (hasSelectedTag) className += " selected-tag";
+        return className;
     },
     getEventCellSize: function (single) {
         return single ? "5" : "1";
@@ -37,6 +44,23 @@ var Timeline = React.createClass({displayName: "Timeline",
     },
     getEventId: function (i) {
         return this.props.timelineId + "#" + i;
+    },
+    getEventTags: function (event, selectedTags) {
+        if (event.tags && event.tags.length > 0) {
+            return event.tags.map(function (tag, i) {
+                return (
+                    React.createElement("a", {
+                        className: selectedTags[tag] === true ? "selected-tag" : "", 
+                        onClick: this.handleTagSelect.bind(this, tag), key: i}, tag
+                    )
+                );
+            }, this);
+        } else {
+            return "";
+        }
+    },
+    handleTagSelect: function (tag) {
+        this.props.handleTagSelect(tag);
     },
     render: function () {
         var timelineNodes = [];
@@ -54,16 +78,20 @@ var Timeline = React.createClass({displayName: "Timeline",
         var self = this;
 
         function buildEventCell(event, i) {
-            var cellClassName = self.getEventCellClassName(clickable);
+            var cellClassName = self.getEventCellClassName(clickable, event, self.props.selectedTags);
             var cellColSpan = self.getEventCellSize(single);
             var eventHeader = self.getEventHeader(event);
             var eventSubtitle = self.getEventSubtitle(event);
             var eventId = self.getEventId(i);
+            var eventTags = self.getEventTags(event, self.props.selectedTags);
 
             timelineNodes.push(
                 React.createElement("td", {className: cellClassName, colSpan: cellColSpan, key: i, "data-event-id": eventId}, 
-                    React.createElement("header", {dangerouslySetInnerHTML: {__html: eventHeader}}), 
-                    React.createElement("div", {className: "desc"}, eventSubtitle)
+                    React.createElement("div", {className: "main"}, 
+                        React.createElement("header", {dangerouslySetInnerHTML: {__html: eventHeader}}), 
+                        React.createElement("div", {className: "desc"}, eventSubtitle)
+                    ), 
+                    React.createElement("div", {className: "tags"}, eventTags)
                 )
             );
         }
@@ -78,26 +106,19 @@ var Timeline = React.createClass({displayName: "Timeline",
     }
 });
 
-var EventPopup = React.createClass({
-    displayName: "EventPopup",
-    render: function () {
-        return (
-            React.createElement("div", {id: "schedule-popup"}, 
-                React.createElement("header", null, 
-                    React.createElement("div", {className: "close"}), 
-                    React.createElement("img", {src: "assets/img/logo2.png"})
-                ), 
-                React.createElement("section", {className: "content"}, 
-                    React.createElement("div", {className: "title"}), 
-                    React.createElement("div", {className: "description"}), 
-                    React.createElement("ul", {className: "speakers"})
-                )
-            )
-        );
-    }
-});
-
 var TimelineList = React.createClass({displayName: "TimelineList",
+    getInitialState: function () {
+        return {
+            selectedTags: simpleStorage.get('scheduleSelectedTags') || {}
+        };
+    },
+    handleTagSelect: function (tag) {
+        var newState = this.state;
+        newState.selectedTags[tag] = !this.state.selectedTags[tag];
+        this.setState(newState, function () {
+            simpleStorage.set('scheduleSelectedTags', this.state.selectedTags);
+        }.bind(this));
+    },
     getEvent: function (eventId) {
         var eventIdParts = eventId.split("#");
         var timelinePosition = eventIdParts[0];
@@ -135,8 +156,8 @@ var TimelineList = React.createClass({displayName: "TimelineList",
     },
     componentDidMount: function () {
         var self = this;
-        $(this.getDOMNode()).on("click", "td.clickable", function () {
-            var eventId = $(this).data('event-id');
+        $(this.getDOMNode()).on("click", "td.clickable .main", function () {
+            var eventId = $(this).parent().data('event-id');
             var event = self.getEvent(eventId);
             var speakers = self.getSpeakers(event.speakers);
 
@@ -173,12 +194,38 @@ var TimelineList = React.createClass({displayName: "TimelineList",
         var self = this;
 
         function buildTimeline(timeline, i) {
-            timelineRows.push(React.createElement(Timeline, {timelineId: i, timeline: timeline, speakers: self.props.speakers, key: i}));
+            timelineRows.push(React.createElement(Timeline, {
+                timelineId: i, 
+                timeline: timeline, 
+                speakers: self.props.speakers, 
+                key: i, 
+                handleTagSelect: self.handleTagSelect, 
+                selectedTags: self.state.selectedTags}
+            ));
         }
 
-        this.props.timelines.forEach(buildTimeline);
+        this.props.timelines.forEach(buildTimeline.bind(this));
 
         return React.createElement("tbody", null, timelineRows)
+    }
+});
+
+var EventPopup = React.createClass({
+    displayName: "EventPopup",
+    render: function () {
+        return (
+            React.createElement("div", {id: "schedule-popup"}, 
+                React.createElement("header", null, 
+                    React.createElement("div", {className: "close"}), 
+                    React.createElement("img", {src: "assets/img/logo2.png"})
+                ), 
+                React.createElement("section", {className: "content"}, 
+                    React.createElement("div", {className: "title"}), 
+                    React.createElement("div", {className: "description"}), 
+                    React.createElement("ul", {className: "speakers"})
+                )
+            )
+        );
     }
 });
 
