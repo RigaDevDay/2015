@@ -15,11 +15,12 @@
       background-color: #FFFFFF;
     }
     td {
-      padding: 28px 0 20px;
+      padding: 10px 0;
       text-align: center;
       vertical-align: middle;
       &.clickable {
         cursor: pointer;
+        padding-bottom: 35px;
         &:hover {
           background: repeating-linear-gradient(
                   -45deg,
@@ -31,9 +32,12 @@
         }
       }
       &.selected-tag {
-        -webkit-box-shadow: inset 0px 0px 10px 0px rgb(16, 139, 213);
-        -moz-box-shadow: inset 0px 0px 10px 0px rgb(16, 139, 213);
-        box-shadow: inset 0px 0px 10px 0px rgb(16, 139, 213);
+//        -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.75);
+//        -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.75);
+//        box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.75);
+//        -webkit-box-shadow: inset 0px 5px 10px 0px rgb(16, 139, 213);
+//        -moz-box-shadow: inset 0px 5px 10px 0px rgb(16, 139, 213);
+//        box-shadow: inset 0px 5px 10px 0px rgb(16, 139, 213);
       }
     }
     tr {
@@ -87,29 +91,33 @@
     .tags {
       .font-roboto;
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
       width: 100%;
       text-align: center;
       font-size: 10px;
-      padding-top: 5px;
+//      padding-bottom: 5px;
       a {
+        display: inline-block;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 0 5px;
+        color: white;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        background: #acacac;
+//        -webkit-transition: background-color 1000ms linear;
+//        -moz-transition: background-color 1000ms linear;
+//        -o-transition: background-color 1000ms linear;
+//        -ms-transition: background-color 1000ms linear;
+        transition: background-color 100ms linear;
         &.selected-tag {
-          text-decoration: underline;
-        }
-        &:after {
-          content: " ";
-        }
-        &:last-child {
-          &:after {
-            content: "";
-          }
+          background: #0d93e5;
         }
         &:hover {
-          color: #0d93e5;
           cursor: pointer;
-          text-decoration: underline;
         }
       }
     }
