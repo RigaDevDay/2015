@@ -397,8 +397,8 @@
            ]
          },
          {
-           "subtitle": "Introduction to Google Glass development",
-           "description": "Google Glass is an futuristic and controversial device. What possibilities are there for developers? Come to learn up-to-date information about the platform. All the code examples will be taken from an open-source production app used by Glass Explorers on daily basis.",
+           "subtitle": "Introduction to Android TV development",
+           "description": "Android grew a lot this year. From smartphones to your wrist, car and TV. What possibilities are there for TV? Come to learn up-to-date information about the platform. All the code examples will be taken from author's open-source app.",
            "speakers": [
               "15"
            ],
