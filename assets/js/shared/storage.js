@@ -6,8 +6,8 @@
     var _simpleStorageAvailable = simpleStorage.canUse(),
         _defaultTTL = 1000 * 60 * 30; // 30 minutes
 
-    var speakersEndpoint = 'data/speakers.json?v=2';
-    var scheduleEndpoint = 'data/schedule.json?v=2';
+    var speakersEndpoint = 'data/speakers.json?v=3';
+    var scheduleEndpoint = 'data/schedule.json?v=3';
     // TODO: Too much duplication?
 
     // Speakers
