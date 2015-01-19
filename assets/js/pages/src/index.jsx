@@ -126,6 +126,30 @@
             infowindow.open(map, hotelMarker);
         });
 
+        var pachoLatlng = new google.maps.LatLng(56.9462052, 24.1098639);
+        var pachoMarker = new MarkerWithLabel({
+            position: pachoLatlng,
+            map: map,
+            title: 'Pacho music cafe',
+            icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+            labelContent: 'Pacho music cafe',
+            labelAnchor: new google.maps.Point(58, -5),
+            labelClass: 'map-label'
+        });
+        var pachoInfowindow = new google.maps.InfoWindow({
+            content: '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<div id="bodyContent">' +
+            '<a href="http://www.pacho.lv" target="_blank">http://www.pacho.lv</a>' +
+            '</div>' +
+            '</div>'
+        });
+        google.maps.event.addListener(pachoMarker, 'click', function () {
+            pachoInfowindow.open(map, pachoMarker);
+        });
+
+
     }
 
     var image = new Image();
