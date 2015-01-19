@@ -300,9 +300,6 @@ var Schedule = React.createClass({
     render: function () {
         return (
             <div>
-                <header className="huge blue">
-                    <h1>Schedule</h1>
-                </header>
                 <article className="schedule-section">
                     <table>
                         <ScheduleRoomNames roomNames={this.state.roomNames}/>

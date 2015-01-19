@@ -300,9 +300,6 @@ var Schedule = React.createClass({
     render: function () {
         return (
             React.createElement("div", null, 
-                React.createElement("header", {className: "huge blue"}, 
-                    React.createElement("h1", null, "Schedule")
-                ), 
                 React.createElement("article", {className: "schedule-section"}, 
                     React.createElement("table", null, 
                         React.createElement(ScheduleRoomNames, {roomNames: this.state.roomNames}), 
