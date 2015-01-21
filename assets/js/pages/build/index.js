@@ -60,7 +60,7 @@
 
     $('#countdown').flipcountdown({
         size: 'lg',
-        beforeDateTime: '01/22/2015 00:00:00',
+        beforeDateTime: '01/22/2015 09:45:00',
         speedFlip: 60
     });
 }());
