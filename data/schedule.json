@@ -101,7 +101,7 @@
            "subtitle": "Source Control, Versioning and Concurrent Development for OBIEE using Git",
            "description": "In this session we will look at options for integrating OBIEE 11g with source control tools including Subversion and Git, focusing on Git as our preferred SCM tool. We will look at how Git can make use of the new MDS XML Documents repository format, and see how it permits versioning of individual repository element over time. We'll also look at how Git supports concurrent development including branching and merging of repositories, and whether Git + MDS XML can replace MUDE as a platform for concurrent development of the repository.",
            "speakers": [
-              "5", "12"
+              "12"
            ],
            "tags": [
              "DB",
