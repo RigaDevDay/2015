@@ -127,46 +127,7 @@ var Timeline = React.createClass({displayName: "Timeline",
 
 var TimelineList = React.createClass({displayName: "TimelineList",
     getInitialState: function () {
-        var tagColorMap = {};
-
-        if(this.props.timelines) {
-            this.props.timelines.forEach(function (timeline) {
-                timeline.events.forEach(function (event) {
-                    if(event.tags) {
-                        event.tags.forEach(function (tag) {
-                            tagColorMap[tag] = null;
-                        });
-                    }
-                });
-            });
-        }
-
-        var colors = [
-            'orchid',
-            'navy',
-            'orange',
-            'magenta',
-            'brown',
-            'aqua',
-            'chocolate',
-            'plum',
-            'salmon',
-            'sea-green',
-            'state-blue',
-            'yellow-green',
-            'dark-slate-gray'
-        ];
-
-        var colorId = 0;
-        for(key in tagColorMap) {
-            if(tagColorMap.hasOwnProperty(key)) {
-                tagColorMap[key] = colors[colorId];
-                colorId++;
-            }
-        }
-
         return {
-            tagColorMap: tagColorMap,
             selectedTags: simpleStorage.get('scheduleSelectedTags') || {}
         };
     },
@@ -252,6 +213,42 @@ var TimelineList = React.createClass({displayName: "TimelineList",
         var self = this;
 
         if(this.props.timelines) {
+            var tagColorMap = {};
+
+            this.props.timelines.forEach(function (timeline) {
+                timeline.events.forEach(function (event) {
+                    if(event.tags) {
+                        event.tags.forEach(function (tag) {
+                            tagColorMap[tag] = null;
+                        });
+                    }
+                });
+            });
+
+            var colors = [
+                'orchid',
+                'navy',
+                'orange',
+                'magenta',
+                'brown',
+                'aqua',
+                'chocolate',
+                'plum',
+                'salmon',
+                'sea-green',
+                'state-blue',
+                'yellow-green',
+                'dark-slate-gray'
+            ];
+
+            var colorId = 0;
+            for(key in tagColorMap) {
+                if(tagColorMap.hasOwnProperty(key)) {
+                    tagColorMap[key] = colors[colorId];
+                    colorId++;
+                }
+            }
+
             function buildTimeline(timeline, i) {
                 timelineRows.push(React.createElement(Timeline, {
                     timelineId: i, 
@@ -260,7 +257,7 @@ var TimelineList = React.createClass({displayName: "TimelineList",
                     key: i, 
                     handleTagSelect: self.handleTagSelect, 
                     selectedTags: self.state.selectedTags, 
-                    tagColorMap: self.state.tagColorMap}
+                    tagColorMap: tagColorMap}
                 ));
             }
 
