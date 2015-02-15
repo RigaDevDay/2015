@@ -176,7 +176,11 @@
             this.loadSpeakers();
         },
         render: function () {
-            return React.createElement(SpeakersList, {speakers: this.state.speakers})
+            if(this.state.speakers.length > 0) {
+                return React.createElement(SpeakersList, {speakers: this.state.speakers});
+            } else {
+                return null;
+            }
         }
     });
 
@@ -207,7 +211,7 @@
 
             return (
                 React.createElement("ul", {className: "als-wrapper"}, speakerNodes)
-            )
+            );
         }
     });
 

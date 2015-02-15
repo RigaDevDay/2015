@@ -124,15 +124,17 @@ var TimelineList = React.createClass({displayName: "TimelineList",
     getInitialState: function () {
         var tagColorMap = {};
 
-        this.props.timelines.forEach(function (timeline) {
-            timeline.events.forEach(function (event) {
-                if(event.tags) {
-                    event.tags.forEach(function (tag) {
-                        tagColorMap[tag] = null;
-                    });
-                }
+        if(this.props.timelines) {
+            this.props.timelines.forEach(function (timeline) {
+                timeline.events.forEach(function (event) {
+                    if(event.tags) {
+                        event.tags.forEach(function (tag) {
+                            tagColorMap[tag] = null;
+                        });
+                    }
+                });
             });
-        });
+        }
 
         var colors = [
             'orchid',
@@ -158,7 +160,6 @@ var TimelineList = React.createClass({displayName: "TimelineList",
             }
         }
 
-        console.log(tagColorMap);
         return {
             tagColorMap: tagColorMap,
             selectedTags: simpleStorage.get('scheduleSelectedTags') || {}
@@ -245,21 +246,25 @@ var TimelineList = React.createClass({displayName: "TimelineList",
         var timelineRows = [];
         var self = this;
 
-        function buildTimeline(timeline, i) {
-            timelineRows.push(React.createElement(Timeline, {
-                timelineId: i, 
-                timeline: timeline, 
-                speakers: self.props.speakers, 
-                key: i, 
-                handleTagSelect: self.handleTagSelect, 
-                selectedTags: self.state.selectedTags, 
-                tagColorMap: self.state.tagColorMap}
-            ));
+        if(this.props.timelines) {
+            function buildTimeline(timeline, i) {
+                timelineRows.push(React.createElement(Timeline, {
+                    timelineId: i, 
+                    timeline: timeline, 
+                    speakers: self.props.speakers, 
+                    key: i, 
+                    handleTagSelect: self.handleTagSelect, 
+                    selectedTags: self.state.selectedTags, 
+                    tagColorMap: self.state.tagColorMap}
+                ));
+            }
+
+            this.props.timelines.forEach(buildTimeline.bind(this));
+
+            return React.createElement("tbody", null, timelineRows)
+        } else {
+            return null;
         }
-
-        this.props.timelines.forEach(buildTimeline.bind(this));
-
-        return React.createElement("tbody", null, timelineRows)
     }
 });
 
@@ -284,6 +289,13 @@ var EventPopup = React.createClass({
 
 var Schedule = React.createClass({
     displayName: 'Schedule',
+    getInitialState: function () {
+        return {
+            roomNames: [],
+            schedule: [],
+            speakers: {}
+        }
+    },
     componentWillMount: function () {
         var self = this;
         storage.getSpeakers(function (speakers) {

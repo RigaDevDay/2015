@@ -60,7 +60,7 @@
 
     $('#countdown').flipcountdown({
         size: 'lg',
-        beforeDateTime: '01/22/2015 00:00:00',
+        beforeDateTime: '01/22/2015 09:45:00',
         speedFlip: 60
     });
 }());
@@ -176,7 +176,11 @@
             this.loadSpeakers();
         },
         render: function () {
-            return <SpeakersList speakers={this.state.speakers}/>
+            if(this.state.speakers.length > 0) {
+                return <SpeakersList speakers={this.state.speakers}/>;
+            } else {
+                return null;
+            }
         }
     });
 
@@ -207,7 +211,7 @@
 
             return (
                 <ul className="als-wrapper">{speakerNodes}</ul>
-            )
+            );
         }
     });
 
