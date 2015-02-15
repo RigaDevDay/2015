@@ -63,7 +63,8 @@
            ],
            "tags": [
               "Java"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/henrik-stahl-java-update-and-roadmap"
          },
          {
            "subtitle": "Genymotion, the new Android emulator",
@@ -162,7 +163,8 @@
              "DB",
              "NoSQL",
              "JavaScript"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/james-nugent-event-store-internals"
          },
          {
            "subtitle": "Beyond NoSQL: NewSQL on top of Cassandra",
@@ -312,7 +314,8 @@
            ],
            "tags": [
              "Internet of Things"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/kai-kreuzer-smart-home-development-made-easy"
          },
          {
            "subtitle": "The best of both worlds : Going hybrid with your mobile APEX Oracle Application",
