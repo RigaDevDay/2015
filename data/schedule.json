@@ -74,7 +74,8 @@
            "tags": [
              "Mobile",
              "Android"
-           ]
+           ],
+           "slides": "https://docs.google.com/presentation/d/1oOSB0RAYKP0ZPKXisfnWxwH1sAs0K9xO-UC2spWNPE0/edit"
          },
          {
            "subtitle": "Using Node.js for everything or what it is to write a book about it",
@@ -95,7 +96,8 @@
            ],
            "tags": [
              "DevOps"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/45-valuable-tips-for-developers-in-45-minutes"
          },
          {
            "subtitle": "Source Control, Versioning and Concurrent Development for OBIEE using Git",
@@ -136,7 +138,8 @@
            "tags": [
              "Web",
              "Java"
-           ]
+           ],
+           "slides": "http://www.slideshare.net/arungupta1/lessons-learned-from-realworld-deployments-of-java-ee-7-at-javaone-2014"
          },
          {
            "subtitle": "The Mythical Silver Bullet - How Codename One solves mobility differently ",
@@ -146,7 +149,8 @@
            ],
            "tags": [
              "Mobile"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/shai-almog-the-mythical-silver-bullet-how-codename-one-solves-mobility-differently"
          },
          {
            "subtitle": "A deep dive into Event Store",
@@ -180,7 +184,8 @@
            "tags": [
              "DB",
              "Oracle"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/9-use-cases-for-oracle-sql-developer-data-modeler"
          }
       ]
     },
@@ -219,7 +224,8 @@
            ],
            "tags": [
              "Java"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/completablefuture-is-here"
          },
          {
            "subtitle": "Enterprise flight into DevOps space",
@@ -229,7 +235,8 @@
            ],
            "tags": [
              "DevOps"
-           ]
+           ],
+           "slides": "http://www.slideshare.net/aestasit/enterprise-flight-into-devops-space-for-rigadevday-2015"
          },
          {
            "subtitle": "PL/SQL : Stop Making The Same Performance Mistakes",
@@ -240,7 +247,8 @@
            "tags": [
              "DB",
              "Oracle"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/sql-stop-making-the-same-performance-mistakes"
          }
       ]
     },
@@ -269,7 +277,8 @@
            ],
            "tags": [
              "Java"
-           ]
+           ],
+           "slides": "http://www.slideshare.net/SimonRitter/lambdas-beyond-the-basics"
          },
          {
            "subtitle": "How to Become the MacGyver of Android Custom Views",
@@ -280,7 +289,8 @@
            "tags": [
              "Mobile",
              "Android"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/android10/how-to-become-the-macgyver-of-android-custom-views"
          },
          {
            "subtitle": "The Busy Javascript Developer’s Guide to MEAN",
@@ -314,7 +324,8 @@
              "DB",
              "Mobile",
              "Oracle"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/the-best-of-both-worlds-going-hybrid-with-your-mobile-apex-oracle-application"
          }
       ]
     },
@@ -332,7 +343,8 @@
            ],
            "tags": [
              "Web"
-           ]
+           ],
+           "slides": "https://prezi.com/f9tsbyyak2gm/effective-design-of-restful-apis/?utm_source=twitter&utm_medium=landing_share"
          },
          {
            "subtitle": "Android Wear deep dive",
@@ -343,7 +355,8 @@
            "tags": [
              "Android",
              "Internet of Things"
-           ]
+           ],
+           "slides": "https://docs.google.com/presentation/d/1umo6vcZAF2v9M1MtL74aCKWu2ezbmjxd06s2n-cMP-s/edit"
          },
          {
            "subtitle": "Nuts and Bolts of WebSocket",
@@ -354,7 +367,8 @@
            "tags": [
              "Web",
              "Java"
-           ]
+           ],
+           "slides": "http://www.slideshare.net/arungupta1/nuts-and-bolts-of-websocket-devoxx-2014"
          },
          {
            "subtitle": "JVM crash dump analysis",
@@ -364,7 +378,8 @@
            ],
            "tags": [
              "Java"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/andrey-pangin-jvm-crash-dump-analysis"
          },
          {
            "subtitle": "No Silver Bullets - OBIEE Performance in the Real World",
@@ -375,7 +390,8 @@
            "tags": [
              "DB",
              "Oracle"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/source-control-versioning-and-concurrent-development-for-obiee-using-git"
          }
       ]
     },
@@ -405,7 +421,8 @@
            "tags": [
              "Android",
              "Internet of Things"
-           ]
+           ],
+           "slides": "https://docs.google.com/presentation/d/1xe1xuIEgBgdSE_GZIyIv6gOzHhfCrhkpymW02D0rrgc/edit#slide=id.g6c313d397_031"
          },
          {
            "subtitle": "Java Concurrency Under the Hood",
@@ -437,7 +454,8 @@
            "tags": [
              "Java",
              "Oracle"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/an-oracle-dbas-guide-to-weblogic-server"
          }
       ]
     },

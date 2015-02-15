@@ -87,6 +87,10 @@ var Timeline = React.createClass({
             var eventId = this.getEventId(i);
             var eventTags = this.getEventTags(event, this.props.selectedTags);
             var eventFavorite = this.getEventIsFavorite(i);
+            var slides = null;
+            if(event.slides) {
+                slides = <a href={event.slides} target="_blank">slides</a>;
+            }
 
             var favoritesTag = null;
             if (clickable) {
@@ -104,6 +108,7 @@ var Timeline = React.createClass({
                         <div className="desc">{eventSubtitle}</div>
                     </div>
                     <div className="tags">{eventTags}</div>
+                    <div className="slides">{slides}</div>
                 </td>
             );
         }, this);

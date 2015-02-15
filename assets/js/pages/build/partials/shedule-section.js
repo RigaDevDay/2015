@@ -87,6 +87,10 @@ var Timeline = React.createClass({displayName: "Timeline",
             var eventId = this.getEventId(i);
             var eventTags = this.getEventTags(event, this.props.selectedTags);
             var eventFavorite = this.getEventIsFavorite(i);
+            var slides = null;
+            if(event.slides) {
+                slides = React.createElement("a", {href: event.slides, target: "_blank"}, "slides");
+            }
 
             var favoritesTag = null;
             if (clickable) {
@@ -103,7 +107,8 @@ var Timeline = React.createClass({displayName: "Timeline",
                         React.createElement("header", {dangerouslySetInnerHTML: {__html: eventHeader}}), 
                         React.createElement("div", {className: "desc"}, eventSubtitle)
                     ), 
-                    React.createElement("div", {className: "tags"}, eventTags)
+                    React.createElement("div", {className: "tags"}, eventTags), 
+                    React.createElement("div", {className: "slides"}, slides)
                 )
             );
         }, this);
