@@ -87,7 +87,8 @@
            "tags": [
              "Web",
              "JavaScript"
-           ]
+           ],
+           "slides": "http://www.slideshare.net/krasimirtsonev3/using-nodejs-for-everything-or-what-it-is-to-write-a-book-about-it"
          },
          {
            "subtitle": "45 valuable tips for developers in 45 minutes",
@@ -435,7 +436,8 @@
            ],
            "tags": [
              "Java"
-           ]
+           ],
+           "slides": "http://gvsmirnov.ru/docs/presentations/java-concurrency-hands-on"
          },
          {
            "subtitle": "Programming Bitcoin in Java",
