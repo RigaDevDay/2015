@@ -110,7 +110,8 @@
            "tags": [
              "DB",
              "Oracle"
-           ]
+           ],
+           "slides": "https://speakerdeck.com/rigadevday/source-control-versioning-and-concurrent-development-for-obiee-using-git"
          }
       ]
     },
