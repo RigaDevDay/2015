@@ -1,8 +1,8 @@
-@import "../shared/helpers";
+@import "@{shared}/_helpers";
 
 #schedule, .schedule {
   header h1 {
-    background-image: url('../../img/icons/schedule-icon.png');
+    background-image: url('@{imgs}/icons/schedule-icon.png');
   }
   table {
     margin: 20px auto 30px auto;
@@ -44,12 +44,12 @@
       &:nth-child(even) {
         background-color: #F5F5F5;
         .locked.content {
-          background-image: url('../../img/locked-light.png');
+          background-image: url('@{imgs}/locked-light.png');
         }
       }
       &:nth-child(odd) {
         .locked.content {
-          background-image: url('../../img/locked-dark.png');
+          background-image: url('@{imgs}/locked-dark.png');
         }
       }
     }
@@ -63,7 +63,7 @@
   }
   .icon {
     width: 25px;
-    background: url('../../img/5px-gray.png') repeat-y center;
+    background: url('@{imgs}/5px-gray.png') repeat-y center;
     & > div {
       width: 25px;
       height: 25px;
@@ -197,25 +197,25 @@
     color: #e74c3c;
   }
   .registration.icon div {
-    background-image: url('../../img/registration-small-icon.png');
+    background-image: url('@{imgs}/registration-small-icon.png');
   }
   .clock.icon div {
-    background-image: url('../../img/time-small-icon.png');
+    background-image: url('@{imgs}/time-small-icon.png');
   }
   .speaker.icon div {
-    background-image: url('../../img/speaker-small-icon.png');
+    background-image: url('@{imgs}/speaker-small-icon.png');
   }
   .coffee.icon div {
-    background-image: url('../../img/coffee-small-icon.png');
+    background-image: url('@{imgs}/coffee-small-icon.png');
   }
   .lunch.icon div {
-    background-image: url('../../img/lunch-small-icon.png');
+    background-image: url('@{imgs}/lunch-small-icon.png');
   }
   .end.icon div {
-    background-image: url('../../img/end-small-icon.png');
+    background-image: url('@{imgs}/end-small-icon.png');
   }
   .afterparty.icon div {
-    background-image: url('../../img/afterparty-small-icon.png');
+    background-image: url('@{imgs}/afterparty-small-icon.png');
   }
   .locked.content {
     vertical-align: middle;
@@ -243,7 +243,7 @@
     width: 37px;
     height: 37px;
     margin: 15px 15px 0 0;
-    background: url('../../img/modal-close.png') no-repeat;
+    background: url('@{imgs}/modal-close.png') no-repeat;
     float: right;
     cursor: pointer;
   }
